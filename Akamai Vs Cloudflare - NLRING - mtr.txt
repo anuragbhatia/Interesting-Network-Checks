@@ -1,0 +1,1507 @@
+anurag@ansible:~$ ansible -a 'mtr -wr amy.ns.cloudflare.com' nlring
+noris01.ring.nlnog.net | SUCCESS | rc=0 >>
+Start: Fri Aug 19 13:21:39 2016
+HOST: noris01.ring.nlnog.net         Loss%   Snt   Last   Avg  Best  Wrst StDev
+  1.|-- irb42-rt1-nbg6a.core.noris.net  0.0%    10    1.8   0.6   0.2   1.8   0.3
+  2.|-- ae1-0-rt4-nbg3.core.noris.net   0.0%    10    0.5   0.6   0.5   0.7   0.0
+  3.|-- ae0-0-rt3-ffm2.core.noris.net   0.0%    10    5.9   3.8   3.5   5.9   0.7
+  4.|-- de-cix-frankfurt.as13335.net    0.0%    10    3.9   3.9   3.8   4.3   0.0
+  5.|-- amy.ns.cloudflare.com           0.0%    10    5.8   4.0   3.7   5.8   0.6
+
+nordunet01.ring.nlnog.net | SUCCESS | rc=0 >>
+Start: Fri Aug 19 13:21:39 2016
+HOST: nordunet01.ring.nlnog.net Loss%   Snt   Last   Avg  Best  Wrst StDev
+  1.|-- se-fre.nordu.net           0.0%    10    0.7   0.7   0.7   0.8   0.0
+  2.|-- 2001:7f8:d:fe::246         0.0%    10    1.2   1.3   1.2   1.4   0.0
+  3.|-- amy.ns.cloudflare.com      0.0%    10    1.2   1.3   1.2   1.4   0.0
+
+nts01.ring.nlnog.net | SUCCESS | rc=0 >>
+Start: Fri Aug 19 13:21:38 2016
+HOST: nts01.ring.nlnog.net                 Loss%   Snt   Last   Avg  Best  Wrst StDev
+  1.|-- 16070828.te1.01.p.cbn.ch.as15576.net 10.0%    10    1.0   0.9   0.9   1.0   0.0
+  2.|-- lo0.01.p.czh.ch.as15576.net           0.0%    10    2.4   2.4   2.3   2.7   0.0
+  3.|-- lo0.02.p.czh.ch.as15576.net           0.0%    10    2.7   2.7   2.5   2.8   0.0
+  4.|-- as13335.swissix.ch                    0.0%    10    1.8   2.2   1.8   5.5   1.0
+  5.|-- amy.ns.cloudflare.com                 0.0%    10    1.8   1.8   1.7   2.0   0.0
+
+nonattached01.ring.nlnog.net | SUCCESS | rc=0 >>
+Start: Fri Aug 19 13:21:39 2016
+HOST: nonattached01.ring.nlnog.net Loss%   Snt   Last   Avg  Best  Wrst StDev
+  1.|-- gw.core.nonattached.net       0.0%    10    0.5   0.5   0.5   0.6   0.0
+  2.|-- 2001:7f8:33::a100:6939:1      0.0%    10    9.5   4.1   1.1  11.8   4.5
+  3.|-- de-cix-frankfurt.as13335.net  0.0%    10    1.5   1.4   1.2   1.7   0.0
+  4.|-- amy.ns.cloudflare.com         0.0%    10    1.6   1.4   1.2   1.6   0.0
+
+nodesdirect01.ring.nlnog.net | SUCCESS | rc=0 >>
+Start: Fri Aug 19 13:21:41 2016
+HOST: nodesdirect01.ring.nlnog.net Loss%   Snt   Last   Avg  Best  Wrst StDev
+  1.|-- 2604:4600:b01:6122::1         0.0%    10    0.6   0.6   0.5   0.6   0.0
+  2.|-- 2604:4600::175c:5a8d          0.0%    10    1.1   1.2   1.1   1.6   0.0
+  3.|-- 2604:4600::17ef:48fd          0.0%    10    0.3   0.3   0.3   0.3   0.0
+  4.|-- 2001:478:132::136             0.0%    10    6.4   6.4   6.3   6.4   0.0
+  5.|-- amy.ns.cloudflare.com         0.0%    10    6.3   6.4   6.3   6.4   0.0
+
+occaid01.ring.nlnog.net | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Failed to connect to the host via ssh.",
+    "unreachable": true
+}
+ntt02.ring.nlnog.net | SUCCESS | rc=0 >>
+Start: Fri Aug 19 13:21:53 2016
+HOST: ntt02.ring.nlnog.net                             Loss%   Snt   Last   Avg  Best  Wrst StDev
+  1.|-- virbr0.scarlett.6core.net                         0.0%    10    0.2   0.2   0.1   0.3   0.0
+  2.|-- ge-100-0-0-31-100.r03.amstnl02.nl.bb.gin.ntt.net  0.0%    10    1.2   1.1   1.1   1.3   0.0
+  3.|-- ae-4.r02.amstnl02.nl.bb.gin.ntt.net               0.0%    10    1.1   1.1   0.9   1.2   0.0
+  4.|-- 2001:728:0:4000::2                                0.0%    10    1.2   1.2   1.1   1.4   0.0
+  5.|-- cloudflare-ic-304618-adm-b4.c.telia.net           0.0%    10    0.6   0.7   0.6   0.8   0.0
+  6.|-- amy.ns.cloudflare.com                             0.0%    10    0.7   0.7   0.6   0.8   0.0
+
+nynex01.ring.nlnog.net | SUCCESS | rc=0 >>
+Start: Fri Aug 19 13:21:53 2016
+HOST: nynex01.ring.nlnog.net       Loss%   Snt   Last   Avg  Best  Wrst StDev
+  1.|-- 2a00:e60:7000:1::1            0.0%    10    0.2   0.2   0.2   0.2   0.0
+  2.|-- ixfr3-bb1.nynex.de            0.0%    10    1.0  21.0   1.0 113.4  42.3
+  3.|-- eqixfr5-bb1.nynex.de          0.0%    10    1.3  27.5   1.3 198.8  61.3
+  4.|-- de-cix-frankfurt.as13335.net  0.0%    10    1.3   3.2   1.2  15.8   4.5
+  5.|-- amy.ns.cloudflare.com         0.0%    10    1.2   4.2   1.2  25.1   7.4
+
+obenetwork01.ring.nlnog.net | SUCCESS | rc=0 >>
+Start: Fri Aug 19 13:21:54 2016
+HOST: obenetwork01.ring.nlnog.net     Loss%   Snt   Last   Avg  Best  Wrst StDev
+  1.|-- gw-vl132.kst1.se.obenetwork.net  0.0%    10    0.7  61.2   0.5 195.6  81.5
+  2.|-- as13335-te-tc1.sthix.net         0.0%    10    1.0   1.1   0.9   1.6   0.0
+  3.|-- amy.ns.cloudflare.com            0.0%    10    0.8   0.9   0.8   1.1   0.0
+
+ntt01.ring.nlnog.net | SUCCESS | rc=0 >>
+Start: Fri Aug 19 13:21:58 2016
+HOST: ntt01.ring.nlnog.net                         Loss%   Snt   Last   Avg  Best  Wrst StDev
+  1.|-- ge-100-0-0-43.r00.lsanca07.us.bb.gin.ntt.net  0.0%    10    0.7   1.3   0.6   2.4   0.3
+  2.|-- las-b3-link.telia.net                         0.0%    10    0.4   0.5   0.4   1.2   0.0
+  3.|-- cloudflare-ic-301668-las-bb1.c.telia.net      0.0%    10    0.6   0.7   0.5   1.7   0.3
+  4.|-- amy.ns.cloudflare.com                         0.0%    10    0.5   0.5   0.5   0.6   0.0
+
+one01.ring.nlnog.net | SUCCESS | rc=0 >>
+Start: Fri Aug 19 13:22:06 2016
+HOST: one01.ring.nlnog.net              Loss%   Snt   Last   Avg  Best  Wrst StDev
+  1.|-- xe-1-3-0-400.cr3-cph1.net.one.com  0.0%    10    0.4   2.4   0.3  20.1   6.2
+  2.|-- 2001:7f8:d:200::221                0.0%    10    1.0   0.7   0.5   1.5   0.0
+  3.|-- 2001:7f8:d:200::246                0.0%    10    0.8   3.1   0.5   7.6   2.6
+  4.|-- amy.ns.cloudflare.com              0.0%    10    0.6   0.6   0.5   0.6   0.0
+
+octopuce01.ring.nlnog.net | SUCCESS | rc=0 >>
+Start: Fri Aug 19 13:22:06 2016
+HOST: octopuce01.ring.nlnog.net Loss%   Snt   Last   Avg  Best  Wrst StDev
+  1.|-- cigoli.octopuce.fr         0.0%    10    0.6   0.8   0.4   1.2   0.0
+  2.|-- cr7.rt.ielo.net            0.0%    10    8.5   6.5   1.4  23.4   7.0
+  3.|-- frpar01-a9k1.rt.ielo.net   0.0%    10    2.2   1.9   1.6   2.4   0.0
+  4.|-- cloudflare.franceix.net    0.0%    10    2.0   1.7   1.3   2.0   0.0
+  5.|-- amy.ns.cloudflare.com      0.0%    10    1.6   1.7   1.4   2.0   0.0
+
+onlinesas01.ring.nlnog.net | SUCCESS | rc=0 >>
+Start: Fri Aug 19 13:22:11 2016
+HOST: onlinesas01.ring.nlnog.net Loss%   Snt   Last   Avg  Best  Wrst StDev
+  1.|-- 2001:bc8:3::1               0.0%    10    0.9   2.3   0.7   9.0   2.4
+  2.|-- 2001:bc8:0:1::b5            0.0%    10    2.3   1.3   0.9   2.3   0.5
+  3.|-- cloudflare.franceix.net     0.0%    10    1.1   1.2   1.0   2.0   0.0
+  4.|-- amy.ns.cloudflare.com       0.0%    10    0.9   0.9   0.8   1.1   0.0
+
+onet02.ring.nlnog.net | SUCCESS | rc=0 >>
+Start: Fri Aug 19 13:22:11 2016
+HOST: onet02.ring.nlnog.net           Loss%   Snt   Last   Avg  Best  Wrst StDev
+  1.|-- j.dab-br1.z.ring.net.onet.pl     0.0%    10    1.0   0.5   0.3   1.0   0.0
+  2.|-- ruc-br1.z.j.dab-br1.net.onet.pl  0.0%    10   48.2   5.5   0.6  48.2  15.0
+  3.|-- ruc-br2.z.ruc-br1.net.onet.pl    0.0%    10    0.6   3.1   0.5  25.2   7.7
+  4.|-- 2001:7f8:60::13:6                0.0%    10   14.9   8.9   5.9  16.4   4.6
+  5.|-- cloudflare.ipv6.plix.pl          0.0%    10    6.0   6.0   5.9   6.2   0.0
+  6.|-- amy.ns.cloudflare.com            0.0%    10    5.9   6.0   5.9   6.1   0.0
+
+onet01.ring.nlnog.net | SUCCESS | rc=0 >>
+Start: Fri Aug 19 13:22:10 2016
+HOST: onet01.ring.nlnog.net      Loss%   Snt   Last   Avg  Best  Wrst StDev
+  1.|-- ruc-br2.z.ring.net.onet.pl  0.0%    10    0.4   5.4   0.3  47.1  14.6
+  2.|-- 2001:7f8:60::13:6           0.0%    10    5.7   5.9   5.6   7.5   0.5
+  3.|-- cloudflare.ipv6.plix.pl     0.0%    10    5.8   5.8   5.7   5.8   0.0
+  4.|-- amy.ns.cloudflare.com       0.0%    10    5.8   5.7   5.6   5.8   0.0
+
+openit01.ring.nlnog.net | SUCCESS | rc=0 >>
+Start: Fri Aug 19 13:22:23 2016
+HOST: openit01.ring.nlnog.net      Loss%   Snt   Last   Avg  Best  Wrst StDev
+  1.|-- b0-v378.cr5a.dus0.openit.net  0.0%    10    0.2   0.3   0.2   0.5   0.0
+  2.|-- ae0.br0.dus0.openit.net       0.0%    10    0.5   0.5   0.3   0.6   0.0
+  3.|-- ae0.br1.dus0.openit.net       0.0%    10    1.6   0.7   0.4   1.6   0.0
+  4.|-- cloudflare.dus.ecix.net       0.0%    10    1.3   1.2   1.0   1.3   0.0
+  5.|-- amy.ns.cloudflare.com         0.0%    10    0.6   0.6   0.4   1.1   0.0
+
+openminds01.ring.nlnog.net | SUCCESS | rc=0 >>
+Start: Fri Aug 19 13:22:25 2016
+HOST: openminds01.ring.nlnog.net            Loss%   Snt   Last   Avg  Best  Wrst StDev
+  1.|-- n-hahnzma2escgydz6dd.ipv6.as30961.net  0.0%    10    1.5   1.9   1.5   3.9   0.3
+  2.|-- n-pao9.ipv6.as30961.net                0.0%    10    0.5   0.7   0.4   2.1   0.3
+  3.|-- n-cnj9.ipv6.as30961.net                0.0%    10    2.3   2.3   2.3   2.5   0.0
+  4.|-- 2001:978:2:1::38:1                    80.0%    10    2.9   2.9   2.9   2.9   0.0
+  5.|-- be2565.rcr21.bru01.atlas.cogentco.com 50.0%    10    3.2   3.2   3.1   3.3   0.0
+  6.|-- 2001:978:2:1::2b:2                     0.0%    10    2.7   2.7   2.7   2.8   0.0
+  7.|-- amy.ns.cloudflare.com                  0.0%    10    2.6   2.6   2.6   2.7   0.0
+
+ovh01.ring.nlnog.net | SUCCESS | rc=0 >>
+Start: Fri Aug 19 13:22:29 2016
+HOST: ovh01.ring.nlnog.net         Loss%   Snt   Last   Avg  Best  Wrst StDev
+  1.|-- 2001:41d0:a:64ff:ff:ff:ff:fd 60.0%    10   54.3  15.3   0.7  54.3  26.1
+  2.|-- be10-101.gra-g1-a9.fr.eu      0.0%    10    1.3   1.3   1.1   1.6   0.0
+  3.|-- be99-1190.gsw-1-a9.fr.eu      0.0%    10    4.9   5.1   4.9   5.5   0.0
+  4.|-- ???                          100.0    10    0.0   0.0   0.0   0.0   0.0
+  5.|-- cloudflare.franceix.net       0.0%    10    5.2   5.2   5.1   5.4   0.0
+  6.|-- amy.ns.cloudflare.com         0.0%    10    5.2   5.1   5.1   5.2   0.0
+
+ovh02.ring.nlnog.net | SUCCESS | rc=0 >>
+Start: Fri Aug 19 13:23:30 2016
+HOST: ovh02.ring.nlnog.net                 Loss%   Snt   Last   Avg  Best  Wrst StDev
+  1.|-- 2001:41d0:52:4ff:ffff:ffff:ffff:ff7e  0.0%    10    1.2   1.4   1.0   2.6   0.3
+  2.|-- be10-148.rbx-g1-a9.fr.eu              0.0%    10    1.2   1.1   0.9   1.5   0.0
+  3.|-- be99-1269.th2-1-a9.fr.eu              0.0%    10    5.2   4.8   4.4   5.2   0.0
+  4.|-- cloudflare.franceix.net               0.0%    10    4.4   4.4   4.3   4.8   0.0
+  5.|-- amy.ns.cloudflare.com                10.0%    10    4.3   4.5   4.3   4.9   0.0
+
+openimp01.ring.nlnog.net | SUCCESS | rc=0 >>
+Start: Fri Aug 19 13:22:22 2016
+HOST: openimp01.ring.nlnog.net                       Loss%   Snt   Last   Avg  Best  Wrst StDev
+  1.|-- 2a00:1068:ffff:402::a                           0.0%    10    3.9   6.3   1.4  24.3   6.8
+  2.|-- 2a00:1068:0:196::a                              0.0%    10    0.4   0.4   0.3   0.5   0.0
+  3.|-- xe-0-0-0-5-2375.r03.londen01.uk.bb.gin.ntt.net  0.0%    10    1.9   1.9   1.7   2.1   0.0
+  4.|-- ae-1.r02.londen01.uk.bb.gin.ntt.net             0.0%    10    2.0   1.9   1.7   2.2   0.0
+  5.|-- ae-6.r02.londen03.uk.bb.gin.ntt.net             0.0%    10    4.8   3.1   2.6   4.8   0.7
+  6.|-- ldn-b5-link.telia.net                           0.0%    10    2.2   2.2   2.0   2.3   0.0
+  7.|-- ldn-b5-v6.telia.net                             0.0%    10    2.4   2.4   2.2   3.1   0.0
+  8.|-- cloudflare-ic-306325-ldn-b3.c.telia.net         0.0%    10    1.4   1.5   1.3   1.7   0.0
+  9.|-- amy.ns.cloudflare.com                           0.0%    10    1.5   1.5   1.4   1.7   0.0
+
+patientsky01.ring.nlnog.net | SUCCESS | rc=0 >>
+Start: Fri Aug 19 13:22:44 2016
+HOST: patientsky01.ring.nlnog.net       Loss%   Snt   Last   Avg  Best  Wrst StDev
+  1.|-- 2a07:c3c0:ffff:3002::1             0.0%    10    0.3   0.2   0.2   0.3   0.0
+  2.|-- ti0061a400-xe2-1-0.ti.telenor.net  0.0%    10    0.5   0.4   0.3   0.6   0.0
+  3.|-- ti0001c360-lo0-0.ti.telenor.net    0.0%    10    1.7   1.1   0.8   1.7   0.0
+  4.|-- ti0300b400-lo0-0.ti.telenor.net    0.0%    10    0.8   0.8   0.7   0.9   0.0
+  5.|-- 2001:7f8:12:1::1:3335              0.0%    10    1.2   1.0   0.9   1.2   0.0
+  6.|-- amy.ns.cloudflare.com              0.0%    10    1.0   1.0   0.9   1.1   0.0
+
+pbwcomm01.ring.nlnog.net | SUCCESS | rc=0 >>
+Start: Fri Aug 19 13:23:00 2016
+HOST: pbwcomm01.ring.nlnog.net          Loss%   Snt   Last   Avg  Best  Wrst StDev
+  1.|-- gtwy-vl112.leadmon.net             0.0%    10    0.5   0.6   0.4   1.0   0.0
+  2.|-- xe-0-1-3.edge01.iad02.as13335.net  0.0%    10    4.1   3.0   2.8   4.1   0.3
+  3.|-- amy.ns.cloudflare.com              0.0%    10    2.8   3.3   2.8   7.0   1.2
+
+pcextreme02.ring.nlnog.net | SUCCESS | rc=0 >>
+Start: Fri Aug 19 13:22:58 2016
+HOST: pcextreme02.ring.nlnog.net       Loss%   Snt   Last   Avg  Best  Wrst StDev
+  1.|-- 2a00:f10:121:a00::2               0.0%    10    0.3   0.3   0.2   0.3   0.0
+  2.|-- 2a00:f10:170:132::1               0.0%    10    0.6   2.5   0.6  19.1   5.8
+  3.|-- core01.ams04.pcextreme.nl         0.0%    10    0.6   4.0   0.6  33.1  10.2
+  4.|-- cloudflare.equinix-am1.nlsix.net  0.0%    10    1.0   1.1   1.0   2.3   0.0
+  5.|-- amy.ns.cloudflare.com             0.0%    10    0.9   1.8   0.9   9.3   2.5
+
+ovh03.ring.nlnog.net | SUCCESS | rc=0 >>
+Start: Fri Aug 19 13:22:41 2016
+HOST: ovh03.ring.nlnog.net                 Loss%   Snt   Last   Avg  Best  Wrst StDev
+  1.|-- 2001:41d0:52:6ff:ffff:ffff:ffff:ff7d 70.0%    10    0.5  16.1   0.5  41.9  22.5
+  2.|-- be1-106.sbg-g2-a9.fr.eu               0.0%    10    1.1   1.2   1.1   1.3   0.0
+  3.|-- be99-1176.gsw-1-a9.fr.eu              0.0%    10    6.9   6.9   6.7   7.2   0.0
+  4.|-- be99-2.th2-1-a9.fr.eu                20.0%    10    7.8   7.2   6.8   7.8   0.0
+  5.|-- cloudflare.franceix.net               0.0%    10    6.9   6.9   6.8   7.0   0.0
+  6.|-- 2400:cb00:2049:1::adf5:3a65           0.0%    10    6.9   6.8   6.7   6.9   0.0
+
+pcextreme01.ring.nlnog.net | SUCCESS | rc=0 >>
+Start: Fri Aug 19 13:23:09 2016
+HOST: pcextreme01.ring.nlnog.net       Loss%   Snt   Last   Avg  Best  Wrst StDev
+  1.|-- 2a00:f10:105::3                   0.0%    10    3.5   5.9   0.9  10.2   3.1
+  2.|-- core02.ams05.pcextreme.nl         0.0%    10    1.1   1.1   1.1   1.3   0.0
+  3.|-- core01.ams04.pcextreme.nl         0.0%    10    1.2   4.2   1.2  30.1   9.1
+  4.|-- cloudflare.equinix-am1.nlsix.net  0.0%    10    1.5   1.6   1.5   1.7   0.0
+  5.|-- amy.ns.cloudflare.com             0.0%    10    1.4   1.5   1.3   1.6   0.0
+
+pcextreme04.ring.nlnog.net | SUCCESS | rc=0 >>
+Start: Fri Aug 19 13:23:21 2016
+HOST: pcextreme04.ring.nlnog.net Loss%   Snt   Last   Avg  Best  Wrst StDev
+  1.|-- 2a05:1500:202::1            0.0%    10    0.5   0.5   0.4   0.6   0.0
+  2.|-- 2a00:1633:0:1::1            0.0%    10    1.1   2.4   1.0   7.7   2.5
+  3.|-- 2001:de8:c::1:3335:1        0.0%    10    1.5   2.0   1.4   5.6   1.1
+  4.|-- amy.ns.cloudflare.com       0.0%    10    1.5   1.5   1.4   1.5   0.0
+
+pcextreme03.ring.nlnog.net | SUCCESS | rc=0 >>
+Start: Fri Aug 19 13:23:25 2016
+HOST: pcextreme03.ring.nlnog.net       Loss%   Snt   Last   Avg  Best  Wrst StDev
+  1.|-- 2a00:f10:305::1                   0.0%    10    0.3   3.5   0.3  31.7   9.9
+  2.|-- 2a00:f10:170:328::1               0.0%    10   30.3   3.5   0.5  30.3   9.4
+  3.|-- cloudflare.equinix-am1.nlsix.net  0.0%    10    0.9   0.9   0.8   1.0   0.0
+  4.|-- amy.ns.cloudflare.com             0.0%    10    0.8   0.8   0.7   0.9   0.0
+
+pcextreme06.ring.nlnog.net | SUCCESS | rc=0 >>
+Start: Fri Aug 19 13:23:28 2016
+HOST: pcextreme06.ring.nlnog.net Loss%   Snt   Last   Avg  Best  Wrst StDev
+  1.|-- 2a05:1500:100:2::2          0.0%    10    0.3   0.4   0.3   0.6   0.0
+  2.|-- 2605:7300:0:1::5            0.0%    10    2.4   4.4   1.7   8.8   2.1
+  3.|-- 2605:7300::11               0.0%    10    0.7   0.8   0.5   2.5   0.3
+  4.|-- 2001:504:13::211:63         0.0%    10    2.2   1.0   0.7   2.2   0.3
+  5.|-- amy.ns.cloudflare.com       0.0%    10    1.2   0.9   0.7   1.2   0.0
+
+ovh04.ring.nlnog.net | SUCCESS | rc=0 >>
+Start: Fri Aug 19 13:27:27 2016
+HOST: ovh04.ring.nlnog.net                Loss%   Snt   Last   Avg  Best  Wrst StDev
+  1.|-- 2607:5300:101:0:ffff:ffff:ffff:ff7d  0.0%    10    0.5   0.5   0.4   0.8   0.0
+  2.|-- po104.bhs-g1-a75.qc.ca               0.0%    10    0.4   0.5   0.4   0.6   0.0
+  3.|-- be100-1278.chi-1-a9.il.us            0.0%    10   17.1  18.2  16.9  28.0   3.3
+  4.|-- be100-2.chi-5-a9.il.us               0.0%    10   17.2  17.1  16.9  17.3   0.0
+  5.|-- .                                    0.0%    10   16.7  16.9  16.7  17.1   0.0
+  6.|-- 2400:cb00:2049:1::adf5:3a65          0.0%    10   16.7  16.8  16.7  17.0   0.0
+
+pcextreme05.ring.nlnog.net | SUCCESS | rc=0 >>
+Start: Fri Aug 19 13:23:34 2016
+HOST: pcextreme05.ring.nlnog.net              Loss%   Snt   Last   Avg  Best  Wrst StDev
+  1.|-- 2a05:1500:0:101::1                       0.0%    10    0.3   0.3   0.3   0.4   0.0
+  2.|-- 2606:ed00:4786:15::1                     0.0%    10    0.4   4.3   0.4  34.0  10.5
+  3.|-- 2001:450:2002:238::1                     0.0%    10    0.7   1.6   0.6   8.8   2.4
+  4.|-- ???                                     100.0    10    0.0   0.0   0.0   0.0   0.0
+  5.|-- vl-52.car2.Miami1.Level3.net             0.0%    10    1.8   3.1   1.1  15.5   4.4
+  6.|-- 2001:1900:1c::51                         0.0%    10   14.1  14.5  13.7  17.9   1.3
+  7.|-- vl-52.edge2.Atlanta4.Level3.net          0.0%    10   13.8  13.7  13.7  13.8   0.0
+  8.|-- atl-bb1-link.telia.net                   0.0%    10   29.9  29.9  29.8  30.0   0.0
+  9.|-- ash-b1-link.telia.net                    0.0%    10   26.1  26.1  26.1  26.2   0.0
+ 10.|-- cloudflare-ic-301664-ash-b1.c.telia.net  0.0%    10   25.8  25.9  25.8  26.1   0.0
+ 11.|-- amy.ns.cloudflare.com                    0.0%    10   25.5  25.6  25.5  25.7   0.0
+
+peakten02.ring.nlnog.net | SUCCESS | rc=0 >>
+Start: Fri Aug 19 13:23:42 2016
+HOST: peakten02.ring.nlnog.net                Loss%   Snt   Last   Avg  Best  Wrst StDev
+  1.|-- 2607:f758:8080::2                        0.0%    10   70.1  30.1   1.0  79.2  29.8
+  2.|-- 2607:f758:8000:e1::1                     0.0%    10    0.4   0.4   0.4   0.5   0.0
+  3.|-- te0-0-1-1.edge02.clt.peak10.net          0.0%    10    0.8   0.8   0.8   1.0   0.0
+  4.|-- te0-0-0-0.edge01.clt.peak10.net          0.0%    10    0.9   0.8   0.7   0.9   0.0
+  5.|-- te2-2.core02.atl.peak10.net              0.0%    10    7.5   7.5   7.4   7.8   0.0
+  6.|-- 2607:f758:0:111::1                       0.0%    10    7.5   8.0   7.5   8.9   0.0
+  7.|-- 2001:428:c02::1                          0.0%    10    8.7  11.9   8.7  35.5   8.4
+  8.|-- 2001:428:0:1:205:171:0:52                0.0%    10    9.2  10.9   9.1  26.4   5.4
+  9.|-- 2001:428:c01:1::2                        0.0%    10    8.6   8.6   8.5   8.7   0.0
+ 10.|-- ash-b1-link.telia.net                    0.0%    10   26.1  26.1  26.0  26.2   0.0
+ 11.|-- cloudflare-ic-301664-ash-b1.c.telia.net  0.0%    10   25.7  25.7  25.6  25.8   0.0
+ 12.|-- amy.ns.cloudflare.com                    0.0%    10   25.7  25.7  25.6  25.8   0.0
+
+peakten03.ring.nlnog.net | SUCCESS | rc=0 >>
+Start: Fri Aug 19 13:23:45 2016
+HOST: peakten03.ring.nlnog.net                Loss%   Snt   Last   Avg  Best  Wrst StDev
+  1.|-- 2607:f758:d040::3                        0.0%    10    1.0   1.0   0.9   1.2   0.0
+  2.|-- 2607:f758:d000:1a::1                     0.0%    10    0.4   0.4   0.3   0.5   0.0
+  3.|-- 2607:f758:d000:8::1                      0.0%    10    0.8   0.8   0.7   1.0   0.0
+  4.|-- 2607:f758:0:c5::2                       40.0%    10   14.7  14.7  14.5  14.7   0.0
+  5.|-- 2607:f758:0:111::1                      60.0%    10   14.7  14.7  14.7  14.7   0.0
+  6.|-- 2001:428:c02::1                          0.0%    10   15.8  17.3  15.8  29.9   4.4
+  7.|-- 2001:428:0:1:205:171:0:52                0.0%    10   16.5  16.4  16.3  16.6   0.0
+  8.|-- 2001:428:c01:1::2                        0.0%    10   16.5  18.0  16.0  34.0   5.6
+  9.|-- ash-b1-link.telia.net                    0.0%    10   27.0  27.1  27.0  27.2   0.0
+ 10.|-- cloudflare-ic-301664-ash-b1.c.telia.net  0.0%    10   27.3  27.5  26.7  28.9   0.5
+ 11.|-- amy.ns.cloudflare.com                    0.0%    10   26.6  26.6  26.5  26.8   0.0
+
+peakten01.ring.nlnog.net | SUCCESS | rc=0 >>
+Start: Fri Aug 19 13:23:50 2016
+HOST: peakten01.ring.nlnog.net                Loss%   Snt   Last   Avg  Best  Wrst StDev
+  1.|-- 2607:f758:a080::3                        0.0%    10    1.0   1.0   0.9   1.3   0.0
+  2.|-- 2607:f758:a000:e2::1                     0.0%    10    0.4   0.9   0.3   4.4   1.2
+  3.|-- 2607:f758:a000:8::1                      0.0%    10    0.7   0.9   0.7   2.1   0.3
+  4.|-- te0-1-0-2.edge01.atl.peak10.net          0.0%    10   10.9  10.9  10.8  11.0   0.0
+  5.|-- 2001:428:c02::1                          0.0%    10   12.0  19.2  12.0  74.0  19.5
+  6.|-- 2001:428:0:1:205:171:0:52                0.0%    10   12.5  12.6  12.5  12.8   0.0
+  7.|-- 2001:428:c01:1::2                        0.0%    10   12.3  12.7  12.3  14.0   0.3
+  8.|-- ash-b1-link.telia.net                    0.0%    10   27.1  27.1  27.0  27.3   0.0
+  9.|-- cloudflare-ic-301664-ash-b1.c.telia.net  0.0%    10   26.8  26.8  26.7  27.1   0.0
+ 10.|-- amy.ns.cloudflare.com                    0.0%    10   26.6  26.6  26.5  26.8   0.0
+
+peakten04.ring.nlnog.net | SUCCESS | rc=0 >>
+Start: Fri Aug 19 13:23:48 2016
+HOST: peakten04.ring.nlnog.net                Loss%   Snt   Last   Avg  Best  Wrst StDev
+  1.|-- 2607:f758:1280::3                        0.0%    10    0.9  41.9   0.9 409.6 129.2
+  2.|-- 2607:f758:1000:e2::1                     0.0%    10    0.5   0.6   0.4   1.3   0.0
+  3.|-- 2607:f758:1000:8::1                      0.0%    10    0.8   0.9   0.8   1.3   0.0
+  4.|-- ???                                     100.0    10    0.0   0.0   0.0   0.0   0.0
+  5.|-- ???                                     100.0    10    0.0   0.0   0.0   0.0   0.0
+  6.|-- ???                                     100.0    10    0.0   0.0   0.0   0.0   0.0
+  7.|-- ???                                     100.0    10    0.0   0.0   0.0   0.0   0.0
+  8.|-- ash-b1-link.telia.net                    0.0%    10   17.1  17.3  17.0  18.5   0.3
+  9.|-- cloudflare-ic-301664-ash-b1.c.telia.net  0.0%    10   17.7  17.4  16.5  18.6   0.5
+ 10.|-- amy.ns.cloudflare.com                    0.0%    10   16.6  16.5  16.5  16.7   0.0
+
+phusion01.ring.nlnog.net | SUCCESS | rc=0 >>
+Start: Fri Aug 19 13:23:54 2016
+HOST: phusion01.ring.nlnog.net Loss%   Snt   Last   Avg  Best  Wrst StDev
+
+pix01.ring.nlnog.net | SUCCESS | rc=0 >>
+Start: Fri Aug 19 13:23:59 2016
+HOST: pix01.ring.nlnog.net                           Loss%   Snt   Last   Avg  Best  Wrst StDev
+  1.|-- 2a03:87a0:125:134::3                            0.0%    10    0.5   0.8   0.5   2.6   0.6
+  2.|-- salehmansour-1.tunnel.tserv18.fra1.ipv6.he.net  0.0%    10   72.2  81.4  72.2  97.8   9.9
+  3.|-- ve305.core1.fra1.he.net                         0.0%    10   83.1  84.7  71.0 104.0  11.3
+  4.|-- de-cix-frankfurt.as13335.net                    0.0%    10   75.6  85.4  75.6 102.2   9.0
+  5.|-- amy.ns.cloudflare.com                          10.0%    10  103.3  85.2  71.2 103.3   9.7
+
+plutex01.ring.nlnog.net | SUCCESS | rc=0 >>
+Start: Fri Aug 19 13:24:05 2016
+HOST: plutex01.ring.nlnog.net Loss%   Snt   Last   Avg  Best  Wrst StDev
+  1.|-- 2a02:16d0:0:2::1         0.0%    10    0.5   1.6   0.5  10.7   3.2
+  2.|-- 2a02:16d0:10:6::1        0.0%    10    0.5   0.8   0.4   3.4   0.9
+  3.|-- core5.bre.qsc.de         0.0%    10    7.8   7.8   7.5   8.6   0.0
+  4.|-- cloudflare.dus.ecix.net  0.0%    10   33.8  10.8   8.0  33.8   8.1
+  5.|-- amy.ns.cloudflare.com    0.0%    10    7.6   7.7   7.5   8.4   0.0
+
+poppr01.ring.nlnog.net | SUCCESS | rc=0 >>
+Start: Fri Aug 19 13:24:11 2016
+HOST: poppr01.ring.nlnog.net     Loss%   Snt   Last   Avg  Best  Wrst StDev
+  1.|-- 2801:82:0:6::1              0.0%    10    1.4   1.6   0.9   3.0   0.6
+  2.|-- 2801:82:0:ff03::1           0.0%    10    4.2   8.1   0.3  19.5   6.6
+  3.|-- 2001:12f0:0:fe::81          0.0%    10    1.7   2.0   0.3  13.1   3.9
+  4.|-- pr-sp-10g-oi.bkb-v6.rnp.br  0.0%    10    7.3   8.9   7.3  20.9   4.2
+  5.|-- 2001:12f0:0:fd::25          0.0%    10    7.3   8.8   7.3  20.7   4.1
+  6.|-- as13335.saopaulo.sp.ix.br   0.0%    10    8.3   8.3   8.2   8.9   0.0
+  7.|-- amy.ns.cloudflare.com       0.0%    10    8.9   8.3   8.1   8.9   0.0
+
+popsc01.ring.nlnog.net | SUCCESS | rc=0 >>
+Start: Fri Aug 19 13:24:11 2016
+HOST: popsc01.ring.nlnog.net                   Loss%   Snt   Last   Avg  Best  Wrst StDev
+  1.|-- 2801:80:a88:4017::1                      70.0%    10    0.9   1.7   0.9   3.3   1.2
+  2.|-- popsc-rt21-rt26-4047-1.bb6.pop-sc.rnp.br  0.0%    10    0.3   0.4   0.2   0.7   0.0
+  3.|-- 2001:12f0:0:fd::6d                        0.0%    10    0.3   0.4   0.3   0.6   0.0
+  4.|-- sc-sp-10g-oi.bkb-v6.rnp.br                0.0%    10   13.0  13.8  12.9  20.7   2.4
+  5.|-- as13335.saopaulo.sp.ix.br                 0.0%    10   13.8  13.8  13.8  13.9   0.0
+  6.|-- amy.ns.cloudflare.com                     0.0%    10   13.7  13.7  13.6  13.8   0.0
+
+plurimedia01.ring.nlnog.net | SUCCESS | rc=0 >>
+Start: Fri Aug 19 13:24:12 2016
+HOST: plurimedia01.ring.nlnog.net Loss%   Snt   Last   Avg  Best  Wrst StDev
+  1.|-- bgw2-direct.v6.sdv.fr       40.0%    10    0.9   0.8   0.7   0.9   0.0
+  2.|-- 2001:7f8:1::a503:7179:1      0.0%    10  177.0 177.1 176.9 177.7   0.0
+  3.|-- 2c0f:fe18:0:f1::4            0.0%    10  177.4 180.3 177.2 196.6   6.6
+  4.|-- 2c0f:fe18:0:6003::2          0.0%    10  177.5 180.4 177.2 208.5   9.8
+  5.|-- amy.ns.cloudflare.com        0.0%    10  177.3 177.3 177.1 177.6   0.0
+
+poznan01.ring.nlnog.net | SUCCESS | rc=0 >>
+Start: Fri Aug 19 13:24:22 2016
+HOST: poznan01.ring.nlnog.net                     Loss%   Snt   Last   Avg  Best  Wrst StDev
+  1.|-- css6-XE2-0-0-4045.ipv6.man.poznan.pl         0.0%    10    0.3   0.3   0.3   0.4   0.0
+  2.|-- 2001:808:2::1:96fe:ff40                      0.0%    10    0.3   4.4   0.3  29.1   9.4
+  3.|-- z-POZMAN.poznan-gw3.10gb.rtr.pionier.gov.pl  0.0%    10    0.5   0.4   0.3   0.5   0.0
+  4.|-- pionier-ias-geant-gw-1.poz.pl.geant.net      0.0%    10    0.4   0.7   0.4   3.2   0.8
+  5.|-- fra-ix.geant.net                             0.0%    10   21.4  22.6  21.4  32.6   3.5
+  6.|-- de-cix-frankfurt.as13335.net                 0.0%    10   20.7  20.8  20.7  21.2   0.0
+  7.|-- amy.ns.cloudflare.com                        0.0%    10   20.7  20.7  20.6  21.2   0.0
+
+public01.infra.ring.nlnog.net | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Failed to connect to the host via ssh.",
+    "unreachable": true
+}
+public02.infra.ring.nlnog.net | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Failed to connect to the host via ssh.",
+    "unreachable": true
+}
+prolocation01.ring.nlnog.net | SUCCESS | rc=0 >>
+Start: Fri Aug 19 13:24:27 2016
+HOST: prolocation01.ring.nlnog.net Loss%   Snt   Last   Avg  Best  Wrst StDev
+  1.|-- 2a00:d00:ff:136::252          0.0%    10    0.4   0.5   0.4   1.0   0.0
+  2.|-- 2a00:d00:1:2::1               0.0%    10    4.8  12.9   0.4  75.7  26.0
+  3.|-- ams-ix.as13335.net            0.0%    10    1.2   1.2   0.9   1.9   0.0
+  4.|-- amy.ns.cloudflare.com         0.0%    10    1.1   1.0   0.8   1.7   0.0
+
+portlane01.ring.nlnog.net | SUCCESS | rc=0 >>
+Start: Fri Aug 19 13:24:25 2016
+HOST: portlane01.ring.nlnog.net    Loss%   Snt   Last   Avg  Best  Wrst StDev
+  1.|-- 2a00:1a28:0:4::1              0.0%    10    0.5   5.9   0.4  49.7  15.4
+  2.|-- be4.cr1.sto1.se.portlane.net 50.0%    10    1.1   0.9   0.8   1.1   0.0
+  3.|-- 2001:7f8:d:ff::246            0.0%    10    1.0   1.1   0.9   1.6   0.0
+  4.|-- amy.ns.cloudflare.com         0.0%    10    0.9   0.9   0.8   1.0   0.0
+
+proserve01.ring.nlnog.net | SUCCESS | rc=0 >>
+Start: Fri Aug 19 13:24:28 2016
+HOST: proserve01.ring.nlnog.net      Loss%   Snt   Last   Avg  Best  Wrst StDev
+  1.|-- 2001:828:100:82::2              0.0%    10    0.4  19.8   0.4 193.5  61.0
+  2.|-- po2-vl17.cr2.dp.nl.proserve.nl  0.0%    10    0.4   0.6   0.3   2.0   0.5
+  3.|-- vlan7.cr1.nkf.nl.proserve.nl    0.0%    10    1.7   1.7   1.6   1.8   0.0
+  4.|-- te0-23.cr1.nkf.as49685.net      0.0%    10    2.1   2.6   2.0   4.4   0.7
+  5.|-- ams-ix.as13335.net              0.0%    10    2.6   2.2   2.0   2.6   0.0
+  6.|-- amy.ns.cloudflare.com           0.0%    10    2.4   2.2   2.0   2.4   0.0
+
+previder01.ring.nlnog.net | SUCCESS | rc=0 >>
+Start: Fri Aug 19 13:24:36 2016
+HOST: previder01.ring.nlnog.net               Loss%   Snt   Last   Avg  Best  Wrst StDev
+  1.|-- 2001:1690:2:115::1                       0.0%    10    0.6   0.6   0.4   1.2   0.0
+  2.|-- 2001:1690:0:8::701                       0.0%    10    0.7   0.8   0.6   1.4   0.0
+  3.|-- te3-6.ams2crt01.previder.net             0.0%    10    2.9   2.5   2.4   3.0   0.0
+  4.|-- asd-s8-rou-1041.NL.eurorings.net         0.0%    10    2.4   2.5   2.3   3.6   0.3
+  5.|-- asd2-rou-1043.NL.eurorings.net           0.0%    10    3.3   3.8   3.2   6.4   0.8
+  6.|-- asd-s5-rou-1041.NL.eurorings.net         0.0%    10    3.3   3.3   3.3   3.6   0.0
+  7.|-- adm-b5-link.telia.net                    0.0%    10    3.3   3.1   3.0   3.6   0.0
+  8.|-- ldn-b5-v6.telia.net                     30.0%    10    9.6   9.6   9.6   9.6   0.0
+  9.|-- cloudflare-ic-306325-ldn-b3.c.telia.net  0.0%    10   10.1  10.0   9.7  10.6   0.0
+ 10.|-- amy.ns.cloudflare.com                    0.0%    10    9.8   9.9   9.7  10.4   0.0
+
+qbranch01.ring.nlnog.net | SUCCESS | rc=0 >>
+Start: Fri Aug 19 13:24:38 2016
+HOST: qbranch01.ring.nlnog.net                  Loss%   Snt   Last   Avg  Best  Wrst StDev
+  1.|-- v39-br-r1.core.365-24.net                  0.0%    10    1.0   1.1   0.9   2.2   0.3
+  2.|-- s-b3-link.telia.net                        0.0%    10    1.1   1.1   0.9   1.2   0.0
+  3.|-- s-ljh-i1-v6.telia.net                      0.0%    10    2.2   0.8   0.6   2.2   0.5
+  4.|-- cloudflare-ic-154354-s-ljh-i1.c.telia.net  0.0%    10    0.9   0.9   0.8   1.0   0.0
+  5.|-- amy.ns.cloudflare.com                      0.0%    10    0.7   0.7   0.6   0.7   0.0
+
+qcom01.ring.nlnog.net | SUCCESS | rc=0 >>
+Start: Fri Aug 19 13:24:40 2016
+HOST: qcom01.ring.nlnog.net    Loss%   Snt   Last   Avg  Best  Wrst StDev
+  1.|-- 2001:4bb0:d:8::1          0.0%    10    0.6   0.5   0.5   0.6   0.0
+  2.|-- 2001:4bb0:100::1          0.0%    10    2.0   2.0   1.9   2.4   0.0
+  3.|-- 2001:4bb0:100::2          0.0%    10    2.0   2.0   1.9   2.5   0.0
+  4.|-- cloudflare-v6.mix-it.net  0.0%    10    2.0   2.0   2.0   2.1   0.0
+  5.|-- amy.ns.cloudflare.com     0.0%    10    1.9   2.0   1.8   2.2   0.0
+
+quadranet01.ring.nlnog.net | SUCCESS | rc=0 >>
+Start: Fri Aug 19 13:24:44 2016
+HOST: quadranet01.ring.nlnog.net Loss%   Snt   Last   Avg  Best  Wrst StDev
+  1.|-- 2607:fcd0:100:22::1         0.0%    10   59.7   7.2   0.5  59.7  18.6
+  2.|-- 2607:fcd0::602c:b421        0.0%    10    0.2   0.3   0.2   0.9   0.0
+  3.|-- 2001:504:13::211:63         0.0%    10    0.4   0.4   0.3   0.4   0.0
+  4.|-- amy.ns.cloudflare.com       0.0%    10    0.3   0.3   0.2   0.4   0.0
+
+quanza01.ring.nlnog.net | SUCCESS | rc=0 >>
+Start: Fri Aug 19 13:24:43 2016
+HOST: quanza01.ring.nlnog.net                Loss%   Snt   Last   Avg  Best  Wrst StDev
+  1.|-- 2a04:a500:1337:764::1                   0.0%    10    0.2   0.2   0.2   0.2   0.0
+  2.|-- 2a04:a500:1337:904::107                 0.0%    10    0.6   2.9   0.5  21.0   6.4
+  3.|-- 2001:9a8:0:48::1                        0.0%    10   13.8   9.2   0.7  66.9  20.7
+  4.|-- 2001:990:0:1378::d                      0.0%    10    0.8   2.0   0.8   8.7   2.5
+  5.|-- 30gigabitethernet1-3.core1.ams1.he.net  0.0%    10   37.6  31.2  10.1  44.4   8.9
+  6.|-- ams-ix.as13335.net                      0.0%    10    1.6   2.1   1.6   4.5   0.7
+  7.|-- amy.ns.cloudflare.com                   0.0%    10    1.4   1.8   1.4   3.6   0.5
+
+queryfoundry01.ring.nlnog.net | SUCCESS | rc=0 >>
+Start: Fri Aug 19 13:24:55 2016
+HOST: queryfoundry01.ring.nlnog.net             Loss%   Snt   Last   Avg  Best  Wrst StDev
+  1.|-- 2602:ffe8:200::1                           0.0%    10    1.9   1.3   0.7   3.6   0.7
+  2.|-- 2602:ffe8:300::1                           0.0%    10    0.2   0.4   0.2   1.2   0.0
+  3.|-- te0-0-0-21.ccr41.lax04.atlas.cogentco.com 30.0%    10    0.9   1.0   0.9   1.4   0.0
+  4.|-- be2964.ccr21.lax01.atlas.cogentco.com      0.0%    10    1.1   1.3   1.0   2.0   0.0
+  5.|-- be3032.ccr41.lax05.atlas.cogentco.com      0.0%    10    1.4   1.6   1.2   2.8   0.3
+  6.|-- 2001:550:2:67::1a:2                        0.0%    10    0.9   0.8   0.6   1.0   0.0
+  7.|-- amy.ns.cloudflare.com                      0.0%    10    0.6   0.7   0.5   1.1   0.0
+
+rcsrds01.ring.nlnog.net | SUCCESS | rc=0 >>
+Start: Fri Aug 19 13:25:01 2016
+HOST: rcsrds01.ring.nlnog.net      Loss%   Snt   Last   Avg  Best  Wrst StDev
+  1.|-- 2a02:2f0c:d000:26::1          0.0%    10    1.5   3.7   1.5  19.2   5.4
+  2.|-- 2a02:2f00:1234:1::1           0.0%    10    1.1   2.1   1.0  10.8   3.0
+  3.|-- br01.v6.frankfurt.rdsnet.ro   0.0%    10   30.8  30.7  30.6  30.8   0.0
+  4.|-- de-cix-frankfurt.as13335.net  0.0%    10   31.1  31.2  31.0  31.5   0.0
+  5.|-- amy.ns.cloudflare.com         0.0%    10   31.7  32.0  31.6  33.6   0.6
+
+rackfish01.ring.nlnog.net | SUCCESS | rc=0 >>
+Start: Fri Aug 19 13:24:59 2016
+HOST: rackfish01.ring.nlnog.net   Loss%   Snt   Last   Avg  Best  Wrst StDev
+  1.|-- 2a00:59c0:1:3::1             0.0%    10    0.6   0.6   0.4   0.7   0.0
+  2.|-- 2a00:59c0:1:308::2           0.0%    10    0.7  10.0   0.4  95.0  29.9
+  3.|-- gige-g2-1.core1.sto1.he.net  0.0%    10    2.9   5.4   0.7  11.0   3.2
+  4.|-- 2001:7f8:d:fe::246           0.0%    10    1.5   1.6   1.3   2.3   0.0
+  5.|-- amy.ns.cloudflare.com        0.0%    10    1.3   1.2   1.2   1.3   0.0
+
+redpilllinpro01.ring.nlnog.net | SUCCESS | rc=0 >>
+Start: Fri Aug 19 13:25:10 2016
+HOST: redpilllinpro01.ring.nlnog.net            Loss%   Snt   Last   Avg  Best  Wrst StDev
+  1.|-- vlan-910.cs1-osl2.n.bitbit.net             0.0%    10    1.1   1.3   1.1   2.0   0.0
+  2.|-- xe-1-2-0-8.cr1-osl3.n.bitbit.net           0.0%    10    0.4   1.7   0.4  13.4   4.0
+  3.|-- ae0.cr1-osl2.n.bitbit.net                  0.0%    10    0.4   0.4   0.4   0.4   0.0
+  4.|-- xe-11-3-3.bar1.Oslo1.Level3.net            0.0%    10    0.5   1.2   0.4   7.2   2.0
+  5.|-- ae-7-9.bar1.Copenhagen2.Level3.net         0.0%    10   25.8  26.3  25.8  30.5   1.3
+  6.|-- vl-51.ear2.Stockholm2.Level3.net           0.0%    10   27.5  26.2  26.0  27.5   0.3
+  7.|-- Comcast-Level3-10G.boston1.Level3.net      0.0%    10   26.2  26.4  26.2  26.7   0.0
+  8.|-- s-ljh-i1-v6.telia.net                      0.0%    10   27.0  29.3  26.8  51.4   7.8
+  9.|-- cloudflare-ic-154354-s-ljh-i1.c.telia.net  0.0%    10   26.3  27.9  26.2  39.2   3.9
+ 10.|-- amy.ns.cloudflare.com                      0.0%    10   26.8  26.8  26.8  26.9   0.0
+
+redpilllinpro02.ring.nlnog.net | SUCCESS | rc=0 >>
+Start: Fri Aug 19 13:25:14 2016
+HOST: redpilllinpro02.ring.nlnog.net            Loss%   Snt   Last   Avg  Best  Wrst StDev
+  1.|-- vlan-1924.cs1-osl3.n.bitbit.net            0.0%    10    0.8   1.0   0.8   1.2   0.0
+  2.|-- xe-1-3-0-0.cr1-osl3.n.bitbit.net           0.0%    10    0.3   2.2   0.3  18.5   5.7
+  3.|-- ae0.cr1-osl2.n.bitbit.net                  0.0%    10    0.4   6.7   0.4  63.2  19.8
+  4.|-- xe-11-3-3.bar1.Oslo1.Level3.net            0.0%    10    0.6   0.6   0.5   0.9   0.0
+  5.|-- ae-7-9.bar1.Copenhagen2.Level3.net         0.0%    10   26.5  26.7  26.5  27.9   0.3
+  6.|-- vl-52.ear2.Stockholm2.Level3.net           0.0%    10   29.0  27.0  26.7  29.0   0.7
+  7.|-- Comcast-Level3-10G.boston1.Level3.net     60.0%    10   26.3  26.3  26.3  26.4   0.0
+  8.|-- s-ljh-i1-v6.telia.net                      0.0%    10   27.0  32.5  26.9  81.8  17.3
+  9.|-- cloudflare-ic-154354-s-ljh-i1.c.telia.net  0.0%    10   27.0  27.0  27.0  27.2   0.0
+ 10.|-- amy.ns.cloudflare.com                      0.0%    10   27.0  27.4  26.9  32.0   1.5
+
+redpilllinpro03.ring.nlnog.net | SUCCESS | rc=0 >>
+Start: Fri Aug 19 13:25:14 2016
+HOST: redpilllinpro03.ring.nlnog.net            Loss%   Snt   Last   Avg  Best  Wrst StDev
+  1.|-- vlan-1407.cs1-ksd1.n.bitbit.net            0.0%    10    1.1   1.2   1.1   1.6   0.0
+  2.|-- ae9-0.cr2-ksd1.n.bitbit.net                0.0%    10    0.5   0.3   0.3   0.5   0.0
+  3.|-- ge-7-2-8.bar1.Stockholm1.Level3.net        0.0%    10   13.7   5.9   4.8  13.7   2.7
+  4.|-- vl-51.ear2.Stockholm2.Level3.net           0.0%    10    5.5   5.6   5.4   5.9   0.0
+  5.|-- Comcast-Level3-10G.boston1.Level3.net     30.0%    10    5.7   5.8   5.6   6.0   0.0
+  6.|-- s-ljh-i1-v6.telia.net                      0.0%    10    6.2   8.1   5.6  24.8   5.9
+  7.|-- cloudflare-ic-154354-s-ljh-i1.c.telia.net  0.0%    10    6.3   8.1   5.6  26.7   6.5
+  8.|-- amy.ns.cloudflare.com                      0.0%    10    5.8   5.8   5.6   6.3   0.0
+
+rgnet01.ring.nlnog.net | SUCCESS | rc=0 >>
+Start: Fri Aug 19 13:25:33 2016
+HOST: rgnet01.ring.nlnog.net                    Loss%   Snt   Last   Avg  Best  Wrst StDev
+  1.|-- r0.sea.rg.net                              0.0%    10    0.5   0.4   0.3   0.5   0.0
+  2.|-- vrrp.sea.rg.net                            0.0%    10    0.4   0.4   0.3   0.5   0.0
+  3.|-- v6-10gigabitethernet1-3.core1.sea1.he.net  0.0%    10    0.4   0.6   0.4   2.1   0.3
+  4.|-- edge01.sea01.as13335.com                   0.0%    10    0.5   0.7   0.5   1.5   0.0
+  5.|-- amy.ns.cloudflare.com                      0.0%    10    0.5   0.5   0.4   0.5   0.0
+
+rezopole01.ring.nlnog.net | SUCCESS | rc=0 >>
+Start: Fri Aug 19 13:25:28 2016
+HOST: rezopole01.ring.nlnog.net    Loss%   Snt   Last   Avg  Best  Wrst StDev
+  1.|-- ping.rezopole.net             0.0%    10    0.4   0.4   0.3   0.5   0.0
+  2.|-- 2a03:9180:1:25::c2            0.0%    10    0.7   0.8   0.7   0.9   0.0
+  3.|-- 2a02:2528:403:2::41           0.0%    10    0.9   2.7   0.8  18.3   5.4
+  4.|-- 2a02:2528:2:17::2            40.0%    10    7.6   7.6   7.6   7.7   0.0
+  5.|-- 2a02:2528:2:18::1             0.0%    10   13.9  14.3  13.8  17.1   0.7
+  6.|-- de-cix-frankfurt.as13335.net  0.0%    10   13.9  13.8  13.8  13.9   0.0
+  7.|-- amy.ns.cloudflare.com         0.0%    10   13.9  13.9  13.8  14.1   0.0
+
+rackcentral02.ring.nlnog.net | SUCCESS | rc=0 >>
+Start: Fri Aug 19 13:25:03 2016
+HOST: rackcentral02.ring.nlnog.net      Loss%   Snt   Last   Avg  Best  Wrst StDev
+  1.|-- 2400:7180:2:1:ffff:ffff:ffff:ffff  0.0%    10    0.6   0.5   0.5   0.6   0.0
+  2.|-- 10026.syd.equinix.com              0.0%    10  230.9 230.4 230.1 231.0   0.0
+  3.|-- 2001:cb0:a102:1::2                 0.0%    10  230.2 230.3 230.1 230.7   0.0
+  4.|-- 2001:cb0:a105:1:18::2              0.0%    10  249.8 232.4 230.3 249.8   6.1
+  5.|-- 2001:cb0:104:1:14::1               0.0%    10  257.2 233.1 230.0 257.2   8.5
+  6.|-- 2001:cb0:104:1:19::1              40.0%    10  230.9 231.1 230.9 231.4   0.0
+  7.|-- 2001:cb0:104:1:1b::2              50.0%    10  231.3 231.9 231.3 233.9   0.9
+  8.|-- 2001:cb0:105:1:17::2               0.0%    10  230.2 230.4 230.1 230.7   0.0
+  9.|-- 2001:cb0:105:2:10::2              20.0%    10  230.6 231.3 230.5 233.3   0.8
+ 10.|-- amy.ns.cloudflare.com             10.0%    10  230.5 230.5 230.3 230.9   0.0
+
+ripe01.ring.nlnog.net | SUCCESS | rc=0 >>
+Start: Fri Aug 19 13:25:35 2016
+HOST: ripe01.ring.nlnog.net           Loss%   Snt   Last   Avg  Best  Wrst StDev
+  1.|-- ???                             100.0    10    0.0   0.0   0.0   0.0   0.0
+  2.|-- gw.ipv6.transit.telrtr.ripe.net  0.0%    10    1.0   1.1   0.9   1.6   0.0
+  3.|-- 2001:7f8:1::a503:7179:1          0.0%    10  170.7 170.9 170.6 172.3   0.0
+  4.|-- 2c0f:fe18:0:e1::4                0.0%    10  171.3 171.0 170.9 171.3   0.0
+  5.|-- 2c0f:fe18:0:6003::2              0.0%    10  171.3 171.3 170.9 172.9   0.3
+  6.|-- amy.ns.cloudflare.com           10.0%    10  170.9 171.3 170.8 173.3   0.5
+
+rackcentral01.ring.nlnog.net | SUCCESS | rc=0 >>
+Start: Fri Aug 19 13:24:58 2016
+HOST: rackcentral01.ring.nlnog.net      Loss%   Snt   Last   Avg  Best  Wrst StDev
+  1.|-- 2400:7180:1:0:ffff:ffff:ffff:ffff  0.0%    10    0.6   0.4   0.2   0.6   0.0
+  2.|-- 2400:7180:110:111::1               0.0%    10    0.4   0.6   0.4   1.1   0.0
+  3.|-- 45177.syd.equinix.com              0.0%    10   11.4  11.5  11.3  12.0   0.0
+  4.|-- 10026.syd.equinix.com              0.0%    10  241.3 241.3 241.0 241.8   0.0
+  5.|-- 2001:cb0:a102:1::2                 0.0%    10  241.9 241.4 241.0 242.0   0.0
+  6.|-- 2001:cb0:a105:1:18::2             10.0%    10  241.4 242.5 241.4 249.0   2.4
+  7.|-- 2001:cb0:104:1:14::1               0.0%    10  241.2 242.8 241.2 254.4   4.1
+  8.|-- 2001:cb0:104:1:19::1              20.0%    10  242.1 242.2 241.7 242.9   0.0
+  9.|-- 2001:cb0:104:1:1b::2               0.0%    10  241.9 242.2 241.6 242.8   0.0
+ 10.|-- 2001:cb0:105:1:17::2               0.0%    10  241.3 241.3 241.2 241.6   0.0
+ 11.|-- 2001:cb0:105:2:10::2              10.0%    10  241.6 243.0 241.2 250.0   3.0
+ 12.|-- amy.ns.cloudflare.com             10.0%    10  241.7 241.4 241.0 241.7   0.0
+
+riseup01.ring.nlnog.net | SUCCESS | rc=0 >>
+Start: Fri Aug 19 13:25:49 2016
+HOST: riseup01.ring.nlnog.net                   Loss%   Snt   Last   Avg  Best  Wrst StDev
+  1.|-- 2620:13:4000:8000::1                       0.0%    10    0.5   0.5   0.4   0.7   0.0
+  2.|-- v6-10gigabitethernet1-3.core1.sea1.he.net  0.0%    10   19.7  27.8   0.6  74.7  28.8
+  3.|-- edge01.sea01.as13335.com                   0.0%    10    1.1   0.9   0.7   1.9   0.0
+  4.|-- amy.ns.cloudflare.com                      0.0%    10    0.6   0.7   0.6   0.9   0.0
+
+rundeck | SUCCESS | rc=0 >>
+Start: Fri Aug 19 13:26:19 2016
+HOST: rundeck.core.anuragbhatia.com                 Loss%   Snt   Last   Avg  Best  Wrst StDev
+  1.|-- router02-munich-server7.core.anuragbhatia.com  0.0%    10    0.2   0.2   0.1   0.7   0.0
+  2.|-- 2a02:c200:0:10::1                              0.0%    10    0.4   1.0   0.4   3.6   0.7
+  3.|-- mcn-b2-link.telia.net                          0.0%    10    0.7   1.1   0.5   5.7   1.5
+  4.|-- 2001:2000:3018:90::1                           0.0%    10    7.8   8.0   7.8   8.3   0.0
+  5.|-- cloudflare-ic-311709-ffm-b1.c.telia.net        0.0%    10    8.0   8.3   7.9   9.8   0.3
+  6.|-- amy.ns.cloudflare.com                          0.0%    10    8.9   8.2   7.8   9.6   0.3
+
+rootlu01.ring.nlnog.net | SUCCESS | rc=0 >>
+Start: Fri Aug 19 13:26:02 2016
+HOST: rootlu01.ring.nlnog.net                 Loss%   Snt   Last   Avg  Best  Wrst StDev
+  1.|-- 2a01:608:f::1                            0.0%    10    6.3 121.7   3.1 251.6  96.3
+  2.|-- adm-b5-link.telia.net                    0.0%    10    6.7   6.6   6.5   7.1   0.0
+  3.|-- ldn-b5-v6.telia.net                      0.0%    10   45.8  17.0  12.0  45.8  10.2
+  4.|-- cloudflare-ic-306325-ldn-b3.c.telia.net  0.0%    10   12.1  12.3  12.1  14.4   0.7
+  5.|-- amy.ns.cloudflare.com                    0.0%    10   13.2  13.2  13.2  13.2   0.0
+
+rnp01.ring.nlnog.net | SUCCESS | rc=0 >>
+Start: Fri Aug 19 13:24:34 2016
+HOST: rnp01.ring.nlnog.net Loss%   Snt   Last   Avg  Best  Wrst StDev
+
+rrbone01.ring.nlnog.net | SUCCESS | rc=0 >>
+Start: Fri Aug 19 13:26:07 2016
+HOST: rrbone01.ring.nlnog.net                  Loss%   Snt   Last   Avg  Best  Wrst StDev
+  1.|-- gi-0-1-836.br-dus-01.de.infra.rrbone.net  0.0%    10    1.2   1.3   1.2   1.3   0.0
+  2.|-- cloudflare.dus.ecix.net                   0.0%    10    1.1   1.2   1.1   1.4   0.0
+  3.|-- amy.ns.cloudflare.com                     0.0%    10    0.6   0.6   0.4   0.6   0.0
+
+robtex01.ring.nlnog.net | SUCCESS | rc=0 >>
+Start: Fri Aug 19 13:26:02 2016
+HOST: robtex01.ring.nlnog.net                      Loss%   Snt   Last   Avg  Best  Wrst StDev
+  1.|-- 192.71.253.1                                  0.0%    10    0.3   0.3   0.3   0.5   0.0
+  2.|-- te0-7-0-5.310.rcr21.iad03.atlas.cogentco.com  0.0%    10    0.9   0.9   0.7   1.1   0.0
+  3.|-- be2954.ccr41.iad02.atlas.cogentco.com         0.0%    10    1.4   1.3   1.3   1.5   0.0
+  4.|-- 38.88.214.142                                 0.0%    10    1.0   1.5   0.8   6.3   1.6
+  5.|-- amy.ns.cloudflare.com                         0.0%    10    0.8   0.9   0.7   1.0   0.0
+
+sapphire01.ring.nlnog.net | SUCCESS | rc=0 >>
+Start: Fri Aug 19 13:26:19 2016
+HOST: sapphire01.ring.nlnog.net Loss%   Snt   Last   Avg  Best  Wrst StDev
+  1.|-- 2a02:638:8:1::1            0.0%    10    1.4   2.1   0.8   4.1   1.1
+  2.|-- 2a02:638:1:3f::            0.0%    10    0.3   3.2   0.3  22.3   7.0
+  3.|-- 2a02:638:1:3a::1           0.0%    10    0.3   0.3   0.2   0.4   0.0
+  4.|-- 2a02:638:1:64::            0.0%    10   18.6  18.8  18.6  19.6   0.0
+  5.|-- 2001:7f8:4::3417:1         0.0%    10   43.1  42.7  42.2  43.7   0.3
+  6.|-- amy.ns.cloudflare.com      0.0%    10   40.4  40.4  40.3  40.7   0.0
+
+sargasso01.ring.nlnog.net | SUCCESS | rc=0 >>
+Start: Fri Aug 19 13:26:17 2016
+HOST: sargasso01.ring.nlnog.net                     Loss%   Snt   Last   Avg  Best  Wrst StDev
+  1.|-- vl981.ipv6.dist01.clbis02.uk.sargasso.net      0.0%    10    2.6   1.6   0.7   2.6   0.5
+  2.|-- gi0-1-999.ipv6.core01.clbis02.uk.sargasso.net  0.0%    10    0.5   0.3   0.2   0.5   0.0
+  3.|-- gi0-1-996.ipv6.edge01.clbis02.uk.sargasso.net  0.0%    10   12.4   5.1   0.3  35.9  11.5
+  4.|-- ae8-157.edge3.London1.Level3.net               0.0%    10    0.5   0.6   0.4   1.3   0.0
+  5.|-- vl-52.edge5.London1.Level3.net                 0.0%    10    0.6   2.1   0.5  16.4   5.0
+  6.|-- ldn-b5-link.telia.net                          0.0%    10    0.6   0.7   0.6   0.7   0.0
+  7.|-- ldn-b5-v6.telia.net                            0.0%    10    0.8   0.8   0.7   1.2   0.0
+  8.|-- cloudflare-ic-306325-ldn-b3.c.telia.net        0.0%    10    1.4   1.1   0.8   2.3   0.3
+  9.|-- amy.ns.cloudflare.com                          0.0%    10    0.9   0.9   0.8   1.0   0.0
+
+sabay01.ring.nlnog.net | SUCCESS | rc=0 >>
+Start: Fri Aug 19 13:26:29 2016
+HOST: sabay01.ring.nlnog.net Loss%   Snt   Last   Avg  Best  Wrst StDev
+  1.|-- 118.67.200.189          0.0%    10    0.4   0.6   0.4   2.1   0.3
+  2.|-- 175.28.2.33             0.0%    10    1.1   1.8   1.0   4.3   0.9
+  3.|-- 175.28.0.37             0.0%    10   42.7  42.7  42.6  43.0   0.0
+  4.|-- 103.22.203.89           0.0%    10   44.7  44.6  44.4  45.1   0.0
+  5.|-- amy.ns.cloudflare.com   0.0%    10   44.8  44.5  44.4  44.8   0.0
+
+sbtap01.ring.nlnog.net | SUCCESS | rc=0 >>
+Start: Fri Aug 19 13:26:32 2016
+HOST: sbtap01.ring.nlnog.net             Loss%   Snt   Last   Avg  Best  Wrst StDev
+  1.|-- ge02-sbtap01-a.as59715.net          0.0%    10    0.3   0.3   0.2   0.3   0.0
+  2.|-- 2a01:2011:6002::1                   0.0%    10    0.6   0.5   0.4   0.6   0.0
+  3.|-- 2a01:20f1:6009::5                   0.0%    10    4.6   4.3   3.9   5.0   0.0
+  4.|-- ???                                100.0    10    0.0   0.0   0.0   0.0   0.0
+  5.|-- ???                                100.0    10    0.0   0.0   0.0   0.0   0.0
+  6.|-- ???                                100.0    10    0.0   0.0   0.0   0.0   0.0
+  7.|-- ???                                100.0    10    0.0   0.0   0.0   0.0   0.0
+  8.|-- ibs-resid.milano30.mil.seabone.net  0.0%    10   22.0  22.1  22.0  22.2   0.0
+  9.|-- lo0.franco71.fra.seabone.net        0.0%    10   40.5  39.9  39.6  40.6   0.0
+ 10.|-- 2001:41a8:600:2::19e                0.0%    10   25.9  26.2  25.7  27.6   0.5
+ 11.|-- amy.ns.cloudflare.com               0.0%    10   25.9  25.8  25.7  26.0   0.0
+
+sasag01.ring.nlnog.net | SUCCESS | rc=0 >>
+Start: Fri Aug 19 13:26:35 2016
+HOST: sasag01.ring.nlnog.net       Loss%   Snt   Last   Avg  Best  Wrst StDev
+  1.|-- 2a00:d80::1:181               0.0%    10    0.2   2.3   0.2  11.2   4.3
+  2.|-- r1zrh1.core.init7.net         0.0%    10    0.9   2.4   0.9   4.5   1.3
+  3.|-- r1zrh2.core.init7.net         0.0%    10   12.9   2.8   0.9  12.9   3.8
+  4.|-- r1brn1.core.init7.net         0.0%    10    2.2   2.2   2.2   2.3   0.0
+  5.|-- r1qls1.core.init7.net         0.0%    10    3.3   3.4   3.3   4.5   0.0
+  6.|-- r1gva3.core.init7.net         0.0%    10    4.0   5.4   4.0  10.8   2.5
+  7.|-- r1fra3.core.init7.net         0.0%    10   13.5  13.5  13.4  13.5   0.0
+  8.|-- de-cix-frankfurt.as13335.net  0.0%    10   10.3  10.3  10.3  10.4   0.0
+  9.|-- amy.ns.cloudflare.com         0.0%    10   10.2  10.3  10.2  10.3   0.0
+
+selectel01.ring.nlnog.net | SUCCESS | rc=0 >>
+Start: Fri Aug 19 14:20:11 2016
+HOST: selectel01.ring.nlnog.net   Loss%   Snt   Last   Avg  Best  Wrst StDev
+  1.|-- 2a00:ab00:104::1             0.0%    10    1.1   3.8   1.1  26.3   7.9
+  2.|-- 01.msk.net.selectel.ru       0.0%    10    8.5  10.8   8.4  30.3   6.8
+  3.|-- 2a00:1c28:2:1500:0:4:9505:1  0.0%    10    9.4   9.4   9.3   9.7   0.0
+  4.|-- msk-ix.cloudflare.com        0.0%    10    9.5   9.8   9.5  11.1   0.3
+  5.|-- amy.ns.cloudflare.com        0.0%    10   11.5  11.6  11.5  11.8   0.0
+
+seltimil01.ring.nlnog.net | SUCCESS | rc=0 >>
+Start: Fri Aug 19 13:26:42 2016
+HOST: seltimil01.ring.nlnog.net Loss%   Snt   Last   Avg  Best  Wrst StDev
+  1.|-- 2a00:ac00::131             0.0%    10    0.4   0.4   0.4   0.6   0.0
+  2.|-- 2a00:ac00::102             0.0%    10    0.4   0.4   0.3   0.6   0.0
+  3.|-- 2a00:1d50:2::1             0.0%    10    6.0   6.0   6.0   6.1   0.0
+  4.|-- 2a00:1d50:1::1             0.0%    10    6.2   6.2   6.2   6.4   0.0
+  5.|-- 2a00:1d50:1:e::2           0.0%    10   66.7  13.0   6.9  66.7  18.9
+  6.|-- 2a00:5500:0:2::176         0.0%    10   11.5  11.3  11.1  12.1   0.0
+  7.|-- 2a00:5500:0:2::107         0.0%    10   13.4  26.2  13.3  84.9  27.3
+  8.|-- 2001:7f8:d:fe::246         0.0%    10   13.7  13.7  13.7  13.8   0.0
+  9.|-- amy.ns.cloudflare.com      0.0%    10   13.6  13.6  13.5  13.6   0.0
+
+seeweb01.ring.nlnog.net | SUCCESS | rc=0 >>
+Start: Fri Aug 19 13:26:42 2016
+HOST: seeweb01.ring.nlnog.net        Loss%   Snt   Last   Avg  Best  Wrst StDev
+  1.|-- fw-8a.mil.seeweb.it             0.0%    10    0.3   0.4   0.3   0.5   0.0
+  2.|-- xe-2-0-3-6.spock.mil.seeweb.it  0.0%    10    0.4   0.5   0.4   0.6   0.0
+  3.|-- cloudflare-v6.mix-it.net        0.0%    10    0.6   1.0   0.5   3.2   0.7
+  4.|-- amy.ns.cloudflare.com           0.0%    10    1.5   0.6   0.4   1.5   0.0
+
+anurag@ansible:~$
+anurag@ansible:~$
+anurag@ansible:~$
+anurag@ansible:~$
+anurag@ansible:~$
+anurag@ansible:~$ ansible -a 'mtr -wr www.rediff.com' nlring
+nordunet01.ring.nlnog.net | SUCCESS | rc=0 >>
+Start: Fri Aug 19 13:27:42 2016
+HOST: nordunet01.ring.nlnog.net                     Loss%   Snt   Last   Avg  Best  Wrst StDev
+  1.|-- se-fre-vrrp2.nordu.net                         0.0%    10    0.9   3.2   0.9   7.5   2.9
+  2.|-- se-kst.nordu.net                               0.0%    10    0.9   0.9   0.9   1.0   0.0
+  3.|-- gw.akamai.com                                  0.0%    10    1.3   1.2   1.1   1.3   0.0
+  4.|-- a95-101-142-146.deploy.akamaitechnologies.com  0.0%    10    0.9   0.9   0.9   1.0   0.0
+
+nts01.ring.nlnog.net | SUCCESS | rc=0 >>
+Start: Fri Aug 19 13:27:42 2016
+HOST: nts01.ring.nlnog.net                 Loss%   Snt   Last   Avg  Best  Wrst StDev
+  1.|-- 16070828.te1.01.p.cbn.ch.as15576.net  0.0%    10    2.4   1.0   0.7   2.4   0.5
+  2.|-- 3462.te101.01.p.czh.ch.as15576.net    0.0%    10    2.2   2.2   2.0   2.4   0.0
+  3.|-- i79zhh-005-ae10x3104.bb.ip-plus.net   0.0%    10    1.7   3.3   1.6  17.8   5.0
+  4.|-- i69lss-005-hun10-0-0.bb.ip-plus.net   0.0%    10    4.5   4.6   4.4   5.5   0.0
+  5.|-- i69lss-070-por7.bb.ip-plus.net        0.0%    10    4.7   4.7   4.6   4.8   0.0
+  6.|-- 193.247.41.49                         0.0%    10    4.4   4.4   4.3   4.4   0.0
+
+noris01.ring.nlnog.net | SUCCESS | rc=0 >>
+Start: Fri Aug 19 13:27:43 2016
+HOST: noris01.ring.nlnog.net         Loss%   Snt   Last   Avg  Best  Wrst StDev
+  1.|-- irb42-rt1-nbg6a.core.noris.net  0.0%    10    0.3   1.3   0.2  10.9   3.3
+  2.|-- ae0-0-rt1-nbg6b.core.noris.net  0.0%    10    0.5   0.6   0.4   1.2   0.0
+  3.|-- ae1-0-rt4-nbg4.core.noris.net   0.0%    10    0.8   0.8   0.6   1.2   0.0
+  4.|-- ae0-0-rt3-muc2.core.noris.net   0.0%    10    3.3   3.1   3.0   3.3   0.0
+  5.|-- ae0-0-rt1-muc1.core.noris.net   0.0%    10    2.9   2.9   2.9   3.0   0.0
+  6.|-- inxs-nap.netarch.akamai.com     0.0%    10    3.5   3.5   3.3   3.9   0.0
+  7.|-- 2.21.80.72                      0.0%    10    3.0   3.1   2.9   5.0   0.6
+
+nonattached01.ring.nlnog.net | SUCCESS | rc=0 >>
+Start: Fri Aug 19 13:27:43 2016
+HOST: nonattached01.ring.nlnog.net                Loss%   Snt   Last   Avg  Best  Wrst StDev
+  1.|-- gw.core.nonattached.net                      0.0%    10    0.5   0.5   0.4   0.6   0.0
+  2.|-- 5.230.128.25                                 0.0%    10    1.0   1.1   0.9   1.3   0.0
+  3.|-- 5.230.128.22                                 0.0%    10    1.3  10.2   0.9  90.4  28.2
+  4.|-- decix-fra9.netarch.akamai.com                0.0%    10    1.9   1.9   1.8   2.2   0.0
+  5.|-- a2-16-106-184.deploy.akamaitechnologies.com  0.0%    10    1.4   1.4   1.4   1.6   0.0
+
+nodesdirect01.ring.nlnog.net | SUCCESS | rc=0 >>
+Start: Fri Aug 19 13:27:44 2016
+HOST: nodesdirect01.ring.nlnog.net                   Loss%   Snt   Last   Avg  Best  Wrst StDev
+  1.|-- 197.92.92.23.static.reverse.as19531.net         0.0%    10    0.5   0.4   0.3   1.0   0.0
+  2.|-- 172.30.0.36                                     0.0%    10    1.0   1.1   0.9   1.6   0.0
+  3.|-- 172.30.0.28                                     0.0%    10    0.5   0.3   0.3   0.5   0.0
+  4.|-- 80.94.66.156                                    0.0%    10    0.5   3.8   0.3  12.0   5.5
+  5.|-- eth3-2.r1.mia1.us.as5580.net                    0.0%    10   17.3  15.8   7.6  20.0   4.2
+  6.|-- nota.netarch.akamai.com                         0.0%    10    7.6   9.1   7.6  22.2   4.5
+  7.|-- a118-214.160-161.deploy.akamaitechnologies.com  0.0%    10    7.8   8.0   7.8   9.2   0.0
+
+ntt02.ring.nlnog.net | SUCCESS | rc=0 >>
+Start: Fri Aug 19 13:27:55 2016
+HOST: ntt02.ring.nlnog.net                         Loss%   Snt   Last   Avg  Best  Wrst StDev
+  1.|-- virbr0.scarlett.6core.net                     0.0%    10    0.2   0.2   0.2   0.3   0.0
+  2.|-- ge-100-0-0-31.r03.amstnl02.nl.bb.gin.ntt.net  0.0%    10    0.9   1.0   0.8   1.2   0.0
+  3.|-- ae-4.r02.amstnl02.nl.bb.gin.ntt.net           0.0%    10    0.7   0.9   0.7   1.0   0.0
+  4.|-- ae-0.akamai.amstnl02.nl.bb.gin.ntt.net        0.0%    10    0.9   1.1   0.9   1.4   0.0
+  5.|-- a95-101-78-66.deploy.akamaitechnologies.com   0.0%    10    0.6   0.5   0.4   0.7   0.0
+
+nynex01.ring.nlnog.net | SUCCESS | rc=0 >>
+Start: Fri Aug 19 13:27:55 2016
+HOST: nynex01.ring.nlnog.net                      Loss%   Snt   Last   Avg  Best  Wrst StDev
+  1.|-- 109.236.159.253                              0.0%    10    0.2   0.2   0.1   0.2   0.0
+  2.|-- hq-bb1.nynex.de                              0.0%    10    0.4   0.5   0.4   1.1   0.0
+  3.|-- ixfr3-bb1.nynex.de                           0.0%    10    1.0   1.1   1.0   1.6   0.0
+  4.|-- eqixfr5-bb1.nynex.de                         0.0%    10    1.5   2.4   1.3   5.7   1.4
+  5.|-- decix-fra9.netarch.akamai.com                0.0%    10    2.9   2.2   1.9   2.9   0.0
+  6.|-- a2-16-106-216.deploy.akamaitechnologies.com  0.0%    10    1.4   1.4   1.4   1.5   0.0
+
+obenetwork01.ring.nlnog.net | SUCCESS | rc=0 >>
+Start: Fri Aug 19 13:27:56 2016
+HOST: obenetwork01.ring.nlnog.net        Loss%   Snt   Last   Avg  Best  Wrst StDev
+  1.|-- gw-vl132.kst1.se.obenetwork.net     0.0%    10    0.4   0.5   0.4   0.7   0.0
+  2.|-- static-193-12-136-49.cust.tele2.se  0.0%    10    0.9   0.9   0.8   1.2   0.0
+  3.|-- hgd-core-1.bundle-ether7.tele2.net  0.0%    10    1.3   1.0   0.9   1.3   0.0
+  4.|-- static-212-247-20-27.cust.tele2.se  0.0%    10    0.3   0.4   0.3   0.6   0.0
+
+occaid01.ring.nlnog.net | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Failed to connect to the host via ssh.",
+    "unreachable": true
+}
+ntt01.ring.nlnog.net | SUCCESS | rc=0 >>
+Start: Fri Aug 19 13:28:00 2016
+HOST: ntt01.ring.nlnog.net                                Loss%   Snt   Last   Avg  Best  Wrst StDev
+  1.|-- ge-100-0-0-43.r00.lsanca07.us.bb.gin.ntt.net         0.0%    10    0.6   1.0   0.6   3.9   1.0
+  2.|-- ae-2.r23.lsanca07.us.bb.gin.ntt.net                  0.0%    10    0.5   0.6   0.5   0.7   0.0
+  3.|-- ae-6.r22.asbnva02.us.bb.gin.ntt.net                  0.0%    10   65.8  66.4  65.8  68.6   0.9
+  4.|-- ae-1.r05.asbnva02.us.bb.gin.ntt.net                  0.0%    10   67.4  67.5  67.4  67.9   0.0
+  5.|-- ae-0.akamai-onnet.asbnva02.us.bb.gin.ntt.net         0.0%    10   82.7  81.4  76.6  86.4   3.1
+  6.|-- a23-219-88-113.deploy.static.akamaitechnologies.com  0.0%    10   65.8  65.8  65.8  65.9   0.0
+
+one01.ring.nlnog.net | SUCCESS | rc=0 >>
+Start: Fri Aug 19 13:28:08 2016
+HOST: one01.ring.nlnog.net                      Loss%   Snt   Last   Avg  Best  Wrst StDev
+  1.|-- xe-1-3-0-400.cr3-cph1.net.one.com          0.0%    10    0.4   0.3   0.3   0.4   0.0
+  2.|-- onecom-ic-307407-kbn-horsk-i1.c.telia.net  0.0%    10    0.6   0.5   0.5   0.6   0.0
+  3.|-- kbn-horsk-i1-link.telia.net                0.0%    10    0.8   0.9   0.7   2.5   0.5
+  4.|-- kbn-bb3-link.telia.net                     0.0%    10    1.9   0.9   0.7   1.9   0.3
+  5.|-- kbn-b4-link.telia.net                      0.0%    10    1.0   1.2   0.9   2.9   0.3
+  6.|-- 80-239-247-162.customer.teliacarrier.com   0.0%    10    1.0   1.1   1.0   1.6   0.0
+
+onet01.ring.nlnog.net | SUCCESS | rc=0 >>
+Start: Fri Aug 19 13:28:09 2016
+HOST: onet01.ring.nlnog.net                         Loss%   Snt   Last   Avg  Best  Wrst StDev
+  1.|-- ruc-br2.z.ring.pdmz.onet.pl                    0.0%    10    0.4   3.5   0.3  31.2   9.7
+  2.|-- akamai.thinx.pl                                0.0%    10    6.1   6.1   5.9   6.2   0.0
+  3.|-- a72-247-182-202.deploy.akamaitechnologies.com  0.0%    10    7.9   5.8   5.5   7.9   0.7
+
+octopuce01.ring.nlnog.net | SUCCESS | rc=0 >>
+Start: Fri Aug 19 13:28:10 2016
+HOST: octopuce01.ring.nlnog.net                            Loss%   Snt   Last   Avg  Best  Wrst StDev
+  1.|-- cigoli.octopuce.fr                                   90.0%    10    1.2   1.2   1.2   1.2   0.0
+  2.|-- cr7-ge-1-4.ix-customers-iliad.ielo.net                0.0%    10    0.8   2.0   0.8   6.3   1.5
+  3.|-- te-5-4-frpar01-a9k1.rt.ielo.net                       0.0%    10    2.6   2.0   1.4   2.6   0.0
+  4.|-- te-0-0-frpar02-a9k1.rt.ielo.net                       0.0%    10    2.4   2.2   1.3   3.6   0.0
+  5.|-- if-xe-2-1-4-0.tcore1.PYE-Paris.as6453.net             0.0%    10    1.3   1.6   1.0   2.1   0.0
+  6.|-- if-ae-2-2.tcore1.PVU-Paris.as6453.net                 0.0%    10    2.1   2.8   1.4   8.6   2.0
+  7.|-- 80.231.153.218                                        0.0%    10    1.9   1.9   1.6   2.4   0.0
+  8.|-- a184-25-107-174.deploy.static.akamaitechnologies.com  0.0%    10    1.8   2.1   1.8   2.6   0.0
+
+onet02.ring.nlnog.net | SUCCESS | rc=0 >>
+Start: Fri Aug 19 13:28:11 2016
+HOST: onet02.ring.nlnog.net                        Loss%   Snt   Last   Avg  Best  Wrst StDev
+  1.|-- j.dab-br1.z.ring.pdmz.onet.pl                 0.0%    10    0.3   0.9   0.2   6.3   1.8
+  2.|-- ruc-BR1.z.j.dab-BR1.net.onet.pl               0.0%    10    0.7   0.9   0.7   2.3   0.3
+  3.|-- ruc-BR2.z.ruc-BR1.net.onet.pl                 0.0%    10    0.5   0.6   0.5   1.0   0.0
+  4.|-- akamai.thinx.pl                               0.0%    10    6.2   6.2   6.1   6.3   0.0
+  5.|-- a72-247-182-82.deploy.akamaitechnologies.com  0.0%    10    5.7   5.7   5.7   5.8   0.0
+
+openimp01.ring.nlnog.net | SUCCESS | rc=0 >>
+Start: Fri Aug 19 13:28:20 2016
+HOST: openimp01.ring.nlnog.net                             Loss%   Snt   Last   Avg  Best  Wrst StDev
+  1.|-- 94.228.79.57                                          0.0%    10    1.2   1.4   1.0   3.3   0.7
+  2.|-- ge-1-3-0-196.cr0.ixn.openimp.net                      0.0%    10    0.5   0.4   0.3   0.5   0.0
+  3.|-- 195.66.224.168                                        0.0%    10    1.3   1.3   1.1   1.5   0.0
+  4.|-- a104-86-110-208.deploy.static.akamaitechnologies.com  0.0%    10    0.8   0.7   0.6   0.8   0.0
+
+openit01.ring.nlnog.net | SUCCESS | rc=0 >>
+Start: Fri Aug 19 13:28:21 2016
+HOST: openit01.ring.nlnog.net                      Loss%   Snt   Last   Avg  Best  Wrst StDev
+  1.|-- b0-v378.cr3a.dus0.openit.net                  0.0%    10    0.3   0.2   0.2   0.3   0.0
+  2.|-- ae0.br0.dus0.openit.net                       0.0%    10    0.8   0.6   0.3   2.4   0.5
+  3.|-- akamai.dus.ecix.net                           0.0%    10    0.5   0.6   0.4   0.9   0.0
+  4.|-- a95-101-90-192.deploy.akamaitechnologies.com  0.0%    10    0.5   0.5   0.4   0.6   0.0
+
+onlinesas01.ring.nlnog.net | SUCCESS | rc=0 >>
+Start: Fri Aug 19 13:28:24 2016
+HOST: onlinesas01.ring.nlnog.net          Loss%   Snt   Last   Avg  Best  Wrst StDev
+  1.|-- 62.210.156.14.te-dns.org             0.0%    10    0.9   1.0   0.8   1.2   0.0
+  2.|-- a9k1-45x-s44-2.dc3.poneytelecom.eu   0.0%    10    1.0   1.5   0.7   3.9   0.8
+  3.|-- prs-b7-link.telia.net                0.0%    10    1.2   2.5   1.1  11.9   3.4
+  4.|-- prs-bb3-link.telia.net               0.0%    10    1.7   1.8   1.6   2.2   0.0
+  5.|-- prs-b5-link.telia.net                0.0%    10    2.0   2.0   1.8   2.6   0.0
+  6.|-- akamai-ic-310759-prs-b5.c.telia.net  0.0%    10    2.5   2.5   2.3   2.8   0.0
+  7.|-- 2.22.22.216                          0.0%    10    2.3   2.1   2.0   2.3   0.0
+
+ovh01.ring.nlnog.net | SUCCESS | rc=0 >>
+Start: Fri Aug 19 13:28:27 2016
+HOST: ovh01.ring.nlnog.net                         Loss%   Snt   Last   Avg  Best  Wrst StDev
+  1.|-- ???                                          100.0    10    0.0   0.0   0.0   0.0   0.0
+  2.|-- be10-100.gra-g2-a9.fr.eu                      0.0%    10    1.0   1.3   0.9   2.3   0.3
+  3.|-- be100-1197.ams-5-a9.nl.eu                     0.0%    10    8.2   8.4   8.1   8.6   0.0
+  4.|-- amsix-ams10.netarch.akamai.com                0.0%    10    9.0   9.1   8.6  11.0   0.7
+  5.|-- a95-101-78-130.deploy.akamaitechnologies.com  0.0%    10    8.4   8.4   8.3   8.5   0.0
+
+ovh03.ring.nlnog.net | SUCCESS | rc=0 >>
+Start: Fri Aug 19 13:28:35 2016
+HOST: ovh03.ring.nlnog.net                        Loss%   Snt   Last   Avg  Best  Wrst StDev
+  1.|-- sbg-1b-n7.fr.eu                             70.0%    10    0.5   0.5   0.5   0.5   0.0
+  2.|-- ???                                         100.0    10    0.0   0.0   0.0   0.0   0.0
+  3.|-- be100-1170.fra-1-a9.de.eu                    0.0%    10    3.4   3.6   3.3   3.8   0.0
+  4.|-- be10-1105.rbx-g1-a9.fr.eu                    0.0%    10   11.2  11.7  11.1  12.6   0.0
+  5.|-- ???                                         100.0    10    0.0   0.0   0.0   0.0   0.0
+  6.|-- amsix-ams10.netarch.akamai.com              80.0%    10   16.6  16.7  16.6  16.7   0.0
+  7.|-- a95-101-78-66.deploy.akamaitechnologies.com  0.0%    10   15.7  15.9  15.7  16.1   0.0
+
+ovh02.ring.nlnog.net | SUCCESS | rc=0 >>
+Start: Fri Aug 19 13:29:36 2016
+HOST: ovh02.ring.nlnog.net                        Loss%   Snt   Last   Avg  Best  Wrst StDev
+  1.|-- vps15236.ovh.net                             0.0%    10    1.4   1.1   0.9   1.6   0.0
+  2.|-- be10-148.rbx-g2-a9.fr.eu                     0.0%    10    1.9   2.5   1.6   4.1   0.5
+  3.|-- ???                                         100.0    10    0.0   0.0   0.0   0.0   0.0
+  4.|-- amsix-ams10.netarch.akamai.com              10.0%    10    6.9   6.9   6.7   7.2   0.0
+  5.|-- a95-101-78-66.deploy.akamaitechnologies.com  0.0%    10    6.0   6.4   6.0   6.8   0.0
+
+patientsky01.ring.nlnog.net | SUCCESS | rc=0 >>
+Start: Fri Aug 19 13:28:40 2016
+HOST: patientsky01.ring.nlnog.net             Loss%   Snt   Last   Avg  Best  Wrst StDev
+  1.|-- 185.161.127.2                            0.0%    10    0.2   0.2   0.2   0.3   0.0
+  2.|-- ti0061a400-xe2-1-0.ti.telenor.net        0.0%    10    0.4   5.2   0.4  36.3  11.5
+  3.|-- ti0300c360-ae44-0.ti.telenor.net         0.0%    10    0.9   1.0   0.7   2.5   0.3
+  4.|-- ti0300b400-ae0-0.ti.telenor.net          0.0%    10    0.5   0.6   0.4   0.7   0.0
+  5.|-- 62.140.27.9                             80.0%    10    1.1   1.1   1.1   1.1   0.0
+  6.|-- ae-2-3201.ear2.Stockholm2.Level3.net    60.0%    10    7.7   9.0   7.7  13.0   2.6
+  7.|-- ae-2-3201.ear2.Stockholm2.Level3.net    50.0%    10    7.8   8.8   7.7  12.5   2.0
+  8.|-- 4.68.72.166                              0.0%    10    8.1   7.9   7.7   8.1   0.0
+  9.|-- akamai-ic-300619-s-b2.c.telia.net        0.0%    10    8.6   8.8   8.5  11.0   0.7
+ 10.|-- 195-12-233-25.customer.teliacarrier.com  0.0%    10    7.8   7.7   7.6   8.0   0.0
+
+ovh04.ring.nlnog.net | SUCCESS | rc=0 >>
+Start: Fri Aug 19 13:33:04 2016
+HOST: ovh04.ring.nlnog.net                                 Loss%   Snt   Last   Avg  Best  Wrst StDev
+  1.|-- vks25230.ip-142-4-202.net                             0.0%    10    0.4   5.3   0.3  32.2  10.8
+  2.|-- po104.bhs-g1-a75.qc.ca                                0.0%    10    0.3   0.4   0.2   0.5   0.0
+  3.|-- ???                                                  100.0    10    0.0   0.0   0.0   0.0   0.0
+  4.|-- ???                                                  100.0    10    0.0   0.0   0.0   0.0   0.0
+  5.|-- akamai.ip4.torontointernetxchange.net                 0.0%    10    8.5   8.8   8.5   9.8   0.3
+  6.|-- a184-84-243-216.deploy.static.akamaitechnologies.com  0.0%    10    8.8   8.7   8.5   9.2   0.0
+
+pcextreme01.ring.nlnog.net | SUCCESS | rc=0 >>
+Start: Fri Aug 19 13:28:48 2016
+HOST: pcextreme01.ring.nlnog.net Loss%   Snt   Last   Avg  Best  Wrst StDev
+  1.|-- gw1.gyr-dc2.pcextreme.nl    0.0%    10    2.8   4.5   0.6  11.0   4.0
+  2.|-- core02.ams05.pcextreme.nl   0.0%    10    1.1   2.4   1.0  14.1   4.0
+  3.|-- 83.231.213.105              0.0%    10    1.5   1.6   1.5   1.7   0.0
+  4.|-- ae1.ams60.ip4.gtt.net       0.0%    10    7.1   9.9   7.1  31.9   7.7
+  5.|-- xe-2-0-0.ams29.ip4.gtt.net  0.0%    10    7.2   7.2   7.0   7.3   0.0
+  6.|-- 77.67.4.25                  0.0%    10    7.3   7.4   7.2   7.6   0.0
+
+pbwcomm01.ring.nlnog.net | SUCCESS | rc=0 >>
+Start: Fri Aug 19 13:28:51 2016
+HOST: pbwcomm01.ring.nlnog.net                             Loss%   Snt   Last   Avg  Best  Wrst StDev
+  1.|-- gtwy-vl112.leadmon.net                                0.0%    10    0.4   3.3   0.3  27.5   8.5
+  2.|-- equinix-iad8.netarch.akamai.com                       0.0%    10    2.5   3.6   2.5  12.7   3.2
+  3.|-- a104-96-220-193.deploy.static.akamaitechnologies.com  0.0%    10    2.8   2.7   2.6   3.0   0.0
+
+openminds01.ring.nlnog.net | SUCCESS | rc=0 >>
+Start: Fri Aug 19 13:28:23 2016
+HOST: openminds01.ring.nlnog.net                        Loss%   Snt   Last   Avg  Best  Wrst StDev
+  1.|-- ve321.cs1.dcg.as30961.net                          0.0%    10    1.5   1.7   1.2   3.6   0.3
+  2.|-- ve1.rtr1.dcg.as30961.net                           0.0%    10    0.4   0.6   0.4   2.2   0.5
+  3.|-- vif301.rtr1-bebru2.om-powered.net                  0.0%    10    2.2   2.3   2.1   2.3   0.0
+  4.|-- te0-0-2-1.nr11.b015929-1.bru01.atlas.cogentco.com  0.0%    10    2.8   2.8   2.7   2.9   0.0
+  5.|-- be2565.rcr21.bru01.atlas.cogentco.com              0.0%    10    3.0   3.1   3.0   3.2   0.0
+  6.|-- be2885.ccr42.ams03.atlas.cogentco.com              0.0%    10    6.4   6.3   6.2   6.5   0.0
+  7.|-- be2039.rcr21.ams05.atlas.cogentco.com              0.0%    10    7.0   6.9   6.7   7.3   0.0
+  8.|-- tinet.ams05.atlas.cogentco.com                     0.0%    10    5.7   5.6   5.6   5.7   0.0
+  9.|-- 89.149.134.54                                      0.0%    10    6.4   6.4   6.3   7.0   0.0
+ 10.|-- belnet-gw.ip4.gtt.net                              0.0%    10    7.1   8.2   6.9  19.1   3.8
+ 11.|-- ???                                               100.0    10    0.0   0.0   0.0   0.0   0.0
+ 12.|-- akamai.bnix.net                                    0.0%    10    7.4   7.4   7.3   7.5   0.0
+ 13.|-- a92-122-122-137.deploy.akamaitechnologies.com      0.0%    10    7.0   7.0   6.9   7.3   0.0
+
+pcextreme05.ring.nlnog.net | SUCCESS | rc=0 >>
+Start: Fri Aug 19 13:29:05 2016
+HOST: pcextreme05.ring.nlnog.net                         Loss%   Snt   Last   Avg  Best  Wrst StDev
+  1.|-- 185.95.29.2                                         0.0%    10    0.3   0.3   0.3   0.3   0.0
+  2.|-- 104.245.124.157                                     0.0%    10    0.4   1.8   0.3  14.4   4.4
+  3.|-- coresite-mia2.netarch.akamai.com                    0.0%    10    0.6   2.3   0.5   9.5   3.0
+  4.|-- a23-14-84-170.deploy.static.akamaitechnologies.com  0.0%    10    0.8   0.6   0.6   0.8   0.0
+
+pcextreme02.ring.nlnog.net | SUCCESS | rc=0 >>
+Start: Fri Aug 19 13:29:08 2016
+HOST: pcextreme02.ring.nlnog.net               Loss%   Snt   Last   Avg  Best  Wrst StDev
+  1.|-- hosted.by.pcextreme                       0.0%    10    0.2   0.3   0.2   0.3   0.0
+  2.|-- vl2328-core01.ams04.pcextreme.nl          0.0%    10    0.5   5.0   0.4  31.0  10.2
+  3.|-- adm-b5-link.telia.net                     0.0%    10    0.6   1.3   0.5   6.7   1.9
+  4.|-- adm-bb4-link.telia.net                    0.0%    10    0.8   0.8   0.7   0.9   0.0
+  5.|-- adm-b2-link.telia.net                     0.0%    10    1.4   1.6   1.1   3.3   0.5
+  6.|-- inteliquent-ic-305511-adm-b4.c.telia.net  0.0%    10    7.2   7.3   7.1   7.7   0.0
+  7.|-- xe-2-0-0.ams29.ip4.gtt.net                0.0%    10    6.7   9.7   6.7  36.0   9.2
+  8.|-- 77.67.4.25                                0.0%    10    7.4   7.4   7.3   8.1   0.0
+
+pcextreme03.ring.nlnog.net | SUCCESS | rc=0 >>
+Start: Fri Aug 19 13:29:09 2016
+HOST: pcextreme03.ring.nlnog.net               Loss%   Snt   Last   Avg  Best  Wrst StDev
+  1.|-- hosted.by.pcextreme                       0.0%    10    0.4   0.4   0.3   0.4   0.0
+  2.|-- core01.ams04.as48635.net                  0.0%    10    0.6   2.8   0.5  23.1   7.1
+  3.|-- adm-b5-link.telia.net                     0.0%    10    0.6   0.6   0.6   0.7   0.0
+  4.|-- adm-bb3-link.telia.net                    0.0%    10    0.9   3.1   0.8  18.5   5.6
+  5.|-- adm-b2-link.telia.net                     0.0%    10    1.3   1.6   1.3   2.7   0.3
+  6.|-- inteliquent-ic-305511-adm-b4.c.telia.net  0.0%    10    0.8   0.8   0.8   0.9   0.0
+  7.|-- xe-4-2-0.ams29.ip4.gtt.net                0.0%    10    1.1   1.1   1.1   1.1   0.0
+  8.|-- 77.67.4.25                                0.0%    10    1.1   1.2   1.1   1.3   0.0
+
+pcextreme06.ring.nlnog.net | SUCCESS | rc=0 >>
+Start: Fri Aug 19 13:29:13 2016
+HOST: pcextreme06.ring.nlnog.net                          Loss%   Snt   Last   Avg  Best  Wrst StDev
+  1.|-- hosted.by.pcextreme                                  0.0%    10    0.4   0.4   0.2   0.5   0.0
+  2.|-- 121-52-244-162.hosted-by-mis.myisnetwork.com         0.0%    10    0.6   3.7   0.6  11.2   4.8
+  3.|-- any2ix.coresite.com                                  0.0%    10    0.9   0.9   0.7   1.0   0.0
+  4.|-- a184-28-188-91.deploy.static.akamaitechnologies.com  0.0%    10    0.8   0.8   0.7   1.0   0.0
+
+peakten01.ring.nlnog.net | SUCCESS | rc=0 >>
+Start: Fri Aug 19 13:29:21 2016
+HOST: peakten01.ring.nlnog.net                            Loss%   Snt   Last   Avg  Best  Wrst StDev
+  1.|-- vl3001.sddist02.lou3.peak10.net                      0.0%    10    0.5   0.6   0.5   0.7   0.0
+  2.|-- vl72.dist02.lou.peak10.net                           0.0%    10    0.4   0.3   0.3   0.4   0.0
+  3.|-- te0-0-0-1.edge02.lou.peak10.net                      0.0%    10    0.6   0.6   0.6   0.8   0.0
+  4.|-- ipl-edge-03.inet.qwest.net                           0.0%    10    2.6   4.9   2.6  23.2   6.4
+  5.|-- dcx2-edge-01.inet.qwest.net                          0.0%    10   26.3  26.3  26.3  26.3   0.0
+  6.|-- 65.120.84.186                                        0.0%    10   26.3  26.3  26.3  26.4   0.0
+  7.|-- a184-28-17-160.deploy.static.akamaitechnologies.com  0.0%    10   26.7  26.8  26.6  27.2   0.0
+
+peakten02.ring.nlnog.net | SUCCESS | rc=0 >>
+Start: Fri Aug 19 13:29:26 2016
+HOST: peakten02.ring.nlnog.net                            Loss%   Snt   Last   Avg  Best  Wrst StDev
+  1.|-- vl3082.sddist01.clt3.peak10.net                      0.0%    10    0.6   0.6   0.6   0.7   0.0
+  2.|-- vl71.dist01.clt.peak10.net                           0.0%    10    0.3   0.4   0.3   0.4   0.0
+  3.|-- te0-0-1-1.edge02.clt.peak10.net                      0.0%    10    0.7   0.7   0.6   0.7   0.0
+  4.|-- te0-0-0-0.edge01.clt.peak10.net                      0.0%    10    0.7   0.8   0.6   2.1   0.0
+  5.|-- chr-edge-03.inet.qwest.net                           0.0%    10    2.4   4.3   0.7  34.5  10.6
+  6.|-- dcx2-edge-01.inet.qwest.net                          0.0%    10   12.6  14.6  12.5  32.2   6.2
+  7.|-- 65.120.84.186                                        0.0%    10   12.6  12.6  12.6  13.1   0.0
+  8.|-- a184-28-17-160.deploy.static.akamaitechnologies.com  0.0%    10   12.9  13.0  12.8  13.2   0.0
+
+peakten03.ring.nlnog.net | SUCCESS | rc=0 >>
+Start: Fri Aug 19 13:29:27 2016
+HOST: peakten03.ring.nlnog.net                            Loss%   Snt   Last   Avg  Best  Wrst StDev
+  1.|-- vl3011.sddist02.nas3.peak10.net                      0.0%    10    0.6   0.7   0.5   1.4   0.0
+  2.|-- vl72.dist02.nas2.peak10.net                          0.0%    10    0.3   0.4   0.3   1.0   0.0
+  3.|-- te0-0-0-1.edge02.nas2.peak10.net                     0.0%    10    0.6   0.6   0.6   0.8   0.0
+  4.|-- 8-1-7.ear2.Atlanta2.Level3.net                       0.0%    10    8.7   8.7   8.7   8.8   0.0
+  5.|-- be-200-cr02.56marietta.ga.ibone.comcast.net          0.0%    10   10.4  10.2   9.5  11.1   0.0
+  6.|-- be-10114-cr02.ashburn.va.ibone.comcast.net           0.0%    10   22.3  22.6  21.6  23.6   0.5
+  7.|-- hu-0-10-0-0-pe07.ashburn.va.ibone.comcast.net        0.0%    10   21.7  21.4  21.1  21.7   0.0
+  8.|-- a184-25-157-80.deploy.static.akamaitechnologies.com  0.0%    10   21.4  21.4  21.3  21.5   0.0
+
+pcextreme04.ring.nlnog.net | SUCCESS | rc=0 >>
+Start: Fri Aug 19 13:29:08 2016
+HOST: pcextreme04.ring.nlnog.net                 Loss%   Snt   Last   Avg  Best  Wrst StDev
+  1.|-- 185.103.241.1                               0.0%    10    0.4   0.4   0.2   0.5   0.0
+  2.|-- 31.204.145.241                              0.0%    10    3.1   1.4   0.9   3.1   0.6
+  3.|-- xe-0-3-0-19.r02.tokyjp03.jp.bb.gin.ntt.net  0.0%    10    1.5   1.7   1.5   2.6   0.0
+  4.|-- ae-10.r30.tokyjp05.jp.bb.gin.ntt.net        0.0%    10    2.6   2.7   1.7   5.4   1.1
+  5.|-- ae-1.r23.snjsca04.us.bb.gin.ntt.net         0.0%    10  110.4 110.9 109.5 114.8   1.4
+  6.|-- ae-45.r01.snjsca04.us.bb.gin.ntt.net        0.0%    10  110.5 110.6 110.5 110.7   0.0
+  7.|-- sjo-b21-link.telia.net                      0.0%    10  110.8 111.1 110.8 112.2   0.3
+  8.|-- nyk-bb1-link.telia.net                      0.0%    10  176.2 176.1 176.0 176.3   0.0
+  9.|-- ldn-bb3-link.telia.net                      0.0%    10  233.6 237.8 231.9 249.0   5.7
+ 10.|-- ldn-b3-link.telia.net                      10.0%    10  235.3 235.3 232.9 243.9   3.4
+ 11.|-- 213-248-117-49.customer.teliacarrier.com   10.0%    10  232.0 232.1 231.9 232.4   0.0
+
+plurimedia01.ring.nlnog.net | SUCCESS | rc=0 >>
+Start: Fri Aug 19 13:29:40 2016
+HOST: plurimedia01.ring.nlnog.net                                 Loss%   Snt   Last   Avg  Best  Wrst StDev
+  1.|-- bgw2-direct.sdv.fr                                           0.0%    10    0.7   0.7   0.6   0.8   0.0
+  2.|-- 6k-2-sfr-str-e2-3-sdv-plurimedia.customers-sfr-str.ielo.net  0.0%    10    0.3   0.4   0.3   0.7   0.0
+  3.|-- frpar01-a9k1.rt.ielo.net                                     0.0%    10    6.7   6.8   6.7   6.9   0.0
+  4.|-- prs-b5-link.telia.net                                        0.0%    10    7.7   7.8   6.3   8.6   0.7
+  5.|-- prs-bb3-link.telia.net                                       0.0%    10    7.2   7.3   7.2   7.3   0.0
+  6.|-- zch-b2-link.telia.net                                        0.0%    10   28.3  28.4  28.3  28.6   0.0
+  7.|-- 80-239-152-192.customer.teliacarrier.com                     0.0%    10   28.3  28.3  28.2  28.3   0.0
+
+plutex01.ring.nlnog.net | SUCCESS | rc=0 >>
+Start: Fri Aug 19 13:29:47 2016
+HOST: plutex01.ring.nlnog.net                       Loss%   Snt   Last   Avg  Best  Wrst StDev
+  1.|-- gateway.91.202.41.plutex.de                    0.0%    10    0.3   0.3   0.2   0.4   0.0
+  2.|-- 91.202.40.234                                  0.0%    10    0.6   0.7   0.6   1.1   0.0
+  3.|-- 91.202.40.238                                  0.0%    10    0.5   1.0   0.4   5.9   1.6
+  4.|-- core5.bre.qsc.de                               0.0%    10    2.8   6.3   2.8   8.5   1.3
+  5.|-- core3.ham.qsc.de                               0.0%    10    2.4   6.5   2.4  27.6   8.8
+  6.|-- core1.dus.qsc.de                               0.0%    10    7.6   7.9   7.6   9.7   0.6
+  7.|-- dialup-212.162.17.169.frankfurt1.mik.net       0.0%    10    8.3   7.8   7.7   8.3   0.0
+  8.|-- GTT-level3-4x10G.Frankfurt.Level3.net          0.0%    10   11.1  11.3  11.1  13.0   0.5
+  9.|-- xe-3-1-0.dus11.ip4.tinet.net                   0.0%    10   13.6  14.3  13.6  20.0   2.0
+ 10.|-- ip4.gtt.net                                    0.0%    10   14.4  14.4  14.1  14.8   0.0
+ 11.|-- a88-221-116-179.deploy.akamaitechnologies.com  0.0%    10   14.3  14.8  14.2  18.6   1.3
+
+phusion01.ring.nlnog.net | SUCCESS | rc=0 >>
+Start: Fri Aug 19 13:29:48 2016
+HOST: phusion01.ring.nlnog.net                             Loss%   Snt   Last   Avg  Best  Wrst StDev
+  1.|-- 91.239.87.33                                          0.0%    10    0.2   0.2   0.2   0.5   0.0
+  2.|-- 91.239.87.5                                           0.0%    10    0.4   0.4   0.3   0.6   0.0
+  3.|-- 195.66.224.168                                        0.0%    10    9.9  10.2   9.9  11.1   0.0
+  4.|-- a104-86-111-146.deploy.static.akamaitechnologies.com  0.0%    10    9.4   9.5   9.4   9.8   0.0
+
+pix01.ring.nlnog.net | SUCCESS | rc=0 >>
+Start: Fri Aug 19 13:29:44 2016
+HOST: pix01.ring.nlnog.net                           Loss%   Snt   Last   Avg  Best  Wrst StDev
+  1.|-- 185.90.125.133                                  0.0%    10    0.5   1.0   0.5   4.4   1.2
+  2.|-- 192.168.150.1                                   0.0%    10    2.0   2.1   1.4   3.1   0.3
+  3.|-- 216.72.34.230                                  10.0%    10    5.9  18.2   5.2  49.5  15.4
+  4.|-- core1-0-5-0-19-edge5.nta.nv.net.il              0.0%    10    5.4  19.8   4.5  54.0  16.5
+  5.|-- gw1-0-2-0-0-core1.nta.nv.net.il                30.0%    10    4.4  19.7   4.4  34.8  12.1
+  6.|-- gw1-fra-0-4-0-3-100-gw1.nta.nv.net.il          10.0%    10   63.5  75.3  60.8 105.1  17.3
+  7.|-- 10.10.50.1                                     50.0%    10   67.7  67.3  59.1  85.4  10.7
+  8.|-- be4214.nr12.b019066-1.fra03.atlas.cogentco.com 30.0%    10   64.5  66.3  61.1  72.7   4.1
+  9.|-- te0-0-0-4.agr22.fra03.atlas.cogentco.com       20.0%    10   60.4  66.9  60.4  85.8   8.4
+ 10.|-- be2533.ccr41.fra03.atlas.cogentco.com          10.0%    10   58.9  68.3  58.9  85.6  10.3
+ 11.|-- be2959.ccr21.muc03.atlas.cogentco.com          10.0%    10   65.0  72.0  63.7 106.9  14.2
+ 12.|-- be2974.ccr21.vie01.atlas.cogentco.com          30.0%    10   75.4  79.6  72.8  96.0   7.9
+ 13.|-- be2046.ccr21.sof02.atlas.cogentco.com          10.0%    10  102.9  96.0  89.6 106.8   6.5
+ 14.|-- be2906.rcr21.ath01.atlas.cogentco.com          20.0%    10  104.2 111.6 101.0 132.6  11.8
+ 15.|-- akamai.demarc.cogentco.com                     20.0%    10  103.7 114.3 101.5 137.7  13.2
+ 16.|-- 2.21.69.18                                     20.0%    10   99.9 111.4  99.8 130.8  12.3
+
+poppr01.ring.nlnog.net | SUCCESS | rc=0 >>
+Start: Fri Aug 19 13:29:59 2016
+HOST: poppr01.ring.nlnog.net Loss%   Snt   Last   Avg  Best  Wrst StDev
+  1.|-- 200.238.130.1           0.0%    10    4.1   1.7   0.8   4.1   0.9
+  2.|-- 200.238.139.13          0.0%    10   15.3   7.0   0.6  16.2   6.2
+  3.|-- 200.238.138.52          0.0%    10    0.4   0.5   0.4   0.8   0.0
+  4.|-- 200.192.248.35          0.0%    10    0.5   0.6   0.5   1.4   0.0
+  5.|-- 187.16.46.168           0.0%    10    0.6   0.9   0.5   1.8   0.3
+
+portlane01.ring.nlnog.net | SUCCESS | rc=0 >>
+Start: Fri Aug 19 13:30:08 2016
+HOST: portlane01.ring.nlnog.net                Loss%   Snt   Last   Avg  Best  Wrst StDev
+  1.|-- 80.67.0.49                                0.0%    10    0.4   0.7   0.4   2.1   0.5
+  2.|-- be4.cr1.sto1.se.portlane.net              0.0%    10    0.6   0.7   0.6   0.9   0.0
+  3.|-- s-b5-link.telia.net                       0.0%    10    1.1   0.9   0.8   1.3   0.0
+  4.|-- 80-239-254-216.customer.teliacarrier.com  0.0%    10    0.4   0.5   0.4   0.7   0.0
+
+peakten04.ring.nlnog.net | SUCCESS | rc=0 >>
+Start: Fri Aug 19 13:29:42 2016
+HOST: peakten04.ring.nlnog.net                            Loss%   Snt   Last   Avg  Best  Wrst StDev
+  1.|-- vl3076.sddist02.atl2.peak10.net                      0.0%    10  119.3  46.5   0.7 122.9  55.0
+  2.|-- vl72.dist02.atl.peak10.net                           0.0%    10    0.4   0.6   0.4   2.0   0.5
+  3.|-- te0-0-1-1.edge01.peak10.net                          0.0%    10    0.7   0.9   0.6   2.1   0.3
+  4.|-- frp-edge-06.inet.qwest.net                           0.0%    10    1.9  11.6   1.9  67.6  21.9
+  5.|-- atx-edge-05.inet.qwest.net                           0.0%    10    3.1   4.2   3.0  14.3   3.6
+  6.|-- 65.124.97.178                                        0.0%    10    3.6   3.6   3.5   3.6   0.0
+  7.|-- hu-1-3-0-5-cr02.56marietta.ga.ibone.comcast.net      0.0%    10    4.9   4.0   3.2   4.9   0.3
+  8.|-- be-10114-cr02.ashburn.va.ibone.comcast.net           0.0%    10   16.3  16.6  15.4  17.4   0.6
+  9.|-- hu-0-10-0-6-pe07.ashburn.va.ibone.comcast.net        0.0%    10   18.0  18.0  17.8  18.3   0.0
+ 10.|-- a184-25-157-80.deploy.static.akamaitechnologies.com  0.0%    10   18.0  18.3  18.0  19.1   0.0
+
+poznan01.ring.nlnog.net | SUCCESS | rc=0 >>
+Start: Fri Aug 19 13:30:11 2016
+HOST: poznan01.ring.nlnog.net                      Loss%   Snt   Last   Avg  Best  Wrst StDev
+  1.|-- css6-XE0-0-0-4045.man.poznan.pl               0.0%    10    0.3   1.7   0.3  13.7   4.2
+  2.|-- mx-pcss-1-AE0-1.man.poznan.pl                 0.0%    10    0.8   0.7   0.3   3.5   0.8
+  3.|-- z-pozmana.poznan-gw3.10Gb.rtr.pionier.gov.pl  0.0%    10    0.6   0.9   0.3   4.0   1.0
+  4.|-- 212.191.241.26                                0.0%    10    2.0   0.9   0.6   2.0   0.3
+
+public01.infra.ring.nlnog.net | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Failed to connect to the host via ssh.",
+    "unreachable": true
+}
+public02.infra.ring.nlnog.net | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Failed to connect to the host via ssh.",
+    "unreachable": true
+}
+previder01.ring.nlnog.net | SUCCESS | rc=0 >>
+Start: Fri Aug 19 13:30:13 2016
+HOST: previder01.ring.nlnog.net                   Loss%   Snt   Last   Avg  Best  Wrst StDev
+  1.|-- host-84-241-137-17.dsl.introweb.nl           0.0%    10    0.3   1.3   0.3   5.8   1.7
+  2.|-- v924.hgl2crt01.previder.net                  0.0%    10    0.8   2.2   0.5   5.2   1.9
+  3.|-- te3-6.ams2crt01.previder.net                 0.0%    10    2.9   3.9   2.5  11.6   2.9
+  4.|-- amsix-ams10.netarch.akamai.com               0.0%    10    3.4   4.1   3.4   4.9   0.0
+  5.|-- a95-101-78-66.deploy.akamaitechnologies.com  0.0%    10    2.8   3.8   2.8   7.8   1.6
+
+popsc01.ring.nlnog.net | SUCCESS | rc=0 >>
+Start: Fri Aug 19 13:30:11 2016
+HOST: popsc01.ring.nlnog.net                           Loss%   Snt   Last   Avg  Best  Wrst StDev
+  1.|-- gateway.ring-nlnog-v4017.pop-sc.rnp.br            0.0%    10    2.5   2.4   0.8   5.2   1.4
+  2.|-- popsc-4046-rt21.bb.pop-sc.rnp.br                  0.0%    10    0.2   0.3   0.2   0.4   0.0
+  3.|-- as16735.sc.ix.br                                  0.0%    10   72.5  72.6  72.5  72.8   0.0
+  4.|-- et-3-0-0-0.core-a.spo511.algartelecom.com.br      0.0%    10   59.0  59.9  58.8  65.8   2.0
+  5.|-- et-2-3-0-0.core-a.spo-piaf.algartelecom.com.br    0.0%    10   64.1  64.1  64.1  64.2   0.0
+  6.|-- et-3-0-0-0.border-c.spo-piaf.algartelecom.com.br  0.0%    10   57.7  57.7  57.7  57.8   0.0
+  7.|-- 201-048-251-054.static.algartelecom.com.br        0.0%    10   12.3  12.3  12.3  12.5   0.0
+  8.|-- bcu-203-550.optitel.net.br                        0.0%    10   12.5  12.3  12.2  12.5   0.0
+  9.|-- bcu-173-562.optitel.net.br                        0.0%    10   12.3  19.9  12.2  88.5  24.1
+ 10.|-- cdn-200.optitel.net.br                            0.0%    10   12.1  12.2  12.1  12.3   0.0
+
+prolocation01.ring.nlnog.net | SUCCESS | rc=0 >>
+Start: Fri Aug 19 13:30:20 2016
+HOST: prolocation01.ring.nlnog.net                Loss%   Snt   Last   Avg  Best  Wrst StDev
+  1.|-- 94.228.136.252                               0.0%    10    0.4   1.1   0.4   6.7   1.8
+  2.|-- rc03-te8-1.core.as41887.net                  0.0%    10    0.5   1.4   0.4   8.2   2.3
+  3.|-- amsix-ams10.netarch.akamai.com               0.0%    10    1.2   1.5   1.2   1.7   0.0
+  4.|-- a95-101-78-66.deploy.akamaitechnologies.com  0.0%    10    0.9   1.0   0.7   1.8   0.0
+
+proserve01.ring.nlnog.net | SUCCESS | rc=0 >>
+Start: Fri Aug 19 13:30:21 2016
+HOST: proserve01.ring.nlnog.net                   Loss%   Snt   Last   Avg  Best  Wrst StDev
+  1.|-- ip-space.by.proserve.nl                      0.0%    10    0.8   7.0   0.4  64.2  20.1
+  2.|-- routed.by.proserve.nl                        0.0%    10    2.1   0.6   0.3   2.1   0.5
+  3.|-- te1-2-vl7.cr1.nkf.nl.proserve.nl             0.0%    10    1.7   1.6   1.6   1.7   0.0
+  4.|-- te0-23.cr1.nkf.as49685.net                   0.0%    10    2.0   2.3   1.9   3.4   0.3
+  5.|-- ???                                         100.0    10    0.0   0.0   0.0   0.0   0.0
+  6.|-- a95-101-78-66.deploy.akamaitechnologies.com  0.0%    10    2.3   2.3   2.1   2.7   0.0
+
+qbranch01.ring.nlnog.net | SUCCESS | rc=0 >>
+Start: Fri Aug 19 13:30:24 2016
+HOST: qbranch01.ring.nlnog.net                Loss%   Snt   Last   Avg  Best  Wrst StDev
+  1.|-- v39-br-r2.core.365-24.net                0.0%    10    1.2   1.4   1.2   3.2   0.5
+  2.|-- s-b2-link.telia.net                      0.0%    10    1.2   1.2   1.0   1.3   0.0
+  3.|-- s-bb3-link.telia.net                     0.0%    10    0.8   0.9   0.8   1.2   0.0
+  4.|-- s-b5-link.telia.net                      0.0%    10    1.0   1.1   1.0   1.4   0.0
+  5.|-- 80-239-237-11.customer.teliacarrier.com  0.0%    10    0.9   0.9   0.8   0.9   0.0
+
+quanza01.ring.nlnog.net | SUCCESS | rc=0 >>
+Start: Fri Aug 19 13:30:32 2016
+HOST: quanza01.ring.nlnog.net                      Loss%   Snt   Last   Avg  Best  Wrst StDev
+  1.|-- 91.208.87.65                                 90.0%    10    0.3   0.3   0.3   0.3   0.0
+  2.|-- eun-er1-g0-1-904.quanza.net                   0.0%    10    0.7   0.8   0.5   1.9   0.3
+  3.|-- 87.233.1.169                                  0.0%    10    0.7   2.7   0.7  20.4   6.2
+  4.|-- ams7.core02.xe-2-1-0-0.true.nl                0.0%    10    0.8   1.8   0.8  10.7   3.1
+  5.|-- amsix-ams10.netarch.akamai.com                0.0%    10    3.1   1.9   1.5   3.1   0.5
+  6.|-- a95-101-78-130.deploy.akamaitechnologies.com  0.0%    10    1.1   1.1   0.9   1.5   0.0
+
+qcom01.ring.nlnog.net | SUCCESS | rc=0 >>
+Start: Fri Aug 19 13:30:39 2016
+HOST: qcom01.ring.nlnog.net     Loss%   Snt   Last   Avg  Best  Wrst StDev
+  1.|-- gi0-0-2-8.bg-asr1.qcom.it  0.0%    10    0.3   0.3   0.3   0.6   0.0
+  2.|-- gi1-1.bg-r2.qcom.it        0.0%    10    0.6   0.8   0.6   1.4   0.0
+  3.|-- ge-1-1-0-0.mi-gw2.qcom.it  0.0%    10    1.9   5.2   1.8  29.7   8.7
+  4.|-- akamai.mix-it.net          0.0%    10    2.6   2.5   2.4   2.6   0.0
+  5.|-- 2.18.240.211               0.0%    10    2.1   2.0   1.8   2.2   0.0
+
+quadranet01.ring.nlnog.net | SUCCESS | rc=0 >>
+Start: Fri Aug 19 13:30:45 2016
+HOST: quadranet01.ring.nlnog.net                          Loss%   Snt   Last   Avg  Best  Wrst StDev
+  1.|-- 104.223.2.1.static.quadranet.com                     0.0%    10    0.4   0.7   0.3   2.9   0.5
+  2.|-- colo-lax6.as8100.net                                 0.0%    10    0.3   0.3   0.2   0.4   0.0
+  3.|-- any2ix.coresite.com                                  0.0%    10    0.6   0.5   0.4   0.6   0.0
+  4.|-- a184-28-188-81.deploy.static.akamaitechnologies.com  0.0%    10    0.3   0.5   0.3   0.9   0.0
+
+queryfoundry01.ring.nlnog.net | SUCCESS | rc=0 >>
+Start: Fri Aug 19 13:30:49 2016
+HOST: queryfoundry01.ring.nlnog.net                       Loss%   Snt   Last   Avg  Best  Wrst StDev
+  1.|-- ???                                                 100.0    10    0.0   0.0   0.0   0.0   0.0
+  2.|-- 10.100.1.1                                           0.0%    10    0.3   0.2   0.1   0.3   0.0
+  3.|-- any2ix.coresite.com                                  0.0%    10    0.4   0.6   0.3   1.3   0.0
+  4.|-- a184-28-188-81.deploy.static.akamaitechnologies.com  0.0%    10    0.4   0.4   0.3   0.7   0.0
+
+rackcentral01.ring.nlnog.net | SUCCESS | rc=0 >>
+Start: Fri Aug 19 13:30:44 2016
+HOST: rackcentral01.ring.nlnog.net              Loss%   Snt   Last   Avg  Best  Wrst StDev
+  1.|-- m1-au-r1.as58443.net                       0.0%    10    0.2   0.4   0.2   1.0   0.0
+  2.|-- 103.24.14.202                              0.0%    10    0.5   3.8   0.4  33.1  10.3
+  3.|-- 59-100-253-113.mel.static-ipl.aapt.com.au  0.0%    10   21.1   6.3   1.3  22.9   8.5
+  4.|-- te3-3.mburndist01.aapt.net.au              0.0%    10    0.8   1.2   0.7   3.6   0.7
+  5.|-- bu8.mburnbrdr11.aapt.net.au                0.0%    10    1.7   1.9   1.3   3.3   0.3
+  6.|-- nme-apt-bur-wgw1-be-30.tpgi.com.au         0.0%    10    1.3   1.4   1.2   1.9   0.0
+  7.|-- 203-219-155-130.tpgi.com.au                0.0%    10    3.0   3.8   1.9   9.2   2.1
+  8.|-- 202.7.173.42                               0.0%    10    4.1   5.7   3.0   8.5   1.7
+  9.|-- 203-219-155-3.tpgi.com.au                  0.0%    10    1.3   7.6   0.9  65.9  20.5
+ 10.|-- nme-sot-dry-ak1-138.tpgi.com.au            0.0%    10    1.1   1.0   0.8   1.2   0.0
+
+rackcentral02.ring.nlnog.net | SUCCESS | rc=0 >>
+Start: Fri Aug 19 13:30:52 2016
+HOST: rackcentral02.ring.nlnog.net                       Loss%   Snt   Last   Avg  Best  Wrst StDev
+  1.|-- 163.53.233.254                                      0.0%    10    0.9   0.6   0.4   1.1   0.0
+  2.|-- as20940.nsw.ix.asn.au                               0.0%    10    1.1   1.9   1.1   8.8   2.3
+  3.|-- a104-72-70-16.deploy.static.akamaitechnologies.com  0.0%    10    0.6   0.6   0.5   0.7   0.0
+
+rackfish01.ring.nlnog.net | SUCCESS | rc=0 >>
+Start: Fri Aug 19 13:30:53 2016
+HOST: rackfish01.ring.nlnog.net                         Loss%   Snt   Last   Avg  Best  Wrst StDev
+  1.|-- 194.169.225.252                                    0.0%    10    0.7  15.7   0.6 121.9  38.4
+  2.|-- ge-7-3-6.bar1.Stockholm1.Level3.net                0.0%    10   23.3  14.4   0.8  31.3  10.7
+  3.|-- ae-1-3101.ear2.Stockholm2.Level3.net              50.0%    10    1.6   2.5   1.2   6.8   2.4
+  4.|-- ae-1-3101.ear2.Stockholm2.Level3.net              50.0%    10    1.6   1.6   1.3   2.4   0.0
+  5.|-- 4.68.72.166                                        0.0%    10    1.8   1.7   1.5   2.0   0.0
+  6.|-- s-bb4-link.telia.net                               0.0%    10    3.6   2.2   1.6   3.6   0.6
+  7.|-- s-b9-link.telia.net                                0.0%    10    3.6   3.0   1.8   3.6   0.3
+  8.|-- as5580-ic-155269-s-b9.c.telia.net                  0.0%    10    1.6   1.9   1.4   3.1   0.5
+  9.|-- ae01.edge01.cph01.dk.as5580.net                    0.0%    10   11.2  11.2  11.0  11.4   0.0
+ 10.|-- akamai-20940-gw.cph01-1.dk.as5580.net              0.0%    10   11.7  11.7  11.6  11.8   0.0
+ 11.|-- a23-65-29-73.deploy.static.akamaitechnologies.com  0.0%    10   11.1  11.3  11.0  12.3   0.0
+
+rcsrds01.ring.nlnog.net | SUCCESS | rc=0 >>
+Start: Fri Aug 19 13:30:59 2016
+HOST: rcsrds01.ring.nlnog.net    Loss%   Snt   Last   Avg  Best  Wrst StDev
+  1.|-- host-82-79-136-1.rdsnet.ro  0.0%    10    1.8   3.1   1.7  11.6   2.9
+  2.|-- 81-196-185-170.rdsnet.ro    0.0%    10    0.2   0.2   0.1   0.2   0.0
+
+redpilllinpro01.ring.nlnog.net | SUCCESS | rc=0 >>
+Start: Fri Aug 19 13:31:00 2016
+HOST: redpilllinpro01.ring.nlnog.net   Loss%   Snt   Last   Avg  Best  Wrst StDev
+  1.|-- vlan-910.cs1-osl2.n.bitbit.net    0.0%    10    1.1   1.1   0.9   1.4   0.0
+  2.|-- xe-1-2-0-9.cr1-osl2.n.bitbit.net  0.0%    10    0.2   4.5   0.2  42.6  13.4
+  3.|-- ae0.cr1-osl3.n.bitbit.net         0.0%    10    0.4   0.4   0.3   0.5   0.0
+  4.|-- 193.156.90.11                     0.0%    10    1.0   1.7   1.0   2.7   0.0
+  5.|-- 217-168-93.73.ntebredband.no      0.0%    10    9.4   9.6   9.4   9.9   0.0
+  6.|-- 178-164-7.231.3p.ntebredband.no   0.0%    10    8.9   9.0   8.9   9.2   0.0
+
+redpilllinpro02.ring.nlnog.net | SUCCESS | rc=0 >>
+Start: Fri Aug 19 13:31:03 2016
+HOST: redpilllinpro02.ring.nlnog.net   Loss%   Snt   Last   Avg  Best  Wrst StDev
+  1.|-- vlan-1924.cs1-osl3.n.bitbit.net   0.0%    10    1.0   1.8   1.0   5.6   1.2
+  2.|-- xe-1-3-0-0.cr1-osl2.n.bitbit.net  0.0%    10    0.4   0.5   0.4   1.6   0.3
+  3.|-- ae0.cr1-osl3.n.bitbit.net         0.0%    10    0.4   0.6   0.4   1.8   0.0
+  4.|-- 193.156.90.11                     0.0%    10    1.2   1.1   1.1   1.2   0.0
+  5.|-- 217-168-93.73.ntebredband.no      0.0%    10    9.9   9.7   9.5   9.9   0.0
+  6.|-- 178-164-7.231.3p.ntebredband.no   0.0%    10    9.0   9.1   9.0  10.0   0.0
+
+redpilllinpro03.ring.nlnog.net | SUCCESS | rc=0 >>
+Start: Fri Aug 19 13:31:08 2016
+HOST: redpilllinpro03.ring.nlnog.net    Loss%   Snt   Last   Avg  Best  Wrst StDev
+  1.|-- vlan-1407.cs1-ksd1.n.bitbit.net    0.0%    10    1.0   1.2   1.0   2.2   0.0
+  2.|-- ae9-0.cr1-ksd1.n.bitbit.net        0.0%    10    0.2   0.3   0.2   0.3   0.0
+  3.|-- xe-1-2-0-15.cr1-osl2.n.bitbit.net  0.0%    10    3.2   4.5   3.1  17.4   4.5
+  4.|-- ae0.cr1-osl3.n.bitbit.net          0.0%    10    3.3   3.3   3.2   3.3   0.0
+  5.|-- 193.156.90.11                      0.0%    10    3.9   4.0   3.9   4.2   0.0
+  6.|-- 217-168-93.73.ntebredband.no       0.0%    10   12.7  12.7  12.5  12.8   0.0
+  7.|-- 178-164-7.231.3p.ntebredband.no    0.0%    10   11.8  11.8  11.8  11.9   0.0
+
+rgnet01.ring.nlnog.net | SUCCESS | rc=0 >>
+Start: Fri Aug 19 13:31:14 2016
+HOST: rgnet01.ring.nlnog.net                       Loss%   Snt   Last   Avg  Best  Wrst StDev
+  1.|-- r0.sea.rg.net                                 0.0%    10    0.4   0.5   0.3   1.1   0.0
+  2.|-- ge-100-0-0-15.r05.sttlwa01.us.bb.gin.ntt.net  0.0%    10    0.8   0.9   0.7   1.1   0.0
+  3.|-- ae-1.r04.sttlwa01.us.bb.gin.ntt.net           0.0%    10    0.7   0.7   0.6   0.8   0.0
+  4.|-- ae3.sea22.ip4.gtt.net                         0.0%    10    0.4   1.6   0.4   8.9   2.7
+  5.|-- xe-1-2-0.sea23.ip4.gtt.net                    0.0%    10    0.5   1.0   0.5   1.8   0.0
+  6.|-- 204.237.186.33                                0.0%    10    0.7   0.6   0.6   0.8   0.0
+
+rezopole01.ring.nlnog.net | SUCCESS | rc=0 >>
+Start: Fri Aug 19 13:31:10 2016
+HOST: rezopole01.ring.nlnog.net                            Loss%   Snt   Last   Avg  Best  Wrst StDev
+  1.|-- gateway.rezopole.net                                  0.0%    10    0.2   0.3   0.2   0.3   0.0
+  2.|-- asr-l1c-v25.rezopole.net                              0.0%    10    0.4   0.4   0.3   0.5   0.0
+  3.|-- lyonix.ar01.vnx.lasotel.fr                            0.0%    10   17.0  10.1   7.0  17.3   4.8
+  4.|-- cr36-2-2.th2.75.fr.lasotel.net                        0.0%    10   18.1   9.3   7.0  18.1   4.6
+  5.|-- cr26-2-1.brs.75.fr.lasotel.net                        0.0%    10    7.2   7.3   7.2   7.5   0.0
+  6.|-- ix-xe-5-0-1-326.thar1.PV0-Paris.as6453.net            0.0%    10   16.6  16.8  16.4  18.4   0.5
+  7.|-- if-ae-6-4.tcore1.PG1-Paris.as6453.net                 0.0%    10   16.8  16.8  16.6  17.7   0.0
+  8.|-- if-ae-7-2.tcore1.PVU-Paris.as6453.net                 0.0%    10   16.9  16.8  16.7  17.7   0.0
+  9.|-- 80.231.153.218                                        0.0%    10   16.5  16.5  16.4  16.6   0.0
+ 10.|-- a184-25-107-174.deploy.static.akamaitechnologies.com  0.0%    10   16.8  16.8  16.7  16.9   0.0
+
+ripe01.ring.nlnog.net | SUCCESS | rc=0 >>
+Start: Fri Aug 19 13:31:16 2016
+HOST: ripe01.ring.nlnog.net                        Loss%   Snt   Last   Avg  Best  Wrst StDev
+  1.|-- ???                                          100.0    10    0.0   0.0   0.0   0.0   0.0
+  2.|-- gw.transit.telrtr.ripe.net                    0.0%    10    0.9   2.9   0.9  18.4   5.5
+  3.|-- amsix-ams10.netarch.akamai.com                0.0%    10    1.7   1.7   1.5   2.0   0.0
+  4.|-- a95-101-78-130.deploy.akamaitechnologies.com  0.0%    10    1.1   1.2   1.0   1.3   0.0
+
+riseup01.ring.nlnog.net | SUCCESS | rc=0 >>
+Start: Fri Aug 19 13:31:20 2016
+HOST: riseup01.ring.nlnog.net                              Loss%   Snt   Last   Avg  Best  Wrst StDev
+  1.|-- wren.riseup.net                                       0.0%    10    0.5   0.5   0.4   0.6   0.0
+  2.|-- gi0-0-0-5.agr13.sea02.atlas.cogentco.com              0.0%    10   21.0  20.8  20.6  21.0   0.0
+  3.|-- multi-use.cogentco.com                                0.0%    10   20.6  20.7  20.6  20.8   0.0
+  4.|-- be2288.ccr21.sea02.atlas.cogentco.com                 0.0%    10   21.1  21.0  20.6  22.3   0.0
+  5.|-- be-205-pe04.seattle.wa.ibone.comcast.net              0.0%    10    1.8   1.6   1.2   2.5   0.0
+  6.|-- hu-1-2-0-3-cr01.seattle.wa.ibone.comcast.net          0.0%    10    2.5   2.5   1.4   3.4   0.0
+  7.|-- hu-0-10-0-0-pe05.seattle.wa.ibone.comcast.net         0.0%    10    1.2   1.2   1.0   1.3   0.0
+  8.|-- a184-51-159-207.deploy.static.akamaitechnologies.com  0.0%    10    1.1   1.1   0.9   1.2   0.0
+
+rootlu01.ring.nlnog.net | SUCCESS | rc=0 >>
+Start: Fri Aug 19 13:31:27 2016
+HOST: rootlu01.ring.nlnog.net           Loss%   Snt   Last   Avg  Best  Wrst StDev
+  1.|-- 94.242.192.1                       0.0%    10  169.9 111.4   9.5 186.2  67.3
+  2.|-- ip-static-83-243-11-171.server.lu  0.0%    10    0.2   0.2   0.1   0.2   0.0
+
+rundeck | SUCCESS | rc=0 >>
+Start: Fri Aug 19 13:31:51 2016
+HOST: rundeck.core.anuragbhatia.com            Loss%   Snt   Last   Avg  Best  Wrst StDev
+  1.|-- 10.20.70.1                                0.0%    10    0.1   0.1   0.1   0.2   0.0
+  2.|-- gw.giga-dns.com                           0.0%    10    0.4   1.0   0.4   4.1   1.1
+  3.|-- host-93-104-204-33.customer.m-online.net  0.0%    10    7.7   1.3   0.5   7.7   2.2
+  4.|-- ae1.r5.muc7.m-online.net                  0.0%    10    0.8   1.0   0.7   2.1   0.3
+  5.|-- host-62-245-136-17.customer.m-online.net  0.0%    10    0.8   0.8   0.7   1.1   0.0
+
+rnp01.ring.nlnog.net | SUCCESS | rc=0 >>
+Start: Fri Aug 19 13:30:07 2016
+HOST: rnp01.ring.nlnog.net                       Loss%   Snt   Last   Avg  Best  Wrst StDev
+  1.|-- 200.133.192.1                               0.0%    10    0.3   1.1   0.3   6.8   1.9
+  2.|-- 200.133.252.45                              0.0%    10    0.3   0.6   0.3   2.4   0.6
+  3.|-- 200.143.254.213                             0.0%    10    0.3   0.4   0.3   1.1   0.0
+  4.|-- as20940.saopaulo.sp.ix.br                   0.0%    10    2.0   2.1   1.6   4.4   0.7
+  5.|-- a96-6-123-27.deploy.akamaitechnologies.com  0.0%    10    1.2   1.2   1.1   1.5   0.0
+
+rrbone01.ring.nlnog.net | SUCCESS | rc=0 >>
+Start: Fri Aug 19 13:31:42 2016
+HOST: rrbone01.ring.nlnog.net                      Loss%   Snt   Last   Avg  Best  Wrst StDev
+  1.|-- gi-0-1-836.br-dus-01.de.infra.rrbone.net      0.0%    10    1.2   1.2   1.1   1.9   0.0
+  2.|-- akamai.dus.ecix.net                           0.0%    10    0.6   1.2   0.6   6.8   1.9
+  3.|-- a95-101-90-192.deploy.akamaitechnologies.com  0.0%    10    0.5   0.6   0.5   0.8   0.0
+
+robtex01.ring.nlnog.net | SUCCESS | rc=0 >>
+Start: Fri Aug 19 13:31:40 2016
+HOST: robtex01.ring.nlnog.net                             Loss%   Snt   Last   Avg  Best  Wrst StDev
+  1.|-- 192.71.253.1                                         0.0%    10    0.3   0.4   0.3   0.7   0.0
+  2.|-- te0-7-0-5.310.rcr21.iad03.atlas.cogentco.com         0.0%    10    0.9   1.1   0.9   1.4   0.0
+  3.|-- be2954.ccr41.iad02.atlas.cogentco.com                0.0%    10    1.4   1.4   1.2   1.6   0.0
+  4.|-- be2171.ccr41.dca01.atlas.cogentco.com                0.0%    10    1.8   1.8   1.7   2.0   0.0
+  5.|-- be2806.ccr41.jfk02.atlas.cogentco.com                0.0%    10    7.9   8.0   7.9   8.2   0.0
+  6.|-- be2056.ccr21.jfk10.atlas.cogentco.com                0.0%    10    8.6   8.5   8.4   8.8   0.0
+  7.|-- comcast.jfk10.atlas.cogentco.com                     0.0%    10    8.4   8.6   8.4   8.9   0.0
+  8.|-- hu-1-3-0-2-cr02.newyork.ny.ibone.comcast.net         0.0%    10   13.8  12.2   8.8  15.5   2.4
+  9.|-- be-10103-cr02.ashburn.va.ibone.comcast.net           0.0%    10    9.3   9.0   7.9  10.7   0.7
+ 10.|-- hu-0-10-0-5-pe07.ashburn.va.ibone.comcast.net        0.0%    10    7.3   7.5   7.3   7.8   0.0
+ 11.|-- a184-25-157-67.deploy.static.akamaitechnologies.com  0.0%    10    7.5   7.6   7.5   7.7   0.0
+
+sapphire01.ring.nlnog.net | SUCCESS | rc=0 >>
+Start: Fri Aug 19 13:31:48 2016
+HOST: sapphire01.ring.nlnog.net Loss%   Snt   Last   Avg  Best  Wrst StDev
+  1.|-- 195.166.195.251            0.0%    10    0.8   1.7   0.8   3.9   1.1
+  2.|-- 195.166.195.57             0.0%    10    0.1   0.2   0.1   0.2   0.0
+
+sasag01.ring.nlnog.net | SUCCESS | rc=0 >>
+Start: Fri Aug 19 13:31:54 2016
+HOST: sasag01.ring.nlnog.net               Loss%   Snt   Last   Avg  Best  Wrst StDev
+  1.|-- router-xmr-sasag.dist.shinternet.ch   0.0%    10    0.2   1.5   0.2  10.8   3.2
+  2.|-- router-xmr2-sasag.dist.shinternet.ch  0.0%    10    0.3   0.8   0.2   5.4   1.5
+  3.|-- 87.245.64.151                         0.0%    10    0.2   0.7   0.2   5.1   1.4
+
+sbtap01.ring.nlnog.net | SUCCESS | rc=0 >>
+Start: Fri Aug 19 13:31:57 2016
+HOST: sbtap01.ring.nlnog.net                               Loss%   Snt   Last   Avg  Best  Wrst StDev
+  1.|-- ge02-sbtap01-a.as59715.net                            0.0%    10    0.4  18.7   0.2 184.2  58.2
+  2.|-- host9-99-static.97-5-b.business.telecomitalia.it     60.0%    10    0.5   0.5   0.4   0.7   0.0
+  3.|-- host13-121-static.199-31-b.business.telecomitalia.it  0.0%    10    4.0   4.3   4.0   6.3   0.5
+  4.|-- ???                                                  100.0    10    0.0   0.0   0.0   0.0   0.0
+  5.|-- ???                                                  100.0    10    0.0   0.0   0.0   0.0   0.0
+  6.|-- etrunk12.milano50.mil.seabone.net                    70.0%    10   12.8  12.8  12.8  12.8   0.0
+  7.|-- xe8-3-0.roma99.rom.seabone.net                        0.0%    10   68.8  26.2  21.3  68.8  15.0
+  8.|-- 5.178.42.224                                          0.0%    10   21.3  21.4  21.3  21.5   0.0
+
+sargasso01.ring.nlnog.net | SUCCESS | rc=0 >>
+Start: Fri Aug 19 13:32:03 2016
+HOST: sargasso01.ring.nlnog.net                         Loss%   Snt   Last   Avg  Best  Wrst StDev
+  1.|-- vl981.dist01.clbis02.uk.sargasso.net               0.0%    10    1.4   1.9   1.0   2.6   0.3
+  2.|-- gi0-1-999.core01.clbis02.uk.sargasso.net           0.0%    10    0.3   0.3   0.2   0.3   0.0
+  3.|-- gi0-1-996.edge01.clbis02.uk.sargasso.net           0.0%    10    0.4   0.4   0.3   0.8   0.0
+  4.|-- lonap.netarch.akamai.com                           0.0%    10    0.9   0.9   0.8   1.1   0.0
+  5.|-- a23-63-99-48.deploy.static.akamaitechnologies.com  0.0%    10    0.6   0.6   0.5   0.8   0.0
+
+selectel01.ring.nlnog.net | SUCCESS | rc=0 >>
+Start: Fri Aug 19 14:25:44 2016
+HOST: selectel01.ring.nlnog.net                    Loss%   Snt   Last   Avg  Best  Wrst StDev
+  1.|-- 37.200.65.1                                   0.0%    10    0.9   0.9   0.8   1.2   0.0
+  2.|-- 01.msk.net.selectel.ru                        0.0%    10   10.3  12.3  10.2  30.2   6.2
+  3.|-- 02.msk.net.selectel.ru                        0.0%    10   12.4  13.2  12.4  18.1   1.7
+  4.|-- mskix-mow.netarch.akamai.com                  0.0%    10   38.5  16.2  13.4  38.5   7.8
+  5.|-- a88-221-133-38.deploy.akamaitechnologies.com  0.0%    10   17.5  14.2  13.6  17.5   1.2
+
+seltimil01.ring.nlnog.net | SUCCESS | rc=0 >>
+Start: Fri Aug 19 13:32:12 2016
+HOST: seltimil01.ring.nlnog.net               Loss%   Snt   Last   Avg  Best  Wrst StDev
+  1.|-- ip195-205.seltimil.net                   0.0%    10    0.2   0.4   0.2   1.4   0.3
+  2.|-- ip192-161.seltimil.net                   0.0%    10    0.2   0.5   0.2   2.0   0.3
+  3.|-- r5p.as51728.net                          0.0%    10    5.8   6.0   5.8   6.7   0.0
+  4.|-- hls-b2-link.telia.net                    0.0%    10    6.0   6.9   6.0  14.5   2.6
+  5.|-- 80-239-178-41.customer.teliacarrier.com  0.0%    10    6.0   6.0   5.9   6.1   0.0
+
+seeweb01.ring.nlnog.net | SUCCESS | rc=0 >>
+Start: Fri Aug 19 13:32:10 2016
+HOST: seeweb01.ring.nlnog.net        Loss%   Snt   Last   Avg  Best  Wrst StDev
+  1.|-- 85.94.202.9                     0.0%    10    0.3   0.2   0.1   0.3   0.0
+  2.|-- xe-2-0-3-6.spock.mil.seeweb.it  0.0%    10    0.4   0.4   0.3   0.5   0.0
+  3.|-- akamai.mix-it.net               0.0%    10    1.0   1.0   0.8   1.2   0.0
+  4.|-- 2.18.240.200                    0.0%    10    0.4   0.4   0.3   0.5   0.0
+
+sabay01.ring.nlnog.net | SUCCESS | rc=0 >>
+Start: Fri Aug 19 13:31:55 2016
+HOST: sabay01.ring.nlnog.net Loss%   Snt   Last   Avg  Best  Wrst StDev
+  1.|-- 118.67.200.189          0.0%    10    0.4   0.4   0.4   0.6   0.0
+  2.|-- 175.28.2.33             0.0%    10    1.1   1.9   1.0   3.9   0.9
+  3.|-- 175.28.0.101            0.0%    10    1.6   1.7   1.2   3.3   0.5
+  4.|-- 175.28.0.90             0.0%    10    1.7  13.7   1.7 120.2  37.4
+  5.|-- 175.28.3.10             0.0%    10    1.0   0.9   0.8   1.2   0.0
+
+anurag@ansible:~$

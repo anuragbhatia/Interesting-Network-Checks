@@ -1,0 +1,1773 @@
+anurag@ansible:~$ ansible -a 'ping -c5 amy.ns.cloudflare.com' nlring
+nts01.ring.nlnog.net | SUCCESS | rc=0 >>
+PING amy.ns.cloudflare.com (173.245.58.101) 56(84) bytes of data.
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=1 ttl=60 time=1.91 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=2 ttl=60 time=1.97 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=3 ttl=60 time=1.82 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=4 ttl=60 time=1.78 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=5 ttl=60 time=1.98 ms
+
+--- amy.ns.cloudflare.com ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 4004ms
+rtt min/avg/max/mdev = 1.789/1.897/1.987/0.093 ms
+
+noris01.ring.nlnog.net | SUCCESS | rc=0 >>
+PING amy.ns.cloudflare.com (173.245.58.101) 56(84) bytes of data.
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=1 ttl=59 time=3.67 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=2 ttl=59 time=3.64 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=3 ttl=59 time=3.68 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=4 ttl=59 time=3.73 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=5 ttl=59 time=3.67 ms
+
+--- amy.ns.cloudflare.com ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 4005ms
+rtt min/avg/max/mdev = 3.648/3.683/3.734/0.081 ms
+
+nordunet01.ring.nlnog.net | SUCCESS | rc=0 >>
+PING amy.ns.cloudflare.com (173.245.58.101) 56(84) bytes of data.
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=1 ttl=62 time=1.27 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=2 ttl=62 time=1.30 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=3 ttl=62 time=1.32 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=4 ttl=62 time=1.30 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=5 ttl=62 time=1.27 ms
+
+--- amy.ns.cloudflare.com ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 4004ms
+rtt min/avg/max/mdev = 1.274/1.297/1.325/0.049 ms
+
+nodesdirect01.ring.nlnog.net | SUCCESS | rc=0 >>
+PING amy.ns.cloudflare.com (173.245.58.101) 56(84) bytes of data.
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=1 ttl=60 time=6.31 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=2 ttl=60 time=6.28 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=3 ttl=60 time=6.16 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=4 ttl=60 time=6.28 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=5 ttl=60 time=6.27 ms
+
+--- amy.ns.cloudflare.com ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 4004ms
+rtt min/avg/max/mdev = 6.161/6.263/6.318/0.073 ms
+
+nonattached01.ring.nlnog.net | SUCCESS | rc=0 >>
+PING amy.ns.cloudflare.com (173.245.58.101) 56(84) bytes of data.
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=1 ttl=60 time=0.848 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=2 ttl=60 time=0.957 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=3 ttl=60 time=1.01 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=4 ttl=60 time=0.868 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=5 ttl=60 time=0.986 ms
+
+--- amy.ns.cloudflare.com ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 4002ms
+rtt min/avg/max/mdev = 0.848/0.935/1.018/0.071 ms
+
+ntt02.ring.nlnog.net | SUCCESS | rc=0 >>
+PING amy.ns.cloudflare.com (173.245.58.101) 56(84) bytes of data.
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=1 ttl=58 time=0.520 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=2 ttl=58 time=0.467 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=3 ttl=58 time=0.540 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=4 ttl=58 time=0.520 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=5 ttl=58 time=0.516 ms
+
+--- amy.ns.cloudflare.com ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 4003ms
+rtt min/avg/max/mdev = 0.467/0.512/0.540/0.034 ms
+
+nynex01.ring.nlnog.net | SUCCESS | rc=0 >>
+PING amy.ns.cloudflare.com (173.245.58.101) 56(84) bytes of data.
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=1 ttl=59 time=1.17 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=2 ttl=59 time=1.15 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=3 ttl=59 time=1.13 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=4 ttl=59 time=1.15 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=5 ttl=59 time=1.11 ms
+
+--- amy.ns.cloudflare.com ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 4001ms
+rtt min/avg/max/mdev = 1.116/1.146/1.175/0.047 ms
+
+obenetwork01.ring.nlnog.net | SUCCESS | rc=0 >>
+PING amy.ns.cloudflare.com (173.245.58.101) 56(84) bytes of data.
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=1 ttl=62 time=0.835 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=2 ttl=62 time=0.973 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=3 ttl=62 time=0.877 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=4 ttl=62 time=0.923 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=5 ttl=62 time=0.857 ms
+
+--- amy.ns.cloudflare.com ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 4003ms
+rtt min/avg/max/mdev = 0.835/0.893/0.973/0.049 ms
+
+one01.ring.nlnog.net | SUCCESS | rc=0 >>
+PING amy.ns.cloudflare.com (173.245.58.101) 56(84) bytes of data.
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=1 ttl=61 time=0.460 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=2 ttl=61 time=0.451 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=3 ttl=61 time=0.457 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=4 ttl=61 time=0.447 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=5 ttl=61 time=0.460 ms
+
+--- amy.ns.cloudflare.com ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 4003ms
+rtt min/avg/max/mdev = 0.447/0.455/0.460/0.005 ms
+
+ntt01.ring.nlnog.net | SUCCESS | rc=0 >>
+PING amy.ns.cloudflare.com (173.245.58.101) 56(84) bytes of data.
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=1 ttl=59 time=0.968 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=2 ttl=59 time=0.472 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=3 ttl=59 time=0.424 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=4 ttl=59 time=0.444 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=5 ttl=59 time=0.452 ms
+
+--- amy.ns.cloudflare.com ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 4003ms
+rtt min/avg/max/mdev = 0.424/0.552/0.968/0.208 ms
+
+octopuce01.ring.nlnog.net | SUCCESS | rc=0 >>
+PING amy.ns.cloudflare.com (173.245.58.101) 56(84) bytes of data.
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=1 ttl=59 time=1.47 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=2 ttl=59 time=2.36 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=3 ttl=59 time=2.25 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=4 ttl=59 time=2.11 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=5 ttl=59 time=2.25 ms
+
+--- amy.ns.cloudflare.com ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 4003ms
+rtt min/avg/max/mdev = 1.471/2.091/2.368/0.322 ms
+
+onet01.ring.nlnog.net | SUCCESS | rc=0 >>
+PING amy.ns.cloudflare.com (173.245.58.101) 56(84) bytes of data.
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=1 ttl=62 time=5.47 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=2 ttl=62 time=5.66 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=3 ttl=62 time=5.67 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=4 ttl=62 time=5.62 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=5 ttl=62 time=5.88 ms
+
+--- amy.ns.cloudflare.com ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 4003ms
+rtt min/avg/max/mdev = 5.479/5.666/5.883/0.145 ms
+
+occaid01.ring.nlnog.net | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Failed to connect to the host via ssh.",
+    "unreachable": true
+}
+onlinesas01.ring.nlnog.net | SUCCESS | rc=0 >>
+PING amy.ns.cloudflare.com (173.245.58.101) 56(84) bytes of data.
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=1 ttl=60 time=1.28 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=2 ttl=60 time=1.62 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=3 ttl=60 time=1.15 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=4 ttl=60 time=1.15 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=5 ttl=60 time=1.06 ms
+
+--- amy.ns.cloudflare.com ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 4003ms
+rtt min/avg/max/mdev = 1.068/1.255/1.621/0.199 ms
+
+onet02.ring.nlnog.net | SUCCESS | rc=0 >>
+PING amy.ns.cloudflare.com (173.245.58.101) 56(84) bytes of data.
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=1 ttl=60 time=5.84 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=2 ttl=60 time=5.98 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=3 ttl=60 time=5.91 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=4 ttl=60 time=5.89 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=5 ttl=60 time=5.94 ms
+
+--- amy.ns.cloudflare.com ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 4001ms
+rtt min/avg/max/mdev = 5.847/5.915/5.985/0.067 ms
+
+openimp01.ring.nlnog.net | SUCCESS | rc=0 >>
+PING amy.ns.cloudflare.com (173.245.58.101) 56(84) bytes of data.
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=1 ttl=61 time=1.52 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=2 ttl=61 time=1.47 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=3 ttl=61 time=1.47 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=4 ttl=61 time=1.40 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=5 ttl=61 time=1.45 ms
+
+--- amy.ns.cloudflare.com ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 4002ms
+rtt min/avg/max/mdev = 1.401/1.467/1.525/0.046 ms
+
+openit01.ring.nlnog.net | SUCCESS | rc=0 >>
+PING amy.ns.cloudflare.com (173.245.58.101) 56(84) bytes of data.
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=1 ttl=61 time=0.297 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=2 ttl=61 time=0.402 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=3 ttl=61 time=0.347 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=4 ttl=61 time=0.580 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=5 ttl=61 time=0.353 ms
+
+--- amy.ns.cloudflare.com ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 4003ms
+rtt min/avg/max/mdev = 0.297/0.395/0.580/0.101 ms
+
+openminds01.ring.nlnog.net | SUCCESS | rc=0 >>
+PING amy.ns.cloudflare.com (173.245.58.101) 56(84) bytes of data.
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=1 ttl=58 time=2.47 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=2 ttl=58 time=2.49 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=3 ttl=58 time=2.48 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=4 ttl=58 time=2.53 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=5 ttl=58 time=2.46 ms
+
+--- amy.ns.cloudflare.com ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 4003ms
+rtt min/avg/max/mdev = 2.461/2.490/2.536/0.040 ms
+
+ovh02.ring.nlnog.net | SUCCESS | rc=0 >>
+PING amy.ns.cloudflare.com (173.245.58.101) 56(84) bytes of data.
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=1 ttl=56 time=6.08 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=2 ttl=56 time=6.04 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=3 ttl=56 time=6.35 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=4 ttl=56 time=6.15 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=5 ttl=56 time=6.22 ms
+
+--- amy.ns.cloudflare.com ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 4658ms
+rtt min/avg/max/mdev = 6.040/6.171/6.355/0.140 ms
+
+ovh01.ring.nlnog.net | SUCCESS | rc=0 >>
+PING amy.ns.cloudflare.com (173.245.58.101) 56(84) bytes of data.
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=1 ttl=60 time=5.03 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=2 ttl=60 time=4.97 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=3 ttl=60 time=4.84 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=4 ttl=60 time=4.94 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=5 ttl=60 time=4.92 ms
+
+--- amy.ns.cloudflare.com ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 4003ms
+rtt min/avg/max/mdev = 4.846/4.945/5.037/0.108 ms
+
+patientsky01.ring.nlnog.net | SUCCESS | rc=0 >>
+PING amy.ns.cloudflare.com (173.245.58.101) 56(84) bytes of data.
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=1 ttl=59 time=0.944 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=2 ttl=59 time=1.00 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=3 ttl=59 time=1.02 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=4 ttl=59 time=1.10 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=5 ttl=59 time=0.959 ms
+
+--- amy.ns.cloudflare.com ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 4006ms
+rtt min/avg/max/mdev = 0.944/1.008/1.108/0.070 ms
+
+pcextreme01.ring.nlnog.net | SUCCESS | rc=0 >>
+PING amy.ns.cloudflare.com (173.245.58.101) 56(84) bytes of data.
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=1 ttl=61 time=1.04 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=2 ttl=61 time=1.06 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=3 ttl=61 time=1.14 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=4 ttl=61 time=1.14 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=5 ttl=61 time=1.09 ms
+
+--- amy.ns.cloudflare.com ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 3997ms
+rtt min/avg/max/mdev = 1.049/1.100/1.149/0.045 ms
+
+pcextreme02.ring.nlnog.net | SUCCESS | rc=0 >>
+PING amy.ns.cloudflare.com (173.245.58.101) 56(84) bytes of data.
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=1 ttl=61 time=0.624 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=2 ttl=61 time=0.711 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=3 ttl=61 time=0.694 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=4 ttl=61 time=0.667 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=5 ttl=61 time=0.708 ms
+
+--- amy.ns.cloudflare.com ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 4004ms
+rtt min/avg/max/mdev = 0.624/0.680/0.711/0.046 ms
+
+ovh03.ring.nlnog.net | SUCCESS | rc=0 >>
+PING amy.ns.cloudflare.com (173.245.58.101) 56(84) bytes of data.
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=1 ttl=54 time=10.1 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=2 ttl=54 time=10.1 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=3 ttl=54 time=11.7 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=4 ttl=54 time=10.1 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=5 ttl=54 time=10.1 ms
+
+--- amy.ns.cloudflare.com ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 7896ms
+rtt min/avg/max/mdev = 10.161/10.492/11.765/0.642 ms
+
+pbwcomm01.ring.nlnog.net | SUCCESS | rc=0 >>
+PING amy.ns.cloudflare.com (173.245.58.101) 56(84) bytes of data.
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=1 ttl=62 time=2.70 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=2 ttl=62 time=2.75 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=3 ttl=62 time=2.73 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=4 ttl=62 time=2.69 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=5 ttl=62 time=2.71 ms
+
+--- amy.ns.cloudflare.com ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 4004ms
+rtt min/avg/max/mdev = 2.692/2.720/2.756/0.040 ms
+
+pcextreme03.ring.nlnog.net | SUCCESS | rc=0 >>
+PING amy.ns.cloudflare.com (173.245.58.101) 56(84) bytes of data.
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=1 ttl=61 time=0.768 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=2 ttl=61 time=0.747 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=3 ttl=61 time=0.741 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=4 ttl=61 time=0.721 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=5 ttl=61 time=0.755 ms
+
+--- amy.ns.cloudflare.com ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 4007ms
+rtt min/avg/max/mdev = 0.721/0.746/0.768/0.029 ms
+
+pcextreme05.ring.nlnog.net | SUCCESS | rc=0 >>
+PING amy.ns.cloudflare.com (173.245.58.101) 56(84) bytes of data.
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=1 ttl=61 time=0.594 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=2 ttl=61 time=0.585 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=3 ttl=61 time=0.692 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=4 ttl=61 time=0.644 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=5 ttl=61 time=0.629 ms
+
+--- amy.ns.cloudflare.com ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 4003ms
+rtt min/avg/max/mdev = 0.585/0.628/0.692/0.049 ms
+
+pcextreme04.ring.nlnog.net | SUCCESS | rc=0 >>
+PING amy.ns.cloudflare.com (173.245.58.101) 56(84) bytes of data.
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=1 ttl=61 time=1.26 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=2 ttl=61 time=1.41 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=3 ttl=61 time=1.43 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=4 ttl=61 time=1.36 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=5 ttl=61 time=1.33 ms
+
+--- amy.ns.cloudflare.com ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 3998ms
+rtt min/avg/max/mdev = 1.267/1.363/1.435/0.076 ms
+
+pcextreme06.ring.nlnog.net | SUCCESS | rc=0 >>
+PING amy.ns.cloudflare.com (173.245.58.101) 56(84) bytes of data.
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=1 ttl=61 time=0.979 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=2 ttl=61 time=0.811 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=3 ttl=61 time=0.701 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=4 ttl=61 time=0.843 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=5 ttl=61 time=0.790 ms
+
+--- amy.ns.cloudflare.com ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 4007ms
+rtt min/avg/max/mdev = 0.701/0.824/0.979/0.097 ms
+
+peakten01.ring.nlnog.net | SUCCESS | rc=0 >>
+PING amy.ns.cloudflare.com (173.245.58.101) 56(84) bytes of data.
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=1 ttl=57 time=6.38 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=2 ttl=57 time=6.47 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=3 ttl=57 time=6.45 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=4 ttl=57 time=6.37 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=5 ttl=57 time=6.52 ms
+
+--- amy.ns.cloudflare.com ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 3999ms
+rtt min/avg/max/mdev = 6.373/6.441/6.525/0.116 ms
+
+peakten02.ring.nlnog.net | SUCCESS | rc=0 >>
+PING amy.ns.cloudflare.com (173.245.58.101) 56(84) bytes of data.
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=1 ttl=57 time=14.5 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=2 ttl=57 time=14.5 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=3 ttl=57 time=14.6 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=4 ttl=57 time=14.5 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=5 ttl=57 time=14.5 ms
+
+--- amy.ns.cloudflare.com ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 3998ms
+rtt min/avg/max/mdev = 14.551/14.584/14.637/0.135 ms
+
+peakten03.ring.nlnog.net | SUCCESS | rc=0 >>
+PING amy.ns.cloudflare.com (173.245.58.101) 56(84) bytes of data.
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=1 ttl=57 time=20.7 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=2 ttl=57 time=20.7 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=3 ttl=57 time=20.8 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=4 ttl=57 time=20.7 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=5 ttl=57 time=20.8 ms
+
+--- amy.ns.cloudflare.com ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 4004ms
+rtt min/avg/max/mdev = 20.756/20.786/20.831/0.096 ms
+
+ovh04.ring.nlnog.net | SUCCESS | rc=0 >>
+PING amy.ns.cloudflare.com (173.245.58.101) 56(84) bytes of data.
+64 bytes from 173.245.58.101: icmp_req=1 ttl=55 time=16.7 ms
+64 bytes from 173.245.58.101: icmp_req=2 ttl=55 time=17.3 ms
+64 bytes from 173.245.58.101: icmp_req=3 ttl=55 time=18.0 ms
+64 bytes from 173.245.58.101: icmp_req=4 ttl=55 time=16.6 ms
+64 bytes from 173.245.58.101: icmp_req=5 ttl=55 time=16.7 ms
+
+--- amy.ns.cloudflare.com ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 27930ms
+rtt min/avg/max/mdev = 16.674/17.138/18.082/0.555 ms
+
+peakten04.ring.nlnog.net | SUCCESS | rc=0 >>
+PING amy.ns.cloudflare.com (173.245.58.101) 56(84) bytes of data.
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=1 ttl=57 time=16.0 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=2 ttl=57 time=16.1 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=3 ttl=57 time=16.0 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=4 ttl=57 time=16.0 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=5 ttl=57 time=16.0 ms
+
+--- amy.ns.cloudflare.com ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 4002ms
+rtt min/avg/max/mdev = 16.028/16.075/16.157/0.166 ms
+
+plurimedia01.ring.nlnog.net | SUCCESS | rc=0 >>
+PING amy.ns.cloudflare.com (173.245.58.101) 56(84) bytes of data.
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=1 ttl=61 time=6.46 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=2 ttl=61 time=6.45 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=3 ttl=61 time=6.44 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=4 ttl=61 time=6.46 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=5 ttl=61 time=6.48 ms
+
+--- amy.ns.cloudflare.com ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 4006ms
+rtt min/avg/max/mdev = 6.448/6.461/6.482/0.102 ms
+
+plutex01.ring.nlnog.net | SUCCESS | rc=0 >>
+PING amy.ns.cloudflare.com (173.245.58.101) 56(84) bytes of data.
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=1 ttl=59 time=2.43 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=2 ttl=59 time=9.54 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=3 ttl=59 time=2.27 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=4 ttl=59 time=2.38 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=5 ttl=59 time=2.40 ms
+
+--- amy.ns.cloudflare.com ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 4003ms
+rtt min/avg/max/mdev = 2.270/3.808/9.540/2.866 ms
+
+pix01.ring.nlnog.net | SUCCESS | rc=0 >>
+PING amy.ns.cloudflare.com (173.245.58.101) 56(84) bytes of data.
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=1 ttl=55 time=140 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=2 ttl=55 time=177 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=3 ttl=55 time=133 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=4 ttl=55 time=163 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=5 ttl=55 time=175 ms
+
+--- amy.ns.cloudflare.com ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 4366ms
+rtt min/avg/max/mdev = 133.378/158.199/177.603/18.099 ms
+
+portlane01.ring.nlnog.net | SUCCESS | rc=0 >>
+PING amy.ns.cloudflare.com (173.245.58.101) 56(84) bytes of data.
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=1 ttl=60 time=0.846 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=2 ttl=60 time=0.819 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=3 ttl=60 time=0.884 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=4 ttl=60 time=0.809 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=5 ttl=60 time=0.808 ms
+
+--- amy.ns.cloudflare.com ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 4005ms
+rtt min/avg/max/mdev = 0.808/0.833/0.884/0.034 ms
+
+poznan01.ring.nlnog.net | SUCCESS | rc=0 >>
+PING amy.ns.cloudflare.com (173.245.58.101) 56(84) bytes of data.
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=1 ttl=58 time=20.5 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=2 ttl=58 time=20.5 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=3 ttl=58 time=20.5 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=4 ttl=58 time=20.5 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=5 ttl=58 time=20.9 ms
+
+--- amy.ns.cloudflare.com ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 4004ms
+rtt min/avg/max/mdev = 20.565/20.645/20.911/0.184 ms
+
+poppr01.ring.nlnog.net | SUCCESS | rc=0 >>
+PING amy.ns.cloudflare.com (173.245.58.101) 56(84) bytes of data.
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=1 ttl=59 time=8.20 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=2 ttl=59 time=8.07 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=3 ttl=59 time=8.11 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=4 ttl=59 time=8.07 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=5 ttl=59 time=8.05 ms
+
+--- amy.ns.cloudflare.com ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 4003ms
+rtt min/avg/max/mdev = 8.058/8.104/8.206/0.096 ms
+
+phusion01.ring.nlnog.net | SUCCESS | rc=0 >>
+PING amy.ns.cloudflare.com (173.245.58.101) 56(84) bytes of data.
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=1 ttl=61 time=10.1 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=2 ttl=61 time=9.88 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=3 ttl=61 time=9.85 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=4 ttl=61 time=9.94 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=5 ttl=61 time=9.88 ms
+
+--- amy.ns.cloudflare.com ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 7672ms
+rtt min/avg/max/mdev = 9.856/9.942/10.146/0.138 ms
+
+public01.infra.ring.nlnog.net | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Failed to connect to the host via ssh.",
+    "unreachable": true
+}
+public02.infra.ring.nlnog.net | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Failed to connect to the host via ssh.",
+    "unreachable": true
+}
+previder01.ring.nlnog.net | SUCCESS | rc=0 >>
+PING amy.ns.cloudflare.com (173.245.58.101) 56(84) bytes of data.
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=1 ttl=59 time=2.70 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=2 ttl=59 time=2.81 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=3 ttl=59 time=2.63 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=4 ttl=59 time=2.69 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=5 ttl=59 time=2.72 ms
+
+--- amy.ns.cloudflare.com ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 4003ms
+rtt min/avg/max/mdev = 2.635/2.714/2.816/0.088 ms
+
+popsc01.ring.nlnog.net | SUCCESS | rc=0 >>
+PING amy.ns.cloudflare.com (173.245.58.101) 56(84) bytes of data.
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=1 ttl=59 time=13.6 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=2 ttl=59 time=13.7 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=3 ttl=59 time=13.7 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=4 ttl=59 time=13.7 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=5 ttl=59 time=13.6 ms
+
+--- amy.ns.cloudflare.com ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 4000ms
+rtt min/avg/max/mdev = 13.676/13.701/13.717/0.105 ms
+
+prolocation01.ring.nlnog.net | SUCCESS | rc=0 >>
+PING amy.ns.cloudflare.com (173.245.58.101) 56(84) bytes of data.
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=1 ttl=61 time=0.769 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=2 ttl=61 time=0.946 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=3 ttl=61 time=0.801 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=4 ttl=61 time=0.795 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=5 ttl=61 time=0.932 ms
+
+--- amy.ns.cloudflare.com ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 4006ms
+rtt min/avg/max/mdev = 0.769/0.848/0.946/0.081 ms
+
+proserve01.ring.nlnog.net | SUCCESS | rc=0 >>
+PING amy.ns.cloudflare.com (173.245.58.101) 56(84) bytes of data.
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=1 ttl=60 time=2.29 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=2 ttl=60 time=2.47 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=3 ttl=60 time=2.28 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=4 ttl=60 time=2.42 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=5 ttl=60 time=2.58 ms
+
+--- amy.ns.cloudflare.com ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 4003ms
+rtt min/avg/max/mdev = 2.285/2.414/2.588/0.113 ms
+
+qbranch01.ring.nlnog.net | SUCCESS | rc=0 >>
+PING amy.ns.cloudflare.com (173.245.58.101) 56(84) bytes of data.
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=1 ttl=58 time=0.956 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=2 ttl=58 time=0.937 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=3 ttl=58 time=0.954 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=4 ttl=58 time=0.951 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=5 ttl=58 time=0.951 ms
+
+--- amy.ns.cloudflare.com ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 4005ms
+rtt min/avg/max/mdev = 0.937/0.949/0.956/0.039 ms
+
+qcom01.ring.nlnog.net | SUCCESS | rc=0 >>
+PING amy.ns.cloudflare.com (173.245.58.101) 56(84) bytes of data.
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=1 ttl=61 time=2.10 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=2 ttl=61 time=1.89 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=3 ttl=61 time=1.95 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=4 ttl=61 time=1.91 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=5 ttl=61 time=1.82 ms
+
+--- amy.ns.cloudflare.com ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 4004ms
+rtt min/avg/max/mdev = 1.822/1.935/2.102/0.105 ms
+
+quanza01.ring.nlnog.net | SUCCESS | rc=0 >>
+PING amy.ns.cloudflare.com (173.245.58.101) 56(84) bytes of data.
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=1 ttl=59 time=1.04 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=2 ttl=59 time=1.07 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=3 ttl=59 time=1.02 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=4 ttl=59 time=0.816 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=5 ttl=59 time=1.10 ms
+
+--- amy.ns.cloudflare.com ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 4005ms
+rtt min/avg/max/mdev = 0.816/1.014/1.104/0.102 ms
+
+quadranet01.ring.nlnog.net | SUCCESS | rc=0 >>
+PING amy.ns.cloudflare.com (173.245.58.101) 56(84) bytes of data.
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=1 ttl=57 time=12.1 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=2 ttl=57 time=12.1 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=3 ttl=57 time=12.1 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=4 ttl=57 time=12.1 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=5 ttl=57 time=12.1 ms
+
+--- amy.ns.cloudflare.com ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 4004ms
+rtt min/avg/max/mdev = 12.170/12.177/12.182/0.069 ms
+
+rackfish01.ring.nlnog.net | SUCCESS | rc=0 >>
+PING amy.ns.cloudflare.com (173.245.58.101) 56(84) bytes of data.
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=1 ttl=59 time=1.35 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=2 ttl=59 time=1.46 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=3 ttl=59 time=1.39 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=4 ttl=59 time=1.38 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=5 ttl=59 time=1.41 ms
+
+--- amy.ns.cloudflare.com ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 4002ms
+rtt min/avg/max/mdev = 1.355/1.401/1.461/0.035 ms
+
+queryfoundry01.ring.nlnog.net | SUCCESS | rc=0 >>
+PING amy.ns.cloudflare.com (173.245.58.101) 56(84) bytes of data.
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=1 ttl=58 time=0.904 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=2 ttl=58 time=0.669 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=3 ttl=58 time=1.10 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=4 ttl=58 time=0.625 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=5 ttl=58 time=12.4 ms
+
+--- amy.ns.cloudflare.com ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 4003ms
+rtt min/avg/max/mdev = 0.625/3.159/12.496/4.671 ms
+
+rackcentral01.ring.nlnog.net | SUCCESS | rc=0 >>
+PING amy.ns.cloudflare.com (173.245.58.101) 56(84) bytes of data.
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=1 ttl=61 time=0.444 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=2 ttl=61 time=0.462 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=3 ttl=61 time=0.593 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=4 ttl=61 time=0.400 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=5 ttl=61 time=0.555 ms
+
+--- amy.ns.cloudflare.com ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 4001ms
+rtt min/avg/max/mdev = 0.400/0.490/0.593/0.077 ms
+
+rackcentral02.ring.nlnog.net | SUCCESS | rc=0 >>
+PING amy.ns.cloudflare.com (173.245.58.101) 56(84) bytes of data.
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=1 ttl=61 time=11.4 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=2 ttl=61 time=11.5 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=3 ttl=61 time=11.5 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=4 ttl=61 time=11.4 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=5 ttl=61 time=11.4 ms
+
+--- amy.ns.cloudflare.com ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 4003ms
+rtt min/avg/max/mdev = 11.423/11.482/11.572/0.110 ms
+
+redpilllinpro01.ring.nlnog.net | SUCCESS | rc=0 >>
+PING amy.ns.cloudflare.com (173.245.58.101) 56(84) bytes of data.
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=1 ttl=57 time=7.59 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=2 ttl=57 time=7.46 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=3 ttl=57 time=7.48 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=4 ttl=57 time=7.47 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=5 ttl=57 time=7.44 ms
+
+--- amy.ns.cloudflare.com ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 4002ms
+rtt min/avg/max/mdev = 7.444/7.492/7.599/0.109 ms
+
+rcsrds01.ring.nlnog.net | SUCCESS | rc=0 >>
+PING amy.ns.cloudflare.com (173.245.58.101) 56(84) bytes of data.
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=1 ttl=60 time=29.0 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=2 ttl=60 time=29.0 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=3 ttl=60 time=28.9 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=4 ttl=60 time=29.1 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=5 ttl=60 time=28.9 ms
+
+--- amy.ns.cloudflare.com ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 4003ms
+rtt min/avg/max/mdev = 28.990/29.028/29.132/0.161 ms
+
+redpilllinpro02.ring.nlnog.net | SUCCESS | rc=0 >>
+PING amy.ns.cloudflare.com (173.245.58.101) 56(84) bytes of data.
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=1 ttl=57 time=7.90 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=2 ttl=57 time=7.54 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=3 ttl=57 time=7.57 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=4 ttl=57 time=7.60 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=5 ttl=57 time=7.57 ms
+
+--- amy.ns.cloudflare.com ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 4003ms
+rtt min/avg/max/mdev = 7.544/7.639/7.900/0.142 ms
+
+redpilllinpro03.ring.nlnog.net | SUCCESS | rc=0 >>
+PING amy.ns.cloudflare.com (173.245.58.101) 56(84) bytes of data.
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=1 ttl=57 time=5.73 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=2 ttl=57 time=5.55 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=3 ttl=57 time=5.60 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=4 ttl=57 time=5.75 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=5 ttl=57 time=5.54 ms
+
+--- amy.ns.cloudflare.com ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 4127ms
+rtt min/avg/max/mdev = 5.542/5.638/5.755/0.101 ms
+
+rezopole01.ring.nlnog.net | SUCCESS | rc=0 >>
+PING amy.ns.cloudflare.com (173.245.58.101) 56(84) bytes of data.
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=1 ttl=49 time=19.6 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=2 ttl=49 time=19.5 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=3 ttl=49 time=19.6 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=4 ttl=49 time=19.5 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=5 ttl=49 time=19.6 ms
+
+--- amy.ns.cloudflare.com ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 4387ms
+rtt min/avg/max/mdev = 19.543/19.605/19.665/0.046 ms
+
+rgnet01.ring.nlnog.net | SUCCESS | rc=0 >>
+PING amy.ns.cloudflare.com (173.245.58.101) 56(84) bytes of data.
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=1 ttl=59 time=0.437 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=2 ttl=59 time=0.473 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=3 ttl=59 time=0.523 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=4 ttl=59 time=0.459 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=5 ttl=59 time=0.483 ms
+
+--- amy.ns.cloudflare.com ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 4005ms
+rtt min/avg/max/mdev = 0.437/0.475/0.523/0.028 ms
+
+ripe01.ring.nlnog.net | SUCCESS | rc=0 >>
+PING amy.ns.cloudflare.com (173.245.58.101) 56(84) bytes of data.
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=1 ttl=61 time=1.94 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=2 ttl=61 time=1.83 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=3 ttl=61 time=1.91 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=4 ttl=61 time=1.71 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=5 ttl=61 time=1.79 ms
+
+--- amy.ns.cloudflare.com ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 4002ms
+rtt min/avg/max/mdev = 1.711/1.839/1.943/0.087 ms
+
+riseup01.ring.nlnog.net | SUCCESS | rc=0 >>
+PING amy.ns.cloudflare.com (173.245.58.101) 56(84) bytes of data.
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=1 ttl=55 time=0.715 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=2 ttl=55 time=0.729 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=3 ttl=55 time=0.660 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=4 ttl=55 time=0.691 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=5 ttl=55 time=0.496 ms
+
+--- amy.ns.cloudflare.com ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 4002ms
+rtt min/avg/max/mdev = 0.496/0.658/0.729/0.085 ms
+
+rrbone01.ring.nlnog.net | SUCCESS | rc=0 >>
+PING amy.ns.cloudflare.com (173.245.58.101) 56(84) bytes of data.
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=1 ttl=62 time=0.584 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=2 ttl=62 time=0.519 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=3 ttl=62 time=0.547 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=4 ttl=62 time=0.541 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=5 ttl=62 time=0.559 ms
+
+--- amy.ns.cloudflare.com ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 4005ms
+rtt min/avg/max/mdev = 0.519/0.550/0.584/0.021 ms
+
+rootlu01.ring.nlnog.net | SUCCESS | rc=0 >>
+PING amy.ns.cloudflare.com (173.245.58.101) 56(84) bytes of data.
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=1 ttl=58 time=7.63 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=2 ttl=58 time=7.72 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=3 ttl=58 time=7.62 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=4 ttl=58 time=7.55 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=5 ttl=58 time=7.62 ms
+
+--- amy.ns.cloudflare.com ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 4003ms
+rtt min/avg/max/mdev = 7.555/7.632/7.722/0.076 ms
+
+rundeck | SUCCESS | rc=0 >>
+PING amy.ns.cloudflare.com (173.245.58.101) 56(84) bytes of data.
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_seq=1 ttl=59 time=7.29 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_seq=2 ttl=59 time=7.02 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_seq=3 ttl=59 time=7.15 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_seq=4 ttl=59 time=7.05 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_seq=5 ttl=59 time=7.13 ms
+
+--- amy.ns.cloudflare.com ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 4004ms
+rtt min/avg/max/mdev = 7.026/7.131/7.299/0.133 ms
+
+sargasso01.ring.nlnog.net | SUCCESS | rc=0 >>
+PING amy.ns.cloudflare.com (173.245.58.101) 56(84) bytes of data.
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=1 ttl=59 time=0.730 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=2 ttl=59 time=0.653 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=3 ttl=59 time=1.03 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=4 ttl=59 time=0.711 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=5 ttl=59 time=0.746 ms
+
+--- amy.ns.cloudflare.com ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 4005ms
+rtt min/avg/max/mdev = 0.653/0.775/1.036/0.135 ms
+
+sapphire01.ring.nlnog.net | SUCCESS | rc=0 >>
+PING amy.ns.cloudflare.com (173.245.58.101) 56(84) bytes of data.
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=1 ttl=59 time=36.4 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=2 ttl=59 time=36.5 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=3 ttl=59 time=36.5 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=4 ttl=59 time=36.5 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=5 ttl=59 time=36.5 ms
+
+--- amy.ns.cloudflare.com ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 4004ms
+rtt min/avg/max/mdev = 36.498/36.541/36.570/0.243 ms
+
+robtex01.ring.nlnog.net | SUCCESS | rc=0 >>
+PING amy.ns.cloudflare.com (173.245.58.101) 56(84) bytes of data.
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=1 ttl=60 time=0.710 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=2 ttl=60 time=0.649 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=3 ttl=60 time=0.705 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=4 ttl=60 time=0.694 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=5 ttl=60 time=0.708 ms
+
+--- amy.ns.cloudflare.com ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 5547ms
+rtt min/avg/max/mdev = 0.649/0.693/0.710/0.028 ms
+
+sasag01.ring.nlnog.net | SUCCESS | rc=0 >>
+PING amy.ns.cloudflare.com (173.245.58.101) 56(84) bytes of data.
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=1 ttl=61 time=6.72 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=2 ttl=61 time=6.70 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=3 ttl=61 time=6.70 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=4 ttl=61 time=6.71 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=5 ttl=61 time=6.69 ms
+
+--- amy.ns.cloudflare.com ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 4003ms
+rtt min/avg/max/mdev = 6.698/6.712/6.729/0.074 ms
+
+rnp01.ring.nlnog.net | SUCCESS | rc=0 >>
+PING amy.ns.cloudflare.com (173.245.58.101) 56(84) bytes of data.
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=1 ttl=60 time=1.15 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=2 ttl=60 time=1.28 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=3 ttl=60 time=1.13 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=4 ttl=60 time=1.12 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=5 ttl=60 time=1.11 ms
+
+--- amy.ns.cloudflare.com ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 7558ms
+rtt min/avg/max/mdev = 1.113/1.160/1.281/0.068 ms
+
+sabay01.ring.nlnog.net | SUCCESS | rc=0 >>
+PING amy.ns.cloudflare.com (173.245.58.101) 56(84) bytes of data.
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=1 ttl=57 time=46.4 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=2 ttl=57 time=45.9 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=3 ttl=57 time=46.0 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=4 ttl=57 time=45.2 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=5 ttl=57 time=45.0 ms
+
+--- amy.ns.cloudflare.com ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 4318ms
+rtt min/avg/max/mdev = 45.015/45.749/46.464/0.598 ms
+
+seeweb01.ring.nlnog.net | SUCCESS | rc=0 >>
+PING amy.ns.cloudflare.com (173.245.58.101) 56(84) bytes of data.
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=1 ttl=61 time=0.439 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=2 ttl=61 time=0.355 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=3 ttl=61 time=0.371 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=4 ttl=61 time=0.342 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=5 ttl=61 time=0.411 ms
+
+--- amy.ns.cloudflare.com ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 4007ms
+rtt min/avg/max/mdev = 0.342/0.383/0.439/0.042 ms
+
+sbtap01.ring.nlnog.net | SUCCESS | rc=0 >>
+PING amy.ns.cloudflare.com (173.245.58.101) 56(84) bytes of data.
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=1 ttl=60 time=10.4 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=2 ttl=60 time=10.4 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=3 ttl=60 time=12.7 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=4 ttl=60 time=10.7 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=5 ttl=60 time=10.5 ms
+
+--- amy.ns.cloudflare.com ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 4001ms
+rtt min/avg/max/mdev = 10.460/10.974/12.702/0.871 ms
+
+selectel01.ring.nlnog.net | SUCCESS | rc=0 >>
+PING amy.ns.cloudflare.com (173.245.58.101) 56(84) bytes of data.
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=1 ttl=62 time=8.78 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=2 ttl=62 time=8.73 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=3 ttl=62 time=8.72 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=4 ttl=62 time=8.79 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=5 ttl=62 time=9.22 ms
+
+--- amy.ns.cloudflare.com ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 4004ms
+rtt min/avg/max/mdev = 8.729/8.853/9.220/0.203 ms
+
+seltimil01.ring.nlnog.net | SUCCESS | rc=0 >>
+PING amy.ns.cloudflare.com (173.245.58.101) 56(84) bytes of data.
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=1 ttl=57 time=12.8 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=2 ttl=57 time=12.8 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=3 ttl=57 time=12.9 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=4 ttl=57 time=12.9 ms
+64 bytes from amy.ns.cloudflare.com (173.245.58.101): icmp_req=5 ttl=57 time=13.6 ms
+
+--- amy.ns.cloudflare.com ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 4005ms
+rtt min/avg/max/mdev = 12.847/13.054/13.658/0.305 ms
+
+anurag@ansible:~$
+anurag@ansible:~$
+anurag@ansible:~$
+anurag@ansible:~$
+anurag@ansible:~$
+anurag@ansible:~$
+anurag@ansible:~$ ansible -a 'ping -c5 www.rediff.com' nlring
+noris01.ring.nlnog.net | SUCCESS | rc=0 >>
+PING a1586.w3.akamai.net (2.21.80.72) 56(84) bytes of data.
+64 bytes from 2.21.80.72: icmp_req=1 ttl=58 time=2.91 ms
+64 bytes from 2.21.80.72: icmp_req=2 ttl=58 time=3.03 ms
+64 bytes from 2.21.80.72: icmp_req=3 ttl=58 time=2.91 ms
+64 bytes from 2.21.80.72: icmp_req=4 ttl=58 time=2.96 ms
+64 bytes from 2.21.80.72: icmp_req=5 ttl=58 time=2.92 ms
+
+--- a1586.w3.akamai.net ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 4005ms
+rtt min/avg/max/mdev = 2.911/2.950/3.035/0.046 ms
+
+nts01.ring.nlnog.net | SUCCESS | rc=0 >>
+PING a1586.w3.akamai.net (217.146.165.144) 56(84) bytes of data.
+64 bytes from 217.146.165.144: icmp_req=1 ttl=61 time=1.72 ms
+64 bytes from 217.146.165.144: icmp_req=2 ttl=61 time=1.67 ms
+64 bytes from 217.146.165.144: icmp_req=3 ttl=61 time=2.14 ms
+64 bytes from 217.146.165.144: icmp_req=4 ttl=61 time=2.88 ms
+64 bytes from 217.146.165.144: icmp_req=5 ttl=61 time=1.75 ms
+
+--- a1586.w3.akamai.net ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 4005ms
+rtt min/avg/max/mdev = 1.671/2.036/2.889/0.460 ms
+
+nordunet01.ring.nlnog.net | SUCCESS | rc=0 >>
+PING a1586.w3.akamai.net (95.101.142.146) 56(84) bytes of data.
+64 bytes from a95-101-142-146.deploy.akamaitechnologies.com (95.101.142.146): icmp_req=1 ttl=61 time=0.884 ms
+64 bytes from a95-101-142-146.deploy.akamaitechnologies.com (95.101.142.146): icmp_req=2 ttl=61 time=0.884 ms
+64 bytes from a95-101-142-146.deploy.akamaitechnologies.com (95.101.142.146): icmp_req=3 ttl=61 time=0.868 ms
+64 bytes from a95-101-142-146.deploy.akamaitechnologies.com (95.101.142.146): icmp_req=4 ttl=61 time=0.883 ms
+64 bytes from a95-101-142-146.deploy.akamaitechnologies.com (95.101.142.146): icmp_req=5 ttl=61 time=0.904 ms
+
+--- a1586.w3.akamai.net ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 4005ms
+rtt min/avg/max/mdev = 0.868/0.884/0.904/0.034 ms
+
+nonattached01.ring.nlnog.net | SUCCESS | rc=0 >>
+PING a1586.w3.akamai.net (2.16.106.184) 56(84) bytes of data.
+64 bytes from a2-16-106-184.deploy.akamaitechnologies.com (2.16.106.184): icmp_req=1 ttl=59 time=1.25 ms
+64 bytes from a2-16-106-184.deploy.akamaitechnologies.com (2.16.106.184): icmp_req=2 ttl=59 time=1.27 ms
+64 bytes from a2-16-106-184.deploy.akamaitechnologies.com (2.16.106.184): icmp_req=3 ttl=59 time=1.19 ms
+64 bytes from a2-16-106-184.deploy.akamaitechnologies.com (2.16.106.184): icmp_req=4 ttl=59 time=1.20 ms
+64 bytes from a2-16-106-184.deploy.akamaitechnologies.com (2.16.106.184): icmp_req=5 ttl=59 time=1.23 ms
+
+--- a1586.w3.akamai.net ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 4002ms
+rtt min/avg/max/mdev = 1.198/1.234/1.277/0.043 ms
+
+nodesdirect01.ring.nlnog.net | SUCCESS | rc=0 >>
+PING a1586.w3.akamai.net (118.214.160.161) 56(84) bytes of data.
+64 bytes from a118-214.160-161.deploy.akamaitechnologies.com (118.214.160.161): icmp_req=1 ttl=58 time=8.25 ms
+64 bytes from a118-214.160-161.deploy.akamaitechnologies.com (118.214.160.161): icmp_req=2 ttl=58 time=7.83 ms
+64 bytes from a118-214.160-161.deploy.akamaitechnologies.com (118.214.160.161): icmp_req=3 ttl=58 time=7.80 ms
+64 bytes from a118-214.160-161.deploy.akamaitechnologies.com (118.214.160.161): icmp_req=4 ttl=58 time=7.92 ms
+64 bytes from a118-214.160-161.deploy.akamaitechnologies.com (118.214.160.161): icmp_req=5 ttl=58 time=11.0 ms
+
+--- a1586.w3.akamai.net ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 4004ms
+rtt min/avg/max/mdev = 7.809/8.585/11.096/1.265 ms
+
+nynex01.ring.nlnog.net | SUCCESS | rc=0 >>
+PING a1586.w3.akamai.net (2.16.106.184) 56(84) bytes of data.
+64 bytes from a2-16-106-184.deploy.akamaitechnologies.com (2.16.106.184): icmp_req=1 ttl=59 time=1.38 ms
+64 bytes from a2-16-106-184.deploy.akamaitechnologies.com (2.16.106.184): icmp_req=2 ttl=59 time=1.37 ms
+64 bytes from a2-16-106-184.deploy.akamaitechnologies.com (2.16.106.184): icmp_req=3 ttl=59 time=1.37 ms
+64 bytes from a2-16-106-184.deploy.akamaitechnologies.com (2.16.106.184): icmp_req=4 ttl=59 time=1.43 ms
+64 bytes from a2-16-106-184.deploy.akamaitechnologies.com (2.16.106.184): icmp_req=5 ttl=59 time=1.36 ms
+
+--- a1586.w3.akamai.net ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 4005ms
+rtt min/avg/max/mdev = 1.369/1.389/1.436/0.033 ms
+
+ntt02.ring.nlnog.net | SUCCESS | rc=0 >>
+PING a1586.w3.akamai.net (95.101.78.66) 56(84) bytes of data.
+64 bytes from a95-101-78-66.deploy.akamaitechnologies.com (95.101.78.66): icmp_req=1 ttl=61 time=0.667 ms
+64 bytes from a95-101-78-66.deploy.akamaitechnologies.com (95.101.78.66): icmp_req=2 ttl=61 time=0.363 ms
+64 bytes from a95-101-78-66.deploy.akamaitechnologies.com (95.101.78.66): icmp_req=3 ttl=61 time=0.513 ms
+64 bytes from a95-101-78-66.deploy.akamaitechnologies.com (95.101.78.66): icmp_req=4 ttl=61 time=0.624 ms
+64 bytes from a95-101-78-66.deploy.akamaitechnologies.com (95.101.78.66): icmp_req=5 ttl=61 time=0.571 ms
+
+--- a1586.w3.akamai.net ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 4234ms
+rtt min/avg/max/mdev = 0.363/0.547/0.667/0.108 ms
+
+obenetwork01.ring.nlnog.net | SUCCESS | rc=0 >>
+PING a1586.w3.akamai.net (212.247.20.10) 56(84) bytes of data.
+64 bytes from static-212-247-20-10.cust.tele2.se (212.247.20.10): icmp_req=1 ttl=61 time=0.313 ms
+64 bytes from static-212-247-20-10.cust.tele2.se (212.247.20.10): icmp_req=2 ttl=61 time=0.297 ms
+64 bytes from static-212-247-20-10.cust.tele2.se (212.247.20.10): icmp_req=3 ttl=61 time=0.408 ms
+64 bytes from static-212-247-20-10.cust.tele2.se (212.247.20.10): icmp_req=4 ttl=61 time=0.570 ms
+64 bytes from static-212-247-20-10.cust.tele2.se (212.247.20.10): icmp_req=5 ttl=61 time=0.458 ms
+
+--- a1586.w3.akamai.net ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 4001ms
+rtt min/avg/max/mdev = 0.297/0.409/0.570/0.100 ms
+
+ntt01.ring.nlnog.net | SUCCESS | rc=0 >>
+PING a1586.w3.akamai.net (23.219.88.113) 56(84) bytes of data.
+64 bytes from a23-219-88-113.deploy.static.akamaitechnologies.com (23.219.88.113): icmp_req=1 ttl=59 time=65.7 ms
+64 bytes from a23-219-88-113.deploy.static.akamaitechnologies.com (23.219.88.113): icmp_req=2 ttl=59 time=65.7 ms
+64 bytes from a23-219-88-113.deploy.static.akamaitechnologies.com (23.219.88.113): icmp_req=3 ttl=59 time=65.8 ms
+64 bytes from a23-219-88-113.deploy.static.akamaitechnologies.com (23.219.88.113): icmp_req=4 ttl=59 time=65.8 ms
+64 bytes from a23-219-88-113.deploy.static.akamaitechnologies.com (23.219.88.113): icmp_req=5 ttl=59 time=65.7 ms
+
+--- a1586.w3.akamai.net ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 4004ms
+rtt min/avg/max/mdev = 65.751/65.800/65.892/0.169 ms
+
+occaid01.ring.nlnog.net | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Failed to connect to the host via ssh.",
+    "unreachable": true
+}
+one01.ring.nlnog.net | SUCCESS | rc=0 >>
+PING a1586.w3.akamai.net (80.239.247.178) 56(84) bytes of data.
+64 bytes from 80-239-247-178.customer.teliacarrier.com (80.239.247.178): icmp_req=1 ttl=59 time=0.986 ms
+64 bytes from 80-239-247-178.customer.teliacarrier.com (80.239.247.178): icmp_req=2 ttl=59 time=0.848 ms
+64 bytes from 80-239-247-178.customer.teliacarrier.com (80.239.247.178): icmp_req=3 ttl=59 time=1.08 ms
+64 bytes from 80-239-247-178.customer.teliacarrier.com (80.239.247.178): icmp_req=4 ttl=59 time=1.15 ms
+64 bytes from 80-239-247-178.customer.teliacarrier.com (80.239.247.178): icmp_req=5 ttl=59 time=1.20 ms
+
+--- a1586.w3.akamai.net ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 4005ms
+rtt min/avg/max/mdev = 0.848/1.054/1.202/0.129 ms
+
+octopuce01.ring.nlnog.net | SUCCESS | rc=0 >>
+PING a1586.w3.akamai.net (184.25.107.182) 56(84) bytes of data.
+64 bytes from a184-25-107-182.deploy.static.akamaitechnologies.com (184.25.107.182): icmp_req=1 ttl=57 time=1.46 ms
+64 bytes from a184-25-107-182.deploy.static.akamaitechnologies.com (184.25.107.182): icmp_req=2 ttl=57 time=2.36 ms
+64 bytes from a184-25-107-182.deploy.static.akamaitechnologies.com (184.25.107.182): icmp_req=3 ttl=57 time=2.30 ms
+64 bytes from a184-25-107-182.deploy.static.akamaitechnologies.com (184.25.107.182): icmp_req=4 ttl=57 time=2.09 ms
+64 bytes from a184-25-107-182.deploy.static.akamaitechnologies.com (184.25.107.182): icmp_req=5 ttl=57 time=2.37 ms
+
+--- a1586.w3.akamai.net ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 4003ms
+rtt min/avg/max/mdev = 1.461/2.120/2.370/0.344 ms
+
+onet01.ring.nlnog.net | SUCCESS | rc=0 >>
+PING a1586.w3.akamai.net (72.247.182.202) 56(84) bytes of data.
+64 bytes from a72-247-182-202.deploy.akamaitechnologies.com (72.247.182.202): icmp_req=1 ttl=62 time=5.59 ms
+64 bytes from a72-247-182-202.deploy.akamaitechnologies.com (72.247.182.202): icmp_req=2 ttl=62 time=5.51 ms
+64 bytes from a72-247-182-202.deploy.akamaitechnologies.com (72.247.182.202): icmp_req=3 ttl=62 time=5.58 ms
+64 bytes from a72-247-182-202.deploy.akamaitechnologies.com (72.247.182.202): icmp_req=4 ttl=62 time=5.50 ms
+64 bytes from a72-247-182-202.deploy.akamaitechnologies.com (72.247.182.202): icmp_req=5 ttl=62 time=5.51 ms
+
+--- a1586.w3.akamai.net ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 4004ms
+rtt min/avg/max/mdev = 5.502/5.540/5.594/0.077 ms
+
+openimp01.ring.nlnog.net | SUCCESS | rc=0 >>
+PING a1586.w3.akamai.net (104.86.111.146) 56(84) bytes of data.
+64 bytes from a104-86-111-146.deploy.static.akamaitechnologies.com (104.86.111.146): icmp_req=1 ttl=61 time=0.578 ms
+64 bytes from a104-86-111-146.deploy.static.akamaitechnologies.com (104.86.111.146): icmp_req=2 ttl=61 time=0.530 ms
+64 bytes from a104-86-111-146.deploy.static.akamaitechnologies.com (104.86.111.146): icmp_req=3 ttl=61 time=0.725 ms
+64 bytes from a104-86-111-146.deploy.static.akamaitechnologies.com (104.86.111.146): icmp_req=4 ttl=61 time=0.588 ms
+64 bytes from a104-86-111-146.deploy.static.akamaitechnologies.com (104.86.111.146): icmp_req=5 ttl=61 time=0.566 ms
+
+--- a1586.w3.akamai.net ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 4005ms
+rtt min/avg/max/mdev = 0.530/0.597/0.725/0.070 ms
+
+onlinesas01.ring.nlnog.net | SUCCESS | rc=0 >>
+PING a1586.w3.akamai.net (2.22.22.216) 56(84) bytes of data.
+64 bytes from 2.22.22.216: icmp_req=1 ttl=58 time=1.99 ms
+64 bytes from 2.22.22.216: icmp_req=2 ttl=58 time=2.11 ms
+64 bytes from 2.22.22.216: icmp_req=3 ttl=58 time=1.99 ms
+64 bytes from 2.22.22.216: icmp_req=4 ttl=58 time=1.97 ms
+64 bytes from 2.22.22.216: icmp_req=5 ttl=58 time=1.96 ms
+
+--- a1586.w3.akamai.net ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 4005ms
+rtt min/avg/max/mdev = 1.964/2.009/2.117/0.078 ms
+
+openit01.ring.nlnog.net | SUCCESS | rc=0 >>
+PING a1586.w3.akamai.net (95.101.90.203) 56(84) bytes of data.
+64 bytes from a95-101-90-203.deploy.akamaitechnologies.com (95.101.90.203): icmp_req=1 ttl=61 time=0.401 ms
+64 bytes from a95-101-90-203.deploy.akamaitechnologies.com (95.101.90.203): icmp_req=2 ttl=61 time=0.333 ms
+64 bytes from a95-101-90-203.deploy.akamaitechnologies.com (95.101.90.203): icmp_req=3 ttl=61 time=0.415 ms
+64 bytes from a95-101-90-203.deploy.akamaitechnologies.com (95.101.90.203): icmp_req=4 ttl=61 time=0.496 ms
+64 bytes from a95-101-90-203.deploy.akamaitechnologies.com (95.101.90.203): icmp_req=5 ttl=61 time=0.332 ms
+
+--- a1586.w3.akamai.net ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 3998ms
+rtt min/avg/max/mdev = 0.332/0.395/0.496/0.063 ms
+
+onet02.ring.nlnog.net | SUCCESS | rc=0 >>
+PING a1586.w3.akamai.net (72.247.182.202) 56(84) bytes of data.
+64 bytes from a72-247-182-202.deploy.akamaitechnologies.com (72.247.182.202): icmp_req=1 ttl=60 time=5.78 ms
+64 bytes from a72-247-182-202.deploy.akamaitechnologies.com (72.247.182.202): icmp_req=2 ttl=60 time=5.78 ms
+64 bytes from a72-247-182-202.deploy.akamaitechnologies.com (72.247.182.202): icmp_req=3 ttl=60 time=5.81 ms
+64 bytes from a72-247-182-202.deploy.akamaitechnologies.com (72.247.182.202): icmp_req=4 ttl=60 time=5.82 ms
+64 bytes from a72-247-182-202.deploy.akamaitechnologies.com (72.247.182.202): icmp_req=5 ttl=60 time=5.90 ms
+
+--- a1586.w3.akamai.net ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 4005ms
+rtt min/avg/max/mdev = 5.782/5.822/5.908/0.106 ms
+
+openminds01.ring.nlnog.net | SUCCESS | rc=0 >>
+PING a1586.w3.akamai.net (92.122.122.137) 56(84) bytes of data.
+64 bytes from a92-122-122-137.deploy.akamaitechnologies.com (92.122.122.137): icmp_req=1 ttl=57 time=7.01 ms
+64 bytes from a92-122-122-137.deploy.akamaitechnologies.com (92.122.122.137): icmp_req=2 ttl=57 time=8.08 ms
+64 bytes from a92-122-122-137.deploy.akamaitechnologies.com (92.122.122.137): icmp_req=3 ttl=57 time=6.93 ms
+64 bytes from a92-122-122-137.deploy.akamaitechnologies.com (92.122.122.137): icmp_req=4 ttl=57 time=6.96 ms
+64 bytes from a92-122-122-137.deploy.akamaitechnologies.com (92.122.122.137): icmp_req=5 ttl=57 time=6.93 ms
+
+--- a1586.w3.akamai.net ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 4000ms
+rtt min/avg/max/mdev = 6.936/7.186/8.088/0.460 ms
+
+patientsky01.ring.nlnog.net | SUCCESS | rc=0 >>
+PING a1586.w3.akamai.net (193.212.178.73) 56(84) bytes of data.
+64 bytes from a193-212-178-73.deploy.akamaitechnologies.com (193.212.178.73): icmp_req=1 ttl=60 time=0.622 ms
+64 bytes from a193-212-178-73.deploy.akamaitechnologies.com (193.212.178.73): icmp_req=2 ttl=60 time=0.642 ms
+64 bytes from a193-212-178-73.deploy.akamaitechnologies.com (193.212.178.73): icmp_req=3 ttl=60 time=0.625 ms
+64 bytes from a193-212-178-73.deploy.akamaitechnologies.com (193.212.178.73): icmp_req=4 ttl=60 time=0.680 ms
+64 bytes from a193-212-178-73.deploy.akamaitechnologies.com (193.212.178.73): icmp_req=5 ttl=60 time=0.592 ms
+
+--- a1586.w3.akamai.net ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 4005ms
+rtt min/avg/max/mdev = 0.592/0.632/0.680/0.032 ms
+
+ovh01.ring.nlnog.net | SUCCESS | rc=0 >>
+PING a1586.w3.akamai.net (95.101.78.130) 56(84) bytes of data.
+64 bytes from a95-101-78-130.deploy.akamaitechnologies.com (95.101.78.130): icmp_req=1 ttl=60 time=8.34 ms
+64 bytes from a95-101-78-130.deploy.akamaitechnologies.com (95.101.78.130): icmp_req=2 ttl=60 time=8.52 ms
+64 bytes from a95-101-78-130.deploy.akamaitechnologies.com (95.101.78.130): icmp_req=3 ttl=60 time=8.30 ms
+64 bytes from a95-101-78-130.deploy.akamaitechnologies.com (95.101.78.130): icmp_req=4 ttl=60 time=8.39 ms
+64 bytes from a95-101-78-130.deploy.akamaitechnologies.com (95.101.78.130): icmp_req=5 ttl=60 time=8.15 ms
+
+--- a1586.w3.akamai.net ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 4004ms
+rtt min/avg/max/mdev = 8.156/8.343/8.521/0.144 ms
+
+ovh02.ring.nlnog.net | FAILED | rc=2 >>
+ping: unknown host www.rediff.com
+
+pcextreme01.ring.nlnog.net | SUCCESS | rc=0 >>
+PING a1586.w3.akamai.net (77.67.4.25) 56(84) bytes of data.
+64 bytes from 77.67.4.25: icmp_req=1 ttl=58 time=7.22 ms
+64 bytes from 77.67.4.25: icmp_req=2 ttl=58 time=7.27 ms
+64 bytes from 77.67.4.25: icmp_req=3 ttl=58 time=7.16 ms
+64 bytes from 77.67.4.25: icmp_req=4 ttl=58 time=7.17 ms
+64 bytes from 77.67.4.25: icmp_req=5 ttl=58 time=7.16 ms
+
+--- a1586.w3.akamai.net ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 4005ms
+rtt min/avg/max/mdev = 7.162/7.199/7.271/0.115 ms
+
+ovh04.ring.nlnog.net | FAILED | rc=2 >>
+ping: unknown host www.rediff.com
+
+ovh03.ring.nlnog.net | SUCCESS | rc=0 >>
+PING a1586.w3.akamai.net (95.101.78.66) 56(84) bytes of data.
+64 bytes from a95-101-78-66.deploy.akamaitechnologies.com (95.101.78.66): icmp_req=1 ttl=54 time=15.5 ms
+64 bytes from a95-101-78-66.deploy.akamaitechnologies.com (95.101.78.66): icmp_req=2 ttl=54 time=15.6 ms
+64 bytes from a95-101-78-66.deploy.akamaitechnologies.com (95.101.78.66): icmp_req=3 ttl=54 time=15.7 ms
+64 bytes from a95-101-78-66.deploy.akamaitechnologies.com (95.101.78.66): icmp_req=4 ttl=54 time=15.5 ms
+64 bytes from a95-101-78-66.deploy.akamaitechnologies.com (95.101.78.66): icmp_req=5 ttl=54 time=15.9 ms
+
+--- a1586.w3.akamai.net ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 6039ms
+rtt min/avg/max/mdev = 15.553/15.708/15.990/0.197 ms
+
+pcextreme02.ring.nlnog.net | SUCCESS | rc=0 >>
+PING a1586.w3.akamai.net (77.67.4.10) 56(84) bytes of data.
+64 bytes from 77.67.4.10: icmp_req=1 ttl=58 time=7.18 ms
+64 bytes from 77.67.4.10: icmp_req=2 ttl=58 time=7.01 ms
+64 bytes from 77.67.4.10: icmp_req=3 ttl=58 time=7.10 ms
+64 bytes from 77.67.4.10: icmp_req=4 ttl=58 time=7.00 ms
+64 bytes from 77.67.4.10: icmp_req=5 ttl=58 time=7.06 ms
+
+--- a1586.w3.akamai.net ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 4005ms
+rtt min/avg/max/mdev = 7.006/7.073/7.181/0.063 ms
+
+pbwcomm01.ring.nlnog.net | SUCCESS | rc=0 >>
+PING a1586.w3.akamai.net (104.96.220.195) 56(84) bytes of data.
+64 bytes from a104-96-220-195.deploy.static.akamaitechnologies.com (104.96.220.195): icmp_req=1 ttl=62 time=2.51 ms
+64 bytes from a104-96-220-195.deploy.static.akamaitechnologies.com (104.96.220.195): icmp_req=2 ttl=62 time=2.62 ms
+64 bytes from a104-96-220-195.deploy.static.akamaitechnologies.com (104.96.220.195): icmp_req=3 ttl=62 time=2.54 ms
+64 bytes from a104-96-220-195.deploy.static.akamaitechnologies.com (104.96.220.195): icmp_req=4 ttl=62 time=2.83 ms
+64 bytes from a104-96-220-195.deploy.static.akamaitechnologies.com (104.96.220.195): icmp_req=5 ttl=62 time=2.47 ms
+
+--- a1586.w3.akamai.net ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 4003ms
+rtt min/avg/max/mdev = 2.476/2.597/2.834/0.128 ms
+
+pcextreme03.ring.nlnog.net | SUCCESS | rc=0 >>
+PING a1586.w3.akamai.net.0.1.cn.akamaitech.net (213.248.117.25) 56(84) bytes of data.
+64 bytes from 213-248-117-25.customer.teliacarrier.com (213.248.117.25): icmp_req=1 ttl=58 time=8.70 ms
+64 bytes from 213-248-117-25.customer.teliacarrier.com (213.248.117.25): icmp_req=2 ttl=58 time=8.66 ms
+64 bytes from 213-248-117-25.customer.teliacarrier.com (213.248.117.25): icmp_req=3 ttl=58 time=8.69 ms
+64 bytes from 213-248-117-25.customer.teliacarrier.com (213.248.117.25): icmp_req=4 ttl=58 time=8.68 ms
+64 bytes from 213-248-117-25.customer.teliacarrier.com (213.248.117.25): icmp_req=5 ttl=58 time=8.70 ms
+
+--- a1586.w3.akamai.net.0.1.cn.akamaitech.net ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 4005ms
+rtt min/avg/max/mdev = 8.662/8.690/8.709/0.103 ms
+
+peakten01.ring.nlnog.net | SUCCESS | rc=0 >>
+PING a1586.w3.akamai.net (184.28.17.227) 56(84) bytes of data.
+64 bytes from a184-28-17-227.deploy.static.akamaitechnologies.com (184.28.17.227): icmp_req=1 ttl=58 time=26.5 ms
+64 bytes from a184-28-17-227.deploy.static.akamaitechnologies.com (184.28.17.227): icmp_req=2 ttl=58 time=27.2 ms
+64 bytes from a184-28-17-227.deploy.static.akamaitechnologies.com (184.28.17.227): icmp_req=3 ttl=58 time=26.6 ms
+64 bytes from a184-28-17-227.deploy.static.akamaitechnologies.com (184.28.17.227): icmp_req=4 ttl=58 time=26.5 ms
+64 bytes from a184-28-17-227.deploy.static.akamaitechnologies.com (184.28.17.227): icmp_req=5 ttl=58 time=26.5 ms
+
+--- a1586.w3.akamai.net ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 4003ms
+rtt min/avg/max/mdev = 26.560/26.702/27.208/0.273 ms
+
+pcextreme05.ring.nlnog.net | SUCCESS | rc=0 >>
+PING a1586.w3.akamai.net (23.14.84.168) 56(84) bytes of data.
+64 bytes from a23-14-84-168.deploy.static.akamaitechnologies.com (23.14.84.168): icmp_req=1 ttl=61 time=0.569 ms
+64 bytes from a23-14-84-168.deploy.static.akamaitechnologies.com (23.14.84.168): icmp_req=2 ttl=61 time=0.621 ms
+64 bytes from a23-14-84-168.deploy.static.akamaitechnologies.com (23.14.84.168): icmp_req=3 ttl=61 time=0.605 ms
+64 bytes from a23-14-84-168.deploy.static.akamaitechnologies.com (23.14.84.168): icmp_req=4 ttl=61 time=0.637 ms
+64 bytes from a23-14-84-168.deploy.static.akamaitechnologies.com (23.14.84.168): icmp_req=5 ttl=61 time=0.525 ms
+
+--- a1586.w3.akamai.net ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 4005ms
+rtt min/avg/max/mdev = 0.525/0.591/0.637/0.045 ms
+
+pcextreme06.ring.nlnog.net | SUCCESS | rc=0 >>
+PING a1586.w3.akamai.net (184.28.188.81) 56(84) bytes of data.
+64 bytes from a184-28-188-81.deploy.static.akamaitechnologies.com (184.28.188.81): icmp_req=1 ttl=61 time=0.766 ms
+64 bytes from a184-28-188-81.deploy.static.akamaitechnologies.com (184.28.188.81): icmp_req=2 ttl=61 time=0.893 ms
+64 bytes from a184-28-188-81.deploy.static.akamaitechnologies.com (184.28.188.81): icmp_req=3 ttl=61 time=0.826 ms
+64 bytes from a184-28-188-81.deploy.static.akamaitechnologies.com (184.28.188.81): icmp_req=4 ttl=61 time=0.596 ms
+64 bytes from a184-28-188-81.deploy.static.akamaitechnologies.com (184.28.188.81): icmp_req=5 ttl=61 time=0.718 ms
+
+--- a1586.w3.akamai.net ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 4005ms
+rtt min/avg/max/mdev = 0.596/0.759/0.893/0.106 ms
+
+peakten02.ring.nlnog.net | SUCCESS | rc=0 >>
+PING a1586.w3.akamai.net (184.28.17.227) 56(84) bytes of data.
+64 bytes from a184-28-17-227.deploy.static.akamaitechnologies.com (184.28.17.227): icmp_req=1 ttl=58 time=12.8 ms
+64 bytes from a184-28-17-227.deploy.static.akamaitechnologies.com (184.28.17.227): icmp_req=2 ttl=58 time=12.8 ms
+64 bytes from a184-28-17-227.deploy.static.akamaitechnologies.com (184.28.17.227): icmp_req=3 ttl=58 time=12.8 ms
+64 bytes from a184-28-17-227.deploy.static.akamaitechnologies.com (184.28.17.227): icmp_req=4 ttl=58 time=12.8 ms
+64 bytes from a184-28-17-227.deploy.static.akamaitechnologies.com (184.28.17.227): icmp_req=5 ttl=58 time=12.8 ms
+
+--- a1586.w3.akamai.net ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 4005ms
+rtt min/avg/max/mdev = 12.839/12.861/12.897/0.145 ms
+
+pcextreme04.ring.nlnog.net | SUCCESS | rc=0 >>
+PING a1586.w3.akamai.net (213.248.117.25) 56(84) bytes of data.
+64 bytes from 213-248-117-25.customer.teliacarrier.com (213.248.117.25): icmp_req=1 ttl=53 time=241 ms
+64 bytes from 213-248-117-25.customer.teliacarrier.com (213.248.117.25): icmp_req=2 ttl=53 time=241 ms
+64 bytes from 213-248-117-25.customer.teliacarrier.com (213.248.117.25): icmp_req=3 ttl=53 time=241 ms
+64 bytes from 213-248-117-25.customer.teliacarrier.com (213.248.117.25): icmp_req=4 ttl=53 time=241 ms
+64 bytes from 213-248-117-25.customer.teliacarrier.com (213.248.117.25): icmp_req=5 ttl=53 time=241 ms
+
+--- a1586.w3.akamai.net ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 5338ms
+rtt min/avg/max/mdev = 241.358/241.531/241.658/0.548 ms
+
+peakten03.ring.nlnog.net | SUCCESS | rc=0 >>
+PING a1586.w3.akamai.net (184.25.157.80) 56(84) bytes of data.
+64 bytes from a184-25-157-80.deploy.static.akamaitechnologies.com (184.25.157.80): icmp_req=1 ttl=57 time=21.2 ms
+64 bytes from a184-25-157-80.deploy.static.akamaitechnologies.com (184.25.157.80): icmp_req=2 ttl=57 time=21.3 ms
+64 bytes from a184-25-157-80.deploy.static.akamaitechnologies.com (184.25.157.80): icmp_req=3 ttl=57 time=21.7 ms
+64 bytes from a184-25-157-80.deploy.static.akamaitechnologies.com (184.25.157.80): icmp_req=4 ttl=57 time=21.3 ms
+64 bytes from a184-25-157-80.deploy.static.akamaitechnologies.com (184.25.157.80): icmp_req=5 ttl=57 time=21.3 ms
+
+--- a1586.w3.akamai.net ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 4004ms
+rtt min/avg/max/mdev = 21.254/21.399/21.721/0.210 ms
+
+plurimedia01.ring.nlnog.net | SUCCESS | rc=0 >>
+PING a1586.w3.akamai.net (80.239.152.192) 56(84) bytes of data.
+64 bytes from 80-239-152-192.customer.teliacarrier.com (80.239.152.192): icmp_req=1 ttl=58 time=28.2 ms
+64 bytes from 80-239-152-192.customer.teliacarrier.com (80.239.152.192): icmp_req=2 ttl=58 time=28.2 ms
+64 bytes from 80-239-152-192.customer.teliacarrier.com (80.239.152.192): icmp_req=3 ttl=58 time=28.2 ms
+64 bytes from 80-239-152-192.customer.teliacarrier.com (80.239.152.192): icmp_req=4 ttl=58 time=28.2 ms
+64 bytes from 80-239-152-192.customer.teliacarrier.com (80.239.152.192): icmp_req=5 ttl=58 time=28.2 ms
+
+--- a1586.w3.akamai.net ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 4004ms
+rtt min/avg/max/mdev = 28.232/28.246/28.280/0.213 ms
+
+phusion01.ring.nlnog.net | SUCCESS | rc=0 >>
+PING a1586.w3.akamai.net (104.86.110.208) 56(84) bytes of data.
+64 bytes from a104-86-110-208.deploy.static.akamaitechnologies.com (104.86.110.208): icmp_req=1 ttl=61 time=9.71 ms
+64 bytes from a104-86-110-208.deploy.static.akamaitechnologies.com (104.86.110.208): icmp_req=2 ttl=61 time=9.41 ms
+64 bytes from a104-86-110-208.deploy.static.akamaitechnologies.com (104.86.110.208): icmp_req=3 ttl=61 time=9.68 ms
+64 bytes from a104-86-110-208.deploy.static.akamaitechnologies.com (104.86.110.208): icmp_req=4 ttl=61 time=9.42 ms
+64 bytes from a104-86-110-208.deploy.static.akamaitechnologies.com (104.86.110.208): icmp_req=5 ttl=61 time=9.44 ms
+
+--- a1586.w3.akamai.net ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 5817ms
+rtt min/avg/max/mdev = 9.413/9.536/9.717/0.182 ms
+
+plutex01.ring.nlnog.net | SUCCESS | rc=0 >>
+PING a1586.w3.akamai.net (104.96.0.16) 56(84) bytes of data.
+64 bytes from a104-96-0-16.deploy.static.akamaitechnologies.com (104.96.0.16): icmp_req=1 ttl=59 time=2.58 ms
+64 bytes from a104-96-0-16.deploy.static.akamaitechnologies.com (104.96.0.16): icmp_req=2 ttl=59 time=3.19 ms
+64 bytes from a104-96-0-16.deploy.static.akamaitechnologies.com (104.96.0.16): icmp_req=3 ttl=59 time=2.46 ms
+64 bytes from a104-96-0-16.deploy.static.akamaitechnologies.com (104.96.0.16): icmp_req=4 ttl=59 time=2.66 ms
+64 bytes from a104-96-0-16.deploy.static.akamaitechnologies.com (104.96.0.16): icmp_req=5 ttl=59 time=2.44 ms
+
+--- a1586.w3.akamai.net ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 4005ms
+rtt min/avg/max/mdev = 2.448/2.671/3.194/0.275 ms
+
+peakten04.ring.nlnog.net | SUCCESS | rc=0 >>
+PING a1586.w3.akamai.net (64.86.203.50) 56(84) bytes of data.
+64 bytes from 64.86.203.50: icmp_req=1 ttl=57 time=2.89 ms
+64 bytes from 64.86.203.50: icmp_req=2 ttl=57 time=2.68 ms
+64 bytes from 64.86.203.50: icmp_req=3 ttl=57 time=2.69 ms
+64 bytes from 64.86.203.50: icmp_req=4 ttl=57 time=2.64 ms
+64 bytes from 64.86.203.50: icmp_req=5 ttl=57 time=2.74 ms
+
+--- a1586.w3.akamai.net ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 4086ms
+rtt min/avg/max/mdev = 2.648/2.734/2.894/0.108 ms
+
+portlane01.ring.nlnog.net | SUCCESS | rc=0 >>
+PING a1586.w3.akamai.net (80.239.254.216) 56(84) bytes of data.
+64 bytes from 80-239-254-216.customer.teliacarrier.com (80.239.254.216): icmp_req=1 ttl=61 time=0.433 ms
+64 bytes from 80-239-254-216.customer.teliacarrier.com (80.239.254.216): icmp_req=2 ttl=61 time=0.445 ms
+64 bytes from 80-239-254-216.customer.teliacarrier.com (80.239.254.216): icmp_req=3 ttl=61 time=0.435 ms
+64 bytes from 80-239-254-216.customer.teliacarrier.com (80.239.254.216): icmp_req=4 ttl=61 time=0.425 ms
+64 bytes from 80-239-254-216.customer.teliacarrier.com (80.239.254.216): icmp_req=5 ttl=61 time=0.481 ms
+
+--- a1586.w3.akamai.net ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 4000ms
+rtt min/avg/max/mdev = 0.425/0.443/0.481/0.033 ms
+
+poppr01.ring.nlnog.net | SUCCESS | rc=0 >>
+PING a1586.w3.akamai.net (187.16.46.168) 56(84) bytes of data.
+64 bytes from 187.16.46.168: icmp_req=1 ttl=60 time=0.902 ms
+64 bytes from 187.16.46.168: icmp_req=2 ttl=60 time=0.600 ms
+64 bytes from 187.16.46.168: icmp_req=3 ttl=60 time=0.528 ms
+64 bytes from 187.16.46.168: icmp_req=4 ttl=60 time=0.532 ms
+64 bytes from 187.16.46.168: icmp_req=5 ttl=60 time=0.494 ms
+
+--- a1586.w3.akamai.net ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 4003ms
+rtt min/avg/max/mdev = 0.494/0.611/0.902/0.150 ms
+
+poznan01.ring.nlnog.net | SUCCESS | rc=0 >>
+PING a1586.w3.akamai.net (212.191.241.9) 56(84) bytes of data.
+64 bytes from a212-191-241-009.deploy.akamaitechnologies.com (212.191.241.9): icmp_req=1 ttl=61 time=0.564 ms
+64 bytes from a212-191-241-009.deploy.akamaitechnologies.com (212.191.241.9): icmp_req=2 ttl=61 time=0.531 ms
+64 bytes from a212-191-241-009.deploy.akamaitechnologies.com (212.191.241.9): icmp_req=3 ttl=61 time=0.779 ms
+64 bytes from a212-191-241-009.deploy.akamaitechnologies.com (212.191.241.9): icmp_req=4 ttl=61 time=0.547 ms
+64 bytes from a212-191-241-009.deploy.akamaitechnologies.com (212.191.241.9): icmp_req=5 ttl=61 time=0.628 ms
+
+--- a1586.w3.akamai.net ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 4002ms
+rtt min/avg/max/mdev = 0.531/0.609/0.779/0.096 ms
+
+popsc01.ring.nlnog.net | SUCCESS | rc=0 >>
+PING a1586.w3.akamai.net (201.49.97.201) 56(84) bytes of data.
+64 bytes from cdn-201.optitel.net.br (201.49.97.201): icmp_req=1 ttl=57 time=12.8 ms
+64 bytes from cdn-201.optitel.net.br (201.49.97.201): icmp_req=2 ttl=57 time=12.8 ms
+64 bytes from cdn-201.optitel.net.br (201.49.97.201): icmp_req=3 ttl=57 time=12.8 ms
+64 bytes from cdn-201.optitel.net.br (201.49.97.201): icmp_req=4 ttl=57 time=12.8 ms
+64 bytes from cdn-201.optitel.net.br (201.49.97.201): icmp_req=5 ttl=57 time=15.9 ms
+
+--- a1586.w3.akamai.net ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 4004ms
+rtt min/avg/max/mdev = 12.800/13.453/15.956/1.259 ms
+
+public01.infra.ring.nlnog.net | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Failed to connect to the host via ssh.",
+    "unreachable": true
+}
+public02.infra.ring.nlnog.net | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Failed to connect to the host via ssh.",
+    "unreachable": true
+}
+pix01.ring.nlnog.net | SUCCESS | rc=0 >>
+PING a1586.w3.akamai.net.0.1.cn.akamaitech.net (82.166.201.162) 56(84) bytes of data.
+64 bytes from 82-166-201-162.barak-online.net (82.166.201.162): icmp_req=1 ttl=58 time=14.5 ms
+64 bytes from 82-166-201-162.barak-online.net (82.166.201.162): icmp_req=2 ttl=58 time=35.4 ms
+64 bytes from 82-166-201-162.barak-online.net (82.166.201.162): icmp_req=3 ttl=58 time=26.0 ms
+64 bytes from 82-166-201-162.barak-online.net (82.166.201.162): icmp_req=4 ttl=58 time=87.0 ms
+64 bytes from 82-166-201-162.barak-online.net (82.166.201.162): icmp_req=5 ttl=58 time=25.9 ms
+
+--- a1586.w3.akamai.net.0.1.cn.akamaitech.net ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 4003ms
+rtt min/avg/max/mdev = 14.541/37.807/87.080/25.511 ms
+
+previder01.ring.nlnog.net | SUCCESS | rc=0 >>
+PING a1586.w3.akamai.net (95.101.78.66) 56(84) bytes of data.
+64 bytes from a95-101-78-66.deploy.akamaitechnologies.com (95.101.78.66): icmp_req=1 ttl=59 time=2.83 ms
+64 bytes from a95-101-78-66.deploy.akamaitechnologies.com (95.101.78.66): icmp_req=2 ttl=59 time=3.07 ms
+64 bytes from a95-101-78-66.deploy.akamaitechnologies.com (95.101.78.66): icmp_req=3 ttl=59 time=2.99 ms
+64 bytes from a95-101-78-66.deploy.akamaitechnologies.com (95.101.78.66): icmp_req=4 ttl=59 time=2.71 ms
+64 bytes from a95-101-78-66.deploy.akamaitechnologies.com (95.101.78.66): icmp_req=5 ttl=59 time=2.82 ms
+
+--- a1586.w3.akamai.net ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 4090ms
+rtt min/avg/max/mdev = 2.714/2.887/3.076/0.142 ms
+
+prolocation01.ring.nlnog.net | SUCCESS | rc=0 >>
+PING a1586.w3.akamai.net (95.101.78.130) 56(84) bytes of data.
+64 bytes from a95-101-78-130.deploy.akamaitechnologies.com (95.101.78.130): icmp_req=1 ttl=61 time=0.765 ms
+64 bytes from a95-101-78-130.deploy.akamaitechnologies.com (95.101.78.130): icmp_req=2 ttl=61 time=0.804 ms
+64 bytes from a95-101-78-130.deploy.akamaitechnologies.com (95.101.78.130): icmp_req=3 ttl=61 time=1.03 ms
+64 bytes from a95-101-78-130.deploy.akamaitechnologies.com (95.101.78.130): icmp_req=4 ttl=61 time=0.675 ms
+64 bytes from a95-101-78-130.deploy.akamaitechnologies.com (95.101.78.130): icmp_req=5 ttl=61 time=0.790 ms
+
+--- a1586.w3.akamai.net ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 4005ms
+rtt min/avg/max/mdev = 0.675/0.814/1.036/0.119 ms
+
+proserve01.ring.nlnog.net | SUCCESS | rc=0 >>
+PING a1586.w3.akamai.net (95.101.78.130) 56(84) bytes of data.
+64 bytes from a95-101-78-130.deploy.akamaitechnologies.com (95.101.78.130): icmp_req=1 ttl=60 time=2.06 ms
+64 bytes from a95-101-78-130.deploy.akamaitechnologies.com (95.101.78.130): icmp_req=2 ttl=60 time=1.97 ms
+64 bytes from a95-101-78-130.deploy.akamaitechnologies.com (95.101.78.130): icmp_req=3 ttl=60 time=2.38 ms
+64 bytes from a95-101-78-130.deploy.akamaitechnologies.com (95.101.78.130): icmp_req=4 ttl=60 time=2.11 ms
+64 bytes from a95-101-78-130.deploy.akamaitechnologies.com (95.101.78.130): icmp_req=5 ttl=60 time=1.91 ms
+
+--- a1586.w3.akamai.net ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 4004ms
+rtt min/avg/max/mdev = 1.917/2.092/2.386/0.162 ms
+
+qbranch01.ring.nlnog.net | SUCCESS | rc=0 >>
+PING a1586.w3.akamai.net (80.239.237.17) 56(84) bytes of data.
+64 bytes from 80-239-237-17.customer.teliacarrier.com (80.239.237.17): icmp_req=1 ttl=62 time=0.817 ms
+64 bytes from 80-239-237-17.customer.teliacarrier.com (80.239.237.17): icmp_req=2 ttl=62 time=0.847 ms
+64 bytes from 80-239-237-17.customer.teliacarrier.com (80.239.237.17): icmp_req=3 ttl=62 time=0.793 ms
+64 bytes from 80-239-237-17.customer.teliacarrier.com (80.239.237.17): icmp_req=4 ttl=62 time=0.838 ms
+64 bytes from 80-239-237-17.customer.teliacarrier.com (80.239.237.17): icmp_req=5 ttl=62 time=0.791 ms
+
+--- a1586.w3.akamai.net ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 4006ms
+rtt min/avg/max/mdev = 0.791/0.817/0.847/0.029 ms
+
+quanza01.ring.nlnog.net | SUCCESS | rc=0 >>
+PING a1586.w3.akamai.net (95.101.78.66) 56(84) bytes of data.
+64 bytes from a95-101-78-66.deploy.akamaitechnologies.com (95.101.78.66): icmp_req=1 ttl=59 time=1.21 ms
+64 bytes from a95-101-78-66.deploy.akamaitechnologies.com (95.101.78.66): icmp_req=2 ttl=59 time=1.19 ms
+64 bytes from a95-101-78-66.deploy.akamaitechnologies.com (95.101.78.66): icmp_req=3 ttl=59 time=1.22 ms
+64 bytes from a95-101-78-66.deploy.akamaitechnologies.com (95.101.78.66): icmp_req=4 ttl=59 time=1.16 ms
+64 bytes from a95-101-78-66.deploy.akamaitechnologies.com (95.101.78.66): icmp_req=5 ttl=59 time=1.20 ms
+
+--- a1586.w3.akamai.net ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 4004ms
+rtt min/avg/max/mdev = 1.164/1.199/1.222/0.020 ms
+
+qcom01.ring.nlnog.net | SUCCESS | rc=0 >>
+PING a1586.w3.akamai.net (2.18.240.211) 56(84) bytes of data.
+64 bytes from 2.18.240.211: icmp_req=1 ttl=61 time=2.08 ms
+64 bytes from 2.18.240.211: icmp_req=2 ttl=61 time=1.91 ms
+64 bytes from 2.18.240.211: icmp_req=3 ttl=61 time=1.77 ms
+64 bytes from 2.18.240.211: icmp_req=4 ttl=61 time=1.89 ms
+64 bytes from 2.18.240.211: icmp_req=5 ttl=61 time=2.90 ms
+
+--- a1586.w3.akamai.net ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 4005ms
+rtt min/avg/max/mdev = 1.777/2.113/2.903/0.409 ms
+
+quadranet01.ring.nlnog.net | SUCCESS | rc=0 >>
+PING a1586.w3.akamai.net (184.28.188.91) 56(84) bytes of data.
+64 bytes from a184-28-188-91.deploy.static.akamaitechnologies.com (184.28.188.91): icmp_req=1 ttl=61 time=0.266 ms
+64 bytes from a184-28-188-91.deploy.static.akamaitechnologies.com (184.28.188.91): icmp_req=2 ttl=61 time=0.271 ms
+64 bytes from a184-28-188-91.deploy.static.akamaitechnologies.com (184.28.188.91): icmp_req=3 ttl=61 time=0.380 ms
+64 bytes from a184-28-188-91.deploy.static.akamaitechnologies.com (184.28.188.91): icmp_req=4 ttl=61 time=0.314 ms
+64 bytes from a184-28-188-91.deploy.static.akamaitechnologies.com (184.28.188.91): icmp_req=5 ttl=61 time=0.766 ms
+
+--- a1586.w3.akamai.net ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 4005ms
+rtt min/avg/max/mdev = 0.266/0.399/0.766/0.188 ms
+
+rackfish01.ring.nlnog.net | SUCCESS | rc=0 >>
+PING a1586.w3.akamai.net (23.65.29.48) 56(84) bytes of data.
+64 bytes from a23-65-29-48.deploy.static.akamaitechnologies.com (23.65.29.48): icmp_req=1 ttl=58 time=11.0 ms
+64 bytes from a23-65-29-48.deploy.static.akamaitechnologies.com (23.65.29.48): icmp_req=2 ttl=58 time=11.0 ms
+64 bytes from a23-65-29-48.deploy.static.akamaitechnologies.com (23.65.29.48): icmp_req=3 ttl=58 time=11.1 ms
+64 bytes from a23-65-29-48.deploy.static.akamaitechnologies.com (23.65.29.48): icmp_req=4 ttl=58 time=11.1 ms
+64 bytes from a23-65-29-48.deploy.static.akamaitechnologies.com (23.65.29.48): icmp_req=5 ttl=58 time=11.0 ms
+
+--- a1586.w3.akamai.net ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 4005ms
+rtt min/avg/max/mdev = 11.036/11.101/11.175/0.125 ms
+
+queryfoundry01.ring.nlnog.net | SUCCESS | rc=0 >>
+PING a1586.w3.akamai.net (184.28.188.81) 56(84) bytes of data.
+64 bytes from a184-28-188-81.deploy.static.akamaitechnologies.com (184.28.188.81): icmp_req=1 ttl=61 time=0.317 ms
+64 bytes from a184-28-188-81.deploy.static.akamaitechnologies.com (184.28.188.81): icmp_req=2 ttl=61 time=0.651 ms
+64 bytes from a184-28-188-81.deploy.static.akamaitechnologies.com (184.28.188.81): icmp_req=3 ttl=61 time=0.312 ms
+64 bytes from a184-28-188-81.deploy.static.akamaitechnologies.com (184.28.188.81): icmp_req=4 ttl=61 time=0.379 ms
+64 bytes from a184-28-188-81.deploy.static.akamaitechnologies.com (184.28.188.81): icmp_req=5 ttl=61 time=0.273 ms
+
+--- a1586.w3.akamai.net ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 4003ms
+rtt min/avg/max/mdev = 0.273/0.386/0.651/0.137 ms
+
+rackcentral01.ring.nlnog.net | SUCCESS | rc=0 >>
+PING a1586.w3.akamai.net (203.26.28.138) 56(84) bytes of data.
+64 bytes from nme-sot-dry-ak1-138.tpgi.com.au (203.26.28.138): icmp_req=1 ttl=56 time=0.965 ms
+64 bytes from nme-sot-dry-ak1-138.tpgi.com.au (203.26.28.138): icmp_req=2 ttl=56 time=0.805 ms
+64 bytes from nme-sot-dry-ak1-138.tpgi.com.au (203.26.28.138): icmp_req=3 ttl=56 time=0.961 ms
+64 bytes from nme-sot-dry-ak1-138.tpgi.com.au (203.26.28.138): icmp_req=4 ttl=56 time=0.850 ms
+64 bytes from nme-sot-dry-ak1-138.tpgi.com.au (203.26.28.138): icmp_req=5 ttl=56 time=1.07 ms
+
+--- a1586.w3.akamai.net ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 4326ms
+rtt min/avg/max/mdev = 0.805/0.932/1.079/0.096 ms
+
+redpilllinpro01.ring.nlnog.net | SUCCESS | rc=0 >>
+PING a1586.w3.akamai.net (178.164.7.231) 56(84) bytes of data.
+64 bytes from 178-164-7.231.3p.ntebredband.no (178.164.7.231): icmp_req=1 ttl=60 time=8.94 ms
+64 bytes from 178-164-7.231.3p.ntebredband.no (178.164.7.231): icmp_req=2 ttl=60 time=8.94 ms
+64 bytes from 178-164-7.231.3p.ntebredband.no (178.164.7.231): icmp_req=3 ttl=60 time=9.20 ms
+64 bytes from 178-164-7.231.3p.ntebredband.no (178.164.7.231): icmp_req=4 ttl=60 time=8.90 ms
+64 bytes from 178-164-7.231.3p.ntebredband.no (178.164.7.231): icmp_req=5 ttl=60 time=8.94 ms
+
+--- a1586.w3.akamai.net ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 4005ms
+rtt min/avg/max/mdev = 8.908/8.988/9.204/0.137 ms
+
+redpilllinpro02.ring.nlnog.net | SUCCESS | rc=0 >>
+PING a1586.w3.akamai.net (178.164.7.231) 56(84) bytes of data.
+64 bytes from 178-164-7.231.3p.ntebredband.no (178.164.7.231): icmp_req=1 ttl=60 time=8.96 ms
+64 bytes from 178-164-7.231.3p.ntebredband.no (178.164.7.231): icmp_req=2 ttl=60 time=8.92 ms
+64 bytes from 178-164-7.231.3p.ntebredband.no (178.164.7.231): icmp_req=3 ttl=60 time=9.04 ms
+64 bytes from 178-164-7.231.3p.ntebredband.no (178.164.7.231): icmp_req=4 ttl=60 time=8.93 ms
+64 bytes from 178-164-7.231.3p.ntebredband.no (178.164.7.231): icmp_req=5 ttl=60 time=8.94 ms
+
+--- a1586.w3.akamai.net ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 4004ms
+rtt min/avg/max/mdev = 8.921/8.961/9.042/0.043 ms
+
+rackcentral02.ring.nlnog.net | SUCCESS | rc=0 >>
+PING a1586.w3.akamai.net (23.1.240.121) 56(84) bytes of data.
+64 bytes from a23-1-240-121.deploy.static.akamaitechnologies.com (23.1.240.121): icmp_req=1 ttl=62 time=0.607 ms
+64 bytes from a23-1-240-121.deploy.static.akamaitechnologies.com (23.1.240.121): icmp_req=2 ttl=62 time=0.538 ms
+64 bytes from a23-1-240-121.deploy.static.akamaitechnologies.com (23.1.240.121): icmp_req=3 ttl=62 time=0.563 ms
+64 bytes from a23-1-240-121.deploy.static.akamaitechnologies.com (23.1.240.121): icmp_req=4 ttl=62 time=0.448 ms
+64 bytes from a23-1-240-121.deploy.static.akamaitechnologies.com (23.1.240.121): icmp_req=5 ttl=62 time=0.554 ms
+
+--- a1586.w3.akamai.net ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 4003ms
+rtt min/avg/max/mdev = 0.448/0.542/0.607/0.052 ms
+
+rcsrds01.ring.nlnog.net | SUCCESS | rc=0 >>
+PING a1586.w3.akamai.net (81.196.185.209) 56(84) bytes of data.
+64 bytes from 81-196-185-209.rdsnet.ro (81.196.185.209): icmp_req=1 ttl=63 time=0.114 ms
+64 bytes from 81-196-185-209.rdsnet.ro (81.196.185.209): icmp_req=2 ttl=63 time=0.123 ms
+64 bytes from 81-196-185-209.rdsnet.ro (81.196.185.209): icmp_req=3 ttl=63 time=0.128 ms
+64 bytes from 81-196-185-209.rdsnet.ro (81.196.185.209): icmp_req=4 ttl=63 time=0.141 ms
+64 bytes from 81-196-185-209.rdsnet.ro (81.196.185.209): icmp_req=5 ttl=63 time=0.113 ms
+
+--- a1586.w3.akamai.net ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 4005ms
+rtt min/avg/max/mdev = 0.113/0.123/0.141/0.017 ms
+
+redpilllinpro03.ring.nlnog.net | SUCCESS | rc=0 >>
+PING a1586.w3.akamai.net (178.164.7.231) 56(84) bytes of data.
+64 bytes from 178-164-7.231.3p.ntebredband.no (178.164.7.231): icmp_req=1 ttl=58 time=11.8 ms
+64 bytes from 178-164-7.231.3p.ntebredband.no (178.164.7.231): icmp_req=2 ttl=58 time=11.8 ms
+64 bytes from 178-164-7.231.3p.ntebredband.no (178.164.7.231): icmp_req=3 ttl=58 time=11.9 ms
+64 bytes from 178-164-7.231.3p.ntebredband.no (178.164.7.231): icmp_req=4 ttl=58 time=12.1 ms
+64 bytes from 178-164-7.231.3p.ntebredband.no (178.164.7.231): icmp_req=5 ttl=58 time=11.8 ms
+
+--- a1586.w3.akamai.net ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 4004ms
+rtt min/avg/max/mdev = 11.853/11.944/12.118/0.138 ms
+
+rezopole01.ring.nlnog.net | SUCCESS | rc=0 >>
+PING a1586.w3.akamai.net (184.25.107.182) 56(84) bytes of data.
+64 bytes from a184-25-107-182.deploy.static.akamaitechnologies.com (184.25.107.182): icmp_req=1 ttl=49 time=16.7 ms
+64 bytes from a184-25-107-182.deploy.static.akamaitechnologies.com (184.25.107.182): icmp_req=2 ttl=49 time=16.5 ms
+64 bytes from a184-25-107-182.deploy.static.akamaitechnologies.com (184.25.107.182): icmp_req=3 ttl=49 time=16.5 ms
+64 bytes from a184-25-107-182.deploy.static.akamaitechnologies.com (184.25.107.182): icmp_req=4 ttl=49 time=16.7 ms
+64 bytes from a184-25-107-182.deploy.static.akamaitechnologies.com (184.25.107.182): icmp_req=5 ttl=49 time=16.6 ms
+
+--- a1586.w3.akamai.net ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 5197ms
+rtt min/avg/max/mdev = 16.567/16.663/16.797/0.151 ms
+
+ripe01.ring.nlnog.net | SUCCESS | rc=0 >>
+PING a1586.w3.akamai.net (95.101.78.66) 56(84) bytes of data.
+64 bytes from a95-101-78-66.deploy.akamaitechnologies.com (95.101.78.66): icmp_req=1 ttl=61 time=1.11 ms
+64 bytes from a95-101-78-66.deploy.akamaitechnologies.com (95.101.78.66): icmp_req=2 ttl=61 time=1.09 ms
+64 bytes from a95-101-78-66.deploy.akamaitechnologies.com (95.101.78.66): icmp_req=3 ttl=61 time=1.32 ms
+64 bytes from a95-101-78-66.deploy.akamaitechnologies.com (95.101.78.66): icmp_req=4 ttl=61 time=1.13 ms
+64 bytes from a95-101-78-66.deploy.akamaitechnologies.com (95.101.78.66): icmp_req=5 ttl=61 time=1.07 ms
+
+--- a1586.w3.akamai.net ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 3998ms
+rtt min/avg/max/mdev = 1.070/1.147/1.325/0.098 ms
+
+rgnet01.ring.nlnog.net | SUCCESS | rc=0 >>
+PING a1586.w3.akamai.net (204.237.186.16) 56(84) bytes of data.
+64 bytes from 204.237.186.16: icmp_req=1 ttl=60 time=0.590 ms
+64 bytes from 204.237.186.16: icmp_req=2 ttl=60 time=0.580 ms
+64 bytes from 204.237.186.16: icmp_req=3 ttl=60 time=0.594 ms
+64 bytes from 204.237.186.16: icmp_req=4 ttl=60 time=0.646 ms
+64 bytes from 204.237.186.16: icmp_req=5 ttl=60 time=0.572 ms
+
+--- a1586.w3.akamai.net ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 4293ms
+rtt min/avg/max/mdev = 0.572/0.596/0.646/0.033 ms
+
+riseup01.ring.nlnog.net | SUCCESS | rc=0 >>
+PING a1586.w3.akamai.net (23.3.105.26) 56(84) bytes of data.
+64 bytes from a23-3-105-26.deploy.static.akamaitechnologies.com (23.3.105.26): icmp_req=1 ttl=57 time=0.915 ms
+64 bytes from a23-3-105-26.deploy.static.akamaitechnologies.com (23.3.105.26): icmp_req=2 ttl=57 time=0.885 ms
+64 bytes from a23-3-105-26.deploy.static.akamaitechnologies.com (23.3.105.26): icmp_req=3 ttl=57 time=0.718 ms
+64 bytes from a23-3-105-26.deploy.static.akamaitechnologies.com (23.3.105.26): icmp_req=4 ttl=57 time=0.839 ms
+64 bytes from a23-3-105-26.deploy.static.akamaitechnologies.com (23.3.105.26): icmp_req=5 ttl=57 time=0.756 ms
+
+--- a1586.w3.akamai.net ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 4003ms
+rtt min/avg/max/mdev = 0.718/0.822/0.915/0.081 ms
+
+rootlu01.ring.nlnog.net | SUCCESS | rc=0 >>
+PING a1586.w3.akamai.net (83.243.11.171) 56(84) bytes of data.
+64 bytes from ip-static-83-243-11-171.server.lu (83.243.11.171): icmp_req=1 ttl=63 time=0.194 ms
+64 bytes from ip-static-83-243-11-171.server.lu (83.243.11.171): icmp_req=2 ttl=63 time=0.161 ms
+64 bytes from ip-static-83-243-11-171.server.lu (83.243.11.171): icmp_req=3 ttl=63 time=0.160 ms
+64 bytes from ip-static-83-243-11-171.server.lu (83.243.11.171): icmp_req=4 ttl=63 time=0.161 ms
+64 bytes from ip-static-83-243-11-171.server.lu (83.243.11.171): icmp_req=5 ttl=63 time=0.160 ms
+
+--- a1586.w3.akamai.net ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 3999ms
+rtt min/avg/max/mdev = 0.160/0.167/0.194/0.015 ms
+
+rundeck | SUCCESS | rc=0 >>
+PING a1586.w3.akamai.net (62.245.136.17) 56(84) bytes of data.
+64 bytes from host-62-245-136-17.customer.m-online.net (62.245.136.17): icmp_seq=1 ttl=60 time=0.879 ms
+64 bytes from host-62-245-136-17.customer.m-online.net (62.245.136.17): icmp_seq=2 ttl=60 time=0.735 ms
+64 bytes from host-62-245-136-17.customer.m-online.net (62.245.136.17): icmp_seq=3 ttl=60 time=0.689 ms
+64 bytes from host-62-245-136-17.customer.m-online.net (62.245.136.17): icmp_seq=4 ttl=60 time=0.813 ms
+64 bytes from host-62-245-136-17.customer.m-online.net (62.245.136.17): icmp_seq=5 ttl=60 time=0.800 ms
+
+--- a1586.w3.akamai.net ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 3998ms
+rtt min/avg/max/mdev = 0.689/0.783/0.879/0.067 ms
+
+rrbone01.ring.nlnog.net | SUCCESS | rc=0 >>
+PING a1586.w3.akamai.net (95.101.90.192) 56(84) bytes of data.
+64 bytes from a95-101-90-192.deploy.akamaitechnologies.com (95.101.90.192): icmp_req=1 ttl=62 time=0.493 ms
+64 bytes from a95-101-90-192.deploy.akamaitechnologies.com (95.101.90.192): icmp_req=2 ttl=62 time=0.548 ms
+64 bytes from a95-101-90-192.deploy.akamaitechnologies.com (95.101.90.192): icmp_req=3 ttl=62 time=0.407 ms
+64 bytes from a95-101-90-192.deploy.akamaitechnologies.com (95.101.90.192): icmp_req=4 ttl=62 time=0.541 ms
+64 bytes from a95-101-90-192.deploy.akamaitechnologies.com (95.101.90.192): icmp_req=5 ttl=62 time=0.549 ms
+
+--- a1586.w3.akamai.net ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 4005ms
+rtt min/avg/max/mdev = 0.407/0.507/0.549/0.059 ms
+
+sargasso01.ring.nlnog.net | SUCCESS | rc=0 >>
+PING a1586.w3.akamai.net (23.63.99.48) 56(84) bytes of data.
+64 bytes from a23-63-99-48.deploy.static.akamaitechnologies.com (23.63.99.48): icmp_req=1 ttl=60 time=0.573 ms
+64 bytes from a23-63-99-48.deploy.static.akamaitechnologies.com (23.63.99.48): icmp_req=2 ttl=60 time=0.643 ms
+64 bytes from a23-63-99-48.deploy.static.akamaitechnologies.com (23.63.99.48): icmp_req=3 ttl=60 time=0.660 ms
+64 bytes from a23-63-99-48.deploy.static.akamaitechnologies.com (23.63.99.48): icmp_req=4 ttl=60 time=0.513 ms
+64 bytes from a23-63-99-48.deploy.static.akamaitechnologies.com (23.63.99.48): icmp_req=5 ttl=60 time=0.523 ms
+
+--- a1586.w3.akamai.net ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 4005ms
+rtt min/avg/max/mdev = 0.513/0.582/0.660/0.063 ms
+
+robtex01.ring.nlnog.net | SUCCESS | rc=0 >>
+PING a1586.w3.akamai.net (184.25.157.67) 56(84) bytes of data.
+64 bytes from a184-25-157-67.deploy.static.akamaitechnologies.com (184.25.157.67): icmp_req=1 ttl=58 time=7.40 ms
+64 bytes from a184-25-157-67.deploy.static.akamaitechnologies.com (184.25.157.67): icmp_req=2 ttl=58 time=9.39 ms
+64 bytes from a184-25-157-67.deploy.static.akamaitechnologies.com (184.25.157.67): icmp_req=3 ttl=58 time=7.52 ms
+64 bytes from a184-25-157-67.deploy.static.akamaitechnologies.com (184.25.157.67): icmp_req=4 ttl=58 time=7.47 ms
+64 bytes from a184-25-157-67.deploy.static.akamaitechnologies.com (184.25.157.67): icmp_req=5 ttl=58 time=7.45 ms
+
+--- a1586.w3.akamai.net ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 4957ms
+rtt min/avg/max/mdev = 7.409/7.850/9.391/0.779 ms
+
+sapphire01.ring.nlnog.net | SUCCESS | rc=0 >>
+PING a1586.w3.akamai.net (195.166.195.57) 56(84) bytes of data.
+64 bytes from 195.166.195.57: icmp_req=1 ttl=63 time=0.117 ms
+64 bytes from 195.166.195.57: icmp_req=2 ttl=63 time=0.157 ms
+64 bytes from 195.166.195.57: icmp_req=3 ttl=63 time=0.178 ms
+64 bytes from 195.166.195.57: icmp_req=4 ttl=63 time=0.129 ms
+64 bytes from 195.166.195.57: icmp_req=5 ttl=63 time=0.150 ms
+
+--- a1586.w3.akamai.net ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 4002ms
+rtt min/avg/max/mdev = 0.117/0.146/0.178/0.022 ms
+
+sasag01.ring.nlnog.net | SUCCESS | rc=0 >>
+PING a1586.w3.akamai.net (87.245.64.151) 56(84) bytes of data.
+64 bytes from 87.245.64.151: icmp_req=1 ttl=63 time=2.35 ms
+64 bytes from 87.245.64.151: icmp_req=2 ttl=63 time=0.193 ms
+64 bytes from 87.245.64.151: icmp_req=3 ttl=63 time=0.220 ms
+64 bytes from 87.245.64.151: icmp_req=4 ttl=63 time=0.191 ms
+64 bytes from 87.245.64.151: icmp_req=5 ttl=63 time=0.239 ms
+
+--- a1586.w3.akamai.net ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 4001ms
+rtt min/avg/max/mdev = 0.191/0.638/2.351/0.856 ms
+
+rnp01.ring.nlnog.net | SUCCESS | rc=0 >>
+PING a1586.w3.akamai.net (96.6.123.33) 56(84) bytes of data.
+64 bytes from a96-6-123-33.deploy.akamaitechnologies.com (96.6.123.33): icmp_req=1 ttl=60 time=1.16 ms
+64 bytes from a96-6-123-33.deploy.akamaitechnologies.com (96.6.123.33): icmp_req=2 ttl=60 time=1.13 ms
+64 bytes from a96-6-123-33.deploy.akamaitechnologies.com (96.6.123.33): icmp_req=3 ttl=60 time=1.13 ms
+64 bytes from a96-6-123-33.deploy.akamaitechnologies.com (96.6.123.33): icmp_req=4 ttl=60 time=1.14 ms
+64 bytes from a96-6-123-33.deploy.akamaitechnologies.com (96.6.123.33): icmp_req=5 ttl=60 time=1.17 ms
+
+--- a1586.w3.akamai.net ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 6918ms
+rtt min/avg/max/mdev = 1.136/1.150/1.170/0.013 ms
+
+sbtap01.ring.nlnog.net | SUCCESS | rc=0 >>
+PING a1586.w3.akamai.net (5.178.42.179) 56(84) bytes of data.
+64 bytes from 5.178.42.179: icmp_req=1 ttl=57 time=21.8 ms
+64 bytes from 5.178.42.179: icmp_req=2 ttl=57 time=21.8 ms
+64 bytes from 5.178.42.179: icmp_req=3 ttl=57 time=21.8 ms
+64 bytes from 5.178.42.179: icmp_req=4 ttl=57 time=21.9 ms
+64 bytes from 5.178.42.179: icmp_req=5 ttl=57 time=21.7 ms
+
+--- a1586.w3.akamai.net ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 4005ms
+rtt min/avg/max/mdev = 21.729/21.860/21.940/0.149 ms
+
+selectel01.ring.nlnog.net | SUCCESS | rc=0 >>
+PING a1586.w3.akamai.net (88.221.133.38) 56(84) bytes of data.
+64 bytes from a88-221-133-38.deploy.akamaitechnologies.com (88.221.133.38): icmp_req=1 ttl=61 time=13.5 ms
+64 bytes from a88-221-133-38.deploy.akamaitechnologies.com (88.221.133.38): icmp_req=2 ttl=61 time=13.6 ms
+64 bytes from a88-221-133-38.deploy.akamaitechnologies.com (88.221.133.38): icmp_req=3 ttl=61 time=13.7 ms
+64 bytes from a88-221-133-38.deploy.akamaitechnologies.com (88.221.133.38): icmp_req=4 ttl=61 time=13.5 ms
+64 bytes from a88-221-133-38.deploy.akamaitechnologies.com (88.221.133.38): icmp_req=5 ttl=61 time=13.5 ms
+
+--- a1586.w3.akamai.net ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 4000ms
+rtt min/avg/max/mdev = 13.550/13.606/13.712/0.139 ms
+
+seltimil01.ring.nlnog.net | SUCCESS | rc=0 >>
+PING a1586.w3.akamai.net (80.239.178.19) 56(84) bytes of data.
+64 bytes from 80-239-178-19.customer.teliacarrier.com (80.239.178.19): icmp_req=1 ttl=60 time=6.21 ms
+64 bytes from 80-239-178-19.customer.teliacarrier.com (80.239.178.19): icmp_req=2 ttl=60 time=6.15 ms
+64 bytes from 80-239-178-19.customer.teliacarrier.com (80.239.178.19): icmp_req=3 ttl=60 time=5.94 ms
+64 bytes from 80-239-178-19.customer.teliacarrier.com (80.239.178.19): icmp_req=4 ttl=60 time=6.01 ms
+64 bytes from 80-239-178-19.customer.teliacarrier.com (80.239.178.19): icmp_req=5 ttl=60 time=6.04 ms
+
+--- a1586.w3.akamai.net ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 4559ms
+rtt min/avg/max/mdev = 5.943/6.074/6.216/0.109 ms
+
+sabay01.ring.nlnog.net | SUCCESS | rc=0 >>
+PING a1586.w3.akamai.net (175.28.3.10) 56(84) bytes of data.
+64 bytes from 175.28.3.10: icmp_req=1 ttl=60 time=1.01 ms
+64 bytes from 175.28.3.10: icmp_req=2 ttl=60 time=0.874 ms
+64 bytes from 175.28.3.10: icmp_req=3 ttl=60 time=0.955 ms
+64 bytes from 175.28.3.10: icmp_req=4 ttl=60 time=0.819 ms
+64 bytes from 175.28.3.10: icmp_req=5 ttl=60 time=0.908 ms
+
+--- a1586.w3.akamai.net ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 4006ms
+rtt min/avg/max/mdev = 0.819/0.914/1.017/0.075 ms
+
+seeweb01.ring.nlnog.net | SUCCESS | rc=0 >>
+PING a1586.w3.akamai.net (2.18.240.211) 56(84) bytes of data.
+64 bytes from 2.18.240.211: icmp_req=1 ttl=61 time=0.371 ms
+64 bytes from 2.18.240.211: icmp_req=2 ttl=61 time=0.473 ms
+64 bytes from 2.18.240.211: icmp_req=3 ttl=61 time=0.359 ms
+64 bytes from 2.18.240.211: icmp_req=4 ttl=61 time=0.390 ms
+64 bytes from 2.18.240.211: icmp_req=5 ttl=61 time=0.284 ms
+
+--- a1586.w3.akamai.net ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 4006ms
+rtt min/avg/max/mdev = 0.284/0.375/0.473/0.063 ms
+
+anurag@ansible:~$
